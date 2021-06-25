@@ -1,0 +1,35 @@
+// Fonts
+
+$font-headers: "Montserrat",
+  "Helvetica",
+  "Arial"
+  sans-serif;
+
+$font: "Lora",
+  "Times New Roman",
+  serif;
+
+
+// regular - 400
+
+
+// Colors
+
+$background-block: #e0e0e0;
+$white: #f5f5f5;
+$brown: #5E4338;
+$font-color: #1A120F;
+$link-color: #FF6B35;
+$active-link-color: #AF5737;
+$smoky: rgba(218, 210, 210, 0.5);
+
+// Viewport
+
+$min-mobile-width: 320px;
+$max-mobile-width: 767px;
+$min-tablet-width: 768px;
+$max-tablet-width: 1023px;
+$min-desktop-width: 1024px;
+$max-desktop-width: 1920px;
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;

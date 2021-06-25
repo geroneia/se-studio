@@ -1,0 +1,48 @@
+/* forum-regular - cyrillic */
+@font-face {
+    font-family: "Montserrat";
+    font-style: bold;
+    font-weight: 700;
+    src: local("Montserrat bold"),
+      url("../fonts/montserrat/Montserrat-Bold.woff2") format("woff2"),
+      /* Super Modern Browsers */
+      url("../fonts/montserrat/Montserrat-Bold.woff") format("woff");
+    /* Modern Browsers */
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Lora-BoldItalic";
+    font-style: bold italic;
+    font-weight: 700;
+    src: local("Lora bold italic"),
+      url("../fonts/lora/Lora-BoldItalic.woff2") format("woff2"),
+      /* Super Modern Browsers */
+      url("../fonts/lora/Lora-BoldItalic.woff") format("woff");
+    /* Modern Browsers */
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Lora Italic";
+    font-style: italic;
+    font-weight: 400;
+    src: local("Lora-Italic"),
+      url("../fonts/lora/Lora-Italic.woff2") format("woff2"),
+      /* Super Modern Browsers */
+      url("../fonts/lora/Lora-Italic.woff") format("woff");
+    /* Modern Browsers */
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Lora";
+    font-style: Regular;
+    font-weight: 700;
+    src: local("Lora-Regular"),
+      url("../fonts/lora/Lora-Regular.woff2") format("woff2"),
+      /* Super Modern Browsers */
+      url("../fonts/lora/Lora-Regular.woff") format("woff");
+    /* Modern Browsers */
+    font-display: swap;
+  }
