@@ -25,29 +25,8 @@
   <header class="page-header page-header--nav-closed page-header--nojs">
     <div class="page-header__wrapper">
       <a class="page-header__logo logo">
-        <svg width="108" height="108" viewBox="0 0 108 108" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g filter="url(#filter0_d)">
-            <circle cx="54" cy="50" r="50" fill="#F5F5F5" />
-            <circle cx="54" cy="50" r="49.5" stroke="#5E4338" />
-          </g>
-          <path
-            d="M58.1718 83.9903C59.5252 75.701 59.1917 67.896 59.6065 59.6017C60.0601 50.5294 67.2974 53.3249 71.0037 58.8844C74.3259 63.8677 78.2266 62.6033 84.3139 62.471C94.9903 62.2389 95.4721 59.1868 95.4721 50.2767C95.4721 46.2152 92.8383 41.0205 91.487 36.9665C90.5989 34.3023 88.5136 24.7879 86.147 23.7361C77.1265 19.727 68.0455 16.563 58.1718 16.563C53.6182 16.563 47.555 18.5238 43.1083 19.5119C38.5968 20.5145 30.3599 19.7528 26.6101 22.6203C21.8609 26.252 23.7408 35.6359 23.7408 40.9516C23.7408 43.3689 24.0592 45.894 22.9438 48.1247C21.0745 51.8634 16.0816 51.7322 14.0173 55.2978C9.67107 62.8049 21.3621 60.3101 24.5379 61.7537C29.0783 63.8175 34.8922 65.7913 39.5217 63.5868C41.7214 62.5393 55.3026 56.5531 55.3026 61.7537C55.3026 66.7897 56.7372 70.26 56.7372 75.3826"
-            stroke="#5E4338" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-          <path
-            d="M33.7832 76.8174C33.9261 82.5325 33.7021 83.7951 38.0871 85.7439C40.6124 86.8663 42.0192 84.6698 43.8256 87.1786C47.2813 91.9782 47.5178 90.6829 52.4333 88.6132C55.4208 87.3553 54.5602 92.5983 57.4545 92.5983C65.0433 92.5983 70.1995 96.3059 73.3151 88.2944C75.6186 82.3711 79.1224 85.7871 83.198 83.1935C86.0774 81.3612 86.8767 73.9979 88.2989 79.6866"
-            stroke="#5E4338" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-          <defs>
-            <filter id="filter0_d" x="0" y="0" width="108" height="108" filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB">
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
-              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
-              <feOffset dy="4" />
-              <feGaussianBlur stdDeviation="2" />
-              <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
-              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
-              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
-            </filter>
-          </defs>
+        <svg class="page-header__logo-icon" width="100" height="100" role="img" aria-label="CH shop logo">
+          <use xlink:href="#icon-logo"></use>
         </svg>
       </a>
       <nav class="page-header__main-nav main-nav main-nav--closed">
@@ -60,6 +39,9 @@
           </li>
           <li class="main-nav__item">
             <a class="main-nav__item-link" href="catalog.html">Каталог</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__item-link" href="order.html">Заказ</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__item-link" href="delivery.html">Доставка</a>
@@ -80,34 +62,86 @@
         <h2 class="visually-hidden">Наши работы</h2>
         <ul class="works__list">
           <li class="works__item">
-            <!-- 1x: 288px*392px; 2x: 576*784px -->
-            <img class="works__item-img" src="img/nb-bag-desktop@1x.jpg" srcset="img/nb-bag-desktop@2x.jpg 2x"
-              width="436" height="270" alt="Черная сумка для ноутбука">
             <a class="works__item-link" href="#">
+              <picture class="works__item-img-wrapper">
+                <!-- 1x: 288px*392px; 2x: 576*784px -->
+                <source media="(min-width: 768px)" type="image/webp"
+                  srcset="img/nb-bag-desktop@1x.webp 1x, img/nb-bag-desktop@2x.webp 2x">
+                <!-- 1x: 271px*169px; 2x: 542*338px -->
+                <source type="image/webp"
+                  srcset="img/nb-bag-mobile@1x.webp, img/nb-bag-mobile@2x.webp 2x">
+
+                <!-- 1x: 288px*392px; 2x: 576*784px -->
+                <source media="(min-width: 768px)"
+                  srcset="img/nb-bag-desktop@1x.jpg 1x, img/nb-bag-desktop@2x.jpg 2x">
+                <!-- 1x: 271px*169px; 2x: 542*338px -->
+                <img class="works__item-img" src="img/nb-bag-mobile@1x.jpg"
+                  srcset="img/nb-bag-mobile@2x.jpg 2x" width="271" height="169"
+                  alt="Черная сумка для ноутбука">
+              </picture>
               <p class="works__item-name">Сумки и рюкзаки</p>
             </a>
           </li>
           <li class="works__item">
-            <!-- 1x: 288px*392px; 2x: 576*784px -->
-            <img class="works__item-img" src="img/antuan-desktop@1x.jpg" srcset="img/antuan-desktop@2x.jpg 2x"
-              width="436" height="270" alt="Книга отзывов для ресторана в кожаном переплете">
             <a class="works__item-link" href="#">
+              <picture class="works__item-img-wrapper">
+                <!-- 1x: 288px*392px; 2x: 576*784px -->
+                <source media="(min-width: 768px)" type="image/webp"
+                  srcset="img/antuan-desktop@1x.webp 1x, img/antuan-desktop@2x.webp 2x">
+                <!-- 1x: 271px*169px; 2x: 542*338px -->
+                <source type="image/webp"
+                  srcset="img/antuan-mobile@1x.webp, img/antuan-mobile@2x.webp 2x">
+
+                <!-- 1x: 288px*392px; 2x: 576*784px -->
+                <source media="(min-width: 768px)"
+                  srcset="img/antuan-desktop@1x.jpg 1x, img/antuan-desktop@2x.jpg 2x">
+                <!-- 1x: 271px*169px; 2x: 542*338px -->
+                <img class="works__item-img" src="img/antuan-mobile@1x.jpg"
+                  srcset="img/antuan-mobile@2x.jpg 2x" width="271" height="169"
+                  alt="Книга отзывов для ресторана в кожаном переплете">
+              </picture>
               <p class="works__item-name">Шьем на заказ</p>
             </a>
           </li>
           <li class="works__item">
-            <!-- 1x: 288px*392px; 2x: 576*784px -->
-            <img class="works__item-img" src="img/orca-desktop@1x.jpg" srcset="img/orca-desktop@2x.jpg 2x" width="436"
-              height="270" alt="Кошелек из темно-зеленой кожи">
             <a class="works__item-link" href="#">
+              <picture class="works__item-img-wrapper">
+                <!-- 1x: 288px*392px; 2x: 576*784px -->
+                <source media="(min-width: 768px)" type="image/webp"
+                  srcset="img/orca-desktop@1x.webp 1x, img/orca-desktop@2x.webp 2x">
+                <!-- 1x: 271px*169px; 2x: 542*338px -->
+                <source type="image/webp"
+                  srcset="img/orca-mobile@1x.webp, img/orca-mobile@2x.webp 2x">
+
+                <!-- 1x: 288px*392px; 2x: 576*784px -->
+                <source media="(min-width: 768px)"
+                  srcset="img/orca-desktop@1x.jpg 1x, img/orca-desktop@2x.jpg 2x">
+                <!-- 1x: 271px*169px; 2x: 542*338px -->
+                <img class="works__item-img" src="img/orca-mobile@1x.jpg"
+                  srcset="img/orca-mobile@2x.jpg 2x" width="271" height="169"
+                  alt="Кошелек из темно-зеленой кожи">
+              </picture>
               <p class="works__item-name">Кошельки</p>
             </a>
           </li>
           <li class="works__item">
-            <!-- 1x: 288px*392px; 2x: 576*784px -->
-            <img class="works__item-img" src="img/cover-desktop@1x.jpg" srcset="img/cover-desktop@2x.jpg 2x" width="436"
-              height="270" alt="Документница из зеленого нубука">
             <a class="works__item-link" href="#">
+              <picture class="works__item-img-wrapper">
+                <!-- 1x: 288px*392px; 2x: 576*784px -->
+                <source media="(min-width: 768px)" type="image/webp"
+                  srcset="img/cover-desktop@1x.webp 1x, img/cover-desktop@2x.webp 2x">
+                <!-- 1x: 271px*169px; 2x: 542*338px -->
+                <source type="image/webp"
+                  srcset="img/cover-mobile@1x.webp, img/cover-mobile@2x.webp 2x">
+
+                <!-- 1x: 288px*392px; 2x: 576*784px -->
+                <source media="(min-width: 768px)"
+                  srcset="img/cover-desktop@1x.jpg 1x, img/cover-desktop@2x.jpg 2x">
+                <!-- 1x: 271px*169px; 2x: 542*338px -->
+                <img class="works__item-img" src="img/cover-mobile@1x.jpg"
+                  srcset="img/cover-mobile@2x.jpg 2x" width="271" height="169"
+                  alt="Документница из зеленого нубука">
+              </picture>
               <p class="works__item-name">Документницы и обложки</p>
             </a>
           </li>
@@ -148,43 +182,88 @@
         <a class="follow-us__follow-link" href="https://www.instagram.com/s.e.vuychich/">#s.e.vuychich</a>
         <div class="follow-us__images-list">
           <div class="follow-us__column follow-us__column--first">
-            <div class="follow-us__images-item">
-              <img class="follow-us__image" src="img/banana-desktop@1x.jpg" width="250" height="296"
-                alt="Пять поясных сумок разных цветов">
+            <div class="follow-us__images-item follow-us__images-item-mobile-no">
+              <picture class="follow-us__images-wrap">
+                <!-- 1x: 250px*296px; 2x: 500px*592px -->
+                <img class="follow-us__image" src="img/banana-desktop@1x.jpg"
+                  srcset="img/banana-desktop@2x.jpg 2x" width="250" height="296" alt="Пять поясных сумок разных цветов">
+              </picture>
             </div>
             <div class="follow-us__images-item">
-              <img class="follow-us__image" src="img/bag-grass-desktop@1x.jpg" width="250" height="175"
-                alt="Коричневая сумочка на траве">
+              <picture class="follow-us__images-wrap">
+                <!-- 1x: 250px*175px; 2x: 500px*350px -->
+                <img class="follow-us__image" src="img/bag-grass-desktop@1x.jpg"
+                  srcset="img/bag-grass-desktop@2x.jpg 2x" width="250" height="175" alt="Коричневая сумочка на траве">
+              </picture>
             </div>
             <div class="follow-us__images-item">
-              <img class="follow-us__image" src="img/orca-gal-desktop@1x.jpg" width="250" height="100"
-                alt="Зеленый кошелек">
+              <picture class="follow-us__images-wrap">
+                <!-- 1x: 250px*100px; 2x: 500px*200px -->
+                <img class="follow-us__image" src="img/orca-gal-desktop@1x.jpg"
+                  srcset="img/orca-gal-desktop@2x.jpg 2x" width="250" height="100" alt="Зеленый кошелек">
+              </picture>
             </div>
             <div class="follow-us__images-item">
-              <img class="follow-us__image" src="img/mega-desktop@1x.jpg" width="520" height="208"
-                alt="Витрина с изделиями на ярмарке">
+              <picture class="follow-us__images-wrap">
+                <!-- 1x: 520px*208px; 2x: 1040px*416px -->
+                <source media="(min-width: 768px)"
+                  srcset="img/mega-desktop@1x.jpg 1x, img/mega-desktop@2x.jpg 2x">
+                <!-- 1x: 270px*121px; 2x: 540px*282px -->
+                <img class="follow-us__image" src="img/mega-mobile@1x.jpg"
+                  srcset="img/mega-mobile@2x.jpg 2x" width="270" height="141" alt="Витрина с изделиями на ярмарке">
+              </picture>
             </div>
           </div>
           <div class="follow-us__column follow-us__column--second">
             <div class="follow-us__images-item">
-              <img class="follow-us__image" src="img/bagpack-desktop@1x.jpg" width="250" height="344"
-                alt="Черно-оранжевый рюкзак">
+              <picture class="follow-us__images-wrap">
+                <!-- 1x: 250px*344px; 2x: 500px*688px -->
+                <source media="(min-width: 768px)"
+                  srcset="img/bagpack-desktop@1x.jpg 1x, img/bagpack-desktop@2x.jpg 2x">
+                <!-- 1x: 130px*221px; 2x: 260px*442px -->
+                <img class="follow-us__image" src="img/bagpack-mobile@1x.jpg"
+                  srcset="img/bagpack-mobile@2x.jpg 2x" width="130" height="221" alt="Черно-оранжевый рюкзак">
+              </picture>
             </div>
             <div class="follow-us__images-item">
-              <img class="follow-us__image" src="img/traveler-holder-desktop@1x.jpg" width="250" height="160"
-                alt="Square earrings">
+              <picture class="follow-us__images-wrap">
+                <!-- 1x: 250px*160px; 2x: 500px*320px -->
+                <source media="(min-width: 768px)"
+                  srcset="img/traveler-holder-desktop@1x.jpg 1x, img/traveler-holder-desktop@2x.jpg 2x">
+                <!-- 1x: 130px*130px; 2x: 260px*260px -->
+                <img class="follow-us__image" src="img/traveler-holder-mobile@1x.jpg"
+                  srcset="img/traveler-holder-mobile@2x.jpg 2x" width="130" height="130" alt="Большая документница для путешествий">
+              </picture>
             </div>
             <div class="follow-us__images-item">
-              <img class="follow-us__image" src="img/cover-with-dog-desktop@1x.jpg" width="250" height="128"
-                alt="Square earrings">
+              <picture class="follow-us__images-wrap">
+                <!-- 1x: 250px*128px; 2x: 500px*256px -->
+                <source media="(min-width: 768px)"
+                  srcset="img/cover-with-dog-desktop@1x.jpg 1x, img/cover-with-dog-desktop@2x.jpg 2x">
+                <!-- 1x: 130px*118px; 2x: 260px*236px -->
+                <img class="follow-us__image" src="img/cover-with-dog-mobile@1x.jpg"
+                  srcset="img/cover-with-dog-mobile@2x.jpg 2x" width="130" height="118" alt="Большая документница для путешествий">
+              </picture>
             </div>
             <div class="follow-us__images-item">
-              <img class="follow-us__image" src="img/document-cover-desktop@1x.jpg" width="250" height="250"
-                alt="Square earrings">
+              <picture class="follow-us__images-wrap">
+                <!-- 1x: 250px*250px; 2x: 500px*500px -->
+                <source media="(min-width: 768px)"
+                  srcset="img/document-cover-desktop@1x.jpg 1x, img/document-cover-desktop@2x.jpg 2x">
+                <!-- 1x: 130px*93px; 2x: 260px*186px -->
+                <img class="follow-us__image" src="img/document-cover-mobile@1x.jpg"
+                  srcset="img/document-cover-mobile@2x.jpg 2x" width="130" height="93" alt="Документница из зеленого нубука">
+              </picture>
             </div>
             <div class="follow-us__images-item">
-              <img class="follow-us__image" src="img/leather-samples-desktop@1x.png" width="250" height="105"
-                alt="Square earrings">
+              <picture class="follow-us__images-wrap">
+                <!-- 1x: 250px*105px; 2x: 500px*210px -->
+                <source media="(min-width: 768px)"
+                  srcset="img/leather-samples-desktop@1x.png 1x, img/leather-samples-desktop@2x.png 2x">
+                <!-- 1x: 130px*130px; 2x: 260px*260px -->
+                <img class="follow-us__image" src="img/leather-samples-mobile@1x.png"
+                  srcset="img/leather-samples-mobile@2x.png 2x" width="130" height="130" alt="Разноцветные образцы кожи">
+              </picture>
             </div>
           </div>
         </div>
@@ -193,29 +272,8 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <a class="page-footer__logo logo">
-          <svg width="108" height="108" viewBox="0 0 108 108" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g filter="url(#filter0_d)">
-              <circle cx="54" cy="50" r="50" fill="#F5F5F5" />
-              <circle cx="54" cy="50" r="49.5" stroke="#5E4338" />
-            </g>
-            <path
-              d="M58.1718 83.9903C59.5252 75.701 59.1917 67.896 59.6065 59.6017C60.0601 50.5294 67.2974 53.3249 71.0037 58.8844C74.3259 63.8677 78.2266 62.6033 84.3139 62.471C94.9903 62.2389 95.4721 59.1868 95.4721 50.2767C95.4721 46.2152 92.8383 41.0205 91.487 36.9665C90.5989 34.3023 88.5136 24.7879 86.147 23.7361C77.1265 19.727 68.0455 16.563 58.1718 16.563C53.6182 16.563 47.555 18.5238 43.1083 19.5119C38.5968 20.5145 30.3599 19.7528 26.6101 22.6203C21.8609 26.252 23.7408 35.6359 23.7408 40.9516C23.7408 43.3689 24.0592 45.894 22.9438 48.1247C21.0745 51.8634 16.0816 51.7322 14.0173 55.2978C9.67107 62.8049 21.3621 60.3101 24.5379 61.7537C29.0783 63.8175 34.8922 65.7913 39.5217 63.5868C41.7214 62.5393 55.3026 56.5531 55.3026 61.7537C55.3026 66.7897 56.7372 70.26 56.7372 75.3826"
-              stroke="#5E4338" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-            <path
-              d="M33.7832 76.8174C33.9261 82.5325 33.7021 83.7951 38.0871 85.7439C40.6124 86.8663 42.0192 84.6698 43.8256 87.1786C47.2813 91.9782 47.5178 90.6829 52.4333 88.6132C55.4208 87.3553 54.5602 92.5983 57.4545 92.5983C65.0433 92.5983 70.1995 96.3059 73.3151 88.2944C75.6186 82.3711 79.1224 85.7871 83.198 83.1935C86.0774 81.3612 86.8767 73.9979 88.2989 79.6866"
-              stroke="#5E4338" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-            <defs>
-              <filter id="filter0_d" x="0" y="0" width="108" height="108" filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB">
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
-                <feOffset dy="4" />
-                <feGaussianBlur stdDeviation="2" />
-                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
-                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
-                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
-              </filter>
-            </defs>
+          <svg class="page-footer__logo-icon" width="100" height="100" role="img" aria-label="CH shop logo">
+            <use xlink:href="#icon-logo"></use>
           </svg>
         </a>
         <div class="page-footer__information information">
@@ -225,6 +283,9 @@
             </li>
             <li class="information__item">
               <a class="information__item-link" href="catalog.html">Каталог</a>
+            </li>
+            <li class="information__item">
+              <a class="information__item-link" href="order.html">Заказ</a>
             </li>
             <li class="information__item">
               <a class="information__item-link" href="delivery.html">Доставка</a>
@@ -241,18 +302,10 @@
                 </svg>
               </a>
             </li>
-            <li class="social__item social__item-vk">
-              <a class="social__link" href="https://vk.com/s.e.vuychich">
-                <svg class="social__icon social__icon-vk" width="25" height="25" role="img"
-                  aria-label="Мы ВКонтакте">
-                  <use xlink:href="#icon-vk"></use>
-                </svg>
-              </a>
-            </li>
             <li class="social__item social__item-twitter">
               <a class="social__link" href="#">
                 <svg class="social__icon social__icon-tw" width="27" height="32" role="img" aria-label="Напишите нам">
-                  <use xlink:href="#icon-tw"></use>
+                  <use xlink:href="#icon-email"></use>
                 </svg>
               </a>
             </li>

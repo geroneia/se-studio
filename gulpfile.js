@@ -12,7 +12,7 @@ var csso = require('gulp-csso');
 var rename = require('gulp-rename');
 var imagemin = require('gulp-imagemin');
 var webp = require('gulp-webp');
-var svgstore = require('gulp-svgstore')
+var svgstore = require('gulp-svgstore');
 var posthtml = require('gulp-posthtml');
 var include = require('posthtml-include');
 var del = require('del');
@@ -70,7 +70,7 @@ gulp.task('webp', function () {
       .pipe(webp({
         quality: 90
       }))
-      .pipe(gulp.dest('source/img'));
+      .pipe(gulp.dest('build/img'));
 });
 
 gulp.task('sprite', function () {
@@ -106,5 +106,5 @@ gulp.task('clean', function () {
   return del('build');
 });
 
-gulp.task('build', gulp.series('clean', 'copy', 'css', 'sprite', 'html'));
+gulp.task('build', gulp.series('clean', 'copy', 'css', 'webp', 'sprite', 'html'));
 gulp.task('start', gulp.series('build', 'server'));
