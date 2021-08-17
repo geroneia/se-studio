@@ -22,16 +22,14 @@
 </div>
 
 <body>
-  <header class="page-header page-header--nav-closed page-header--nojs">
-    <div class="page-header__wrapper">
+  <header class="page-header page-header--nav-opened">
       <a class="page-header__logo logo">
-        <svg class="page-header__logo-icon" width="100" height="100" role="img" aria-label="CH shop logo">
+        <svg class="page-header__logo-icon" width="100" height="100" role="img" aria-label="Логотип мастерской S.E.Vuychich.">
           <use xlink:href="#icon-logo"></use>
         </svg>
       </a>
-      <nav class="page-header__main-nav main-nav main-nav--closed">
-        <button class="main-nav__toggle main-nav__toggle--closed button" type="button" aria-label="Меню"><span
-            class="main-nav__toggle-text">Меню</span>
+      <nav class="page-header__main-nav main-nav main-nav--nav-opened">
+        <button class="main-nav__toggle main-nav__toggle--nav-opened button" type="button" aria-label="Меню">
         </button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
@@ -39,6 +37,32 @@
           </li>
           <li class="main-nav__item">
             <a class="main-nav__item-link" href="catalog.html">Каталог</a>
+            <ul class="main-nav__nested-list">
+              <li class="main-nav__item">
+                <a class="main-nav__item-link" href="#">Рюкзаки</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__item-link" href="#">Сумки</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__item-link" href="#">Кошельки</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__item-link" href="#">Документницы</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__item-link" href="#">Работы на заказ</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__item-link" href="#">Обложки с гравировкой</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__item-link" href="#">Обложки с печатью</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__item-link" href="#">Ремни и ключницы</a>
+              </li>
+            </ul>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__item-link" href="order.html">Заказ</a>
@@ -49,12 +73,11 @@
         </ul>
       </nav>
       <section class="page-header__promo">
-        <h1 class="page-header__title"><span>Семейная мастерская </span>S.E.VUYCHICH</h1>
+        <h1 class="page-header__title"><span>Семейная мастерская </span>S.E.<b>VUYCHICH</b></h1>
         <p class="page-header__text">изделия из кожи ручной работы</p>
         <a class="page-header__promo-button scroll-link" href="#" tabindex="0"
           aria-label="Перейти к просмотру каталога"></a>
       </section>
-    </div>
   </header>
   <div class="page-wrapper">
     <main class="main" id="main">

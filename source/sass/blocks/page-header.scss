@@ -1,0 +1,195 @@
+.page-header__title,
+.page-header__text {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.page-header__promo-button {
+    display: flex;
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    width: 20px;
+    height: 28px;
+
+    &::after {
+        position: absolute;
+        content: "";
+        width: 18px;
+        height: 18px;
+        left: 0;
+        bottom: 0;;
+        border-bottom: 2px solid $brown;
+        border-right: 2px solid $brown;
+        transform: rotate(45deg);
+    }
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: 2px;
+        height: 30px;
+        background-color: $brown;
+        top: 0;
+        left: 8px;
+    }
+
+    &:hover {
+        bottom: 30px;
+    }
+}
+
+@media (min-width: $min-tablet-width) {
+    .page-header__logo-icon {
+        fill: #5E4338;
+      }
+    .page-header {
+        position: relative;
+          min-height: 836px;
+          max-width: 1440px;
+          padding-right: 13.19%;
+          padding-left: 13.19%;
+          margin-left: auto;
+          margin-right: auto;
+          background-image: url("../../img/bg-header-desktop@1x.jpg"),
+          linear-gradient(to right, $white 55.8%, $brown 55.8%);
+          background-repeat: no-repeat, no-repeat;
+          background-size: 36,11% auto, 100%;
+          background-position: 79.5% 184px, 0 0;
+    }
+
+    .page-header__logo {
+        position: absolute;
+        top: 24px;
+        left: 0;
+        width: 100px;
+        height: 100px;
+        margin-left: 13.19%;
+    }
+
+    .page-header__promo {
+        width: 520px;
+        padding-top: 310px;
+        font-size: 24px;
+        line-height: 29px;
+        color: $brown;
+    }
+
+    .page-header__title span,
+    .page-header__text {
+        font-size: 24px;
+        line-height: 29px;
+        color: $brown;
+    }
+
+    .page-header__title {
+        padding-bottom: 5px;
+        font-family: $font-headers;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 59px;
+        letter-spacing: calc(1em / 7);
+        b {
+            font-family: $font-headers;
+            color: $orange;
+        }
+        span {
+            text-transform: lowercase;
+            letter-spacing: 0;
+            font-weight: 400;
+            font-family: $font;
+        }
+    }
+}
+
+@media (min-width: $min-mobile-width) {
+    .page-header__logo {
+        display: flex;
+        width: 50px;
+        height: 50px;
+        padding-top: 13px;
+    }
+
+    .page-header {
+        background-color: $white;
+        background-image: url("../../img/bag-grass-mobile@1x.jpg");
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-position: center 83px;
+        min-height: 900px;
+        flex-direction: column;
+        min-width: 320px;
+        padding-right: 7.8%;
+        padding-left: 7.8%;
+        margin-left: auto;
+        margin-right: auto;
+        .page-header__logo-icon {
+            fill: $brown;
+            width: 50px;
+            height: 50px;
+          }
+    }
+
+    .page-header__promo {
+        width: 270px;
+        padding-top: 190px;
+        font-size: 17px;
+        line-height: 21px;
+        color: $white;
+    }
+
+    .page-header__title span,
+    .page-header__text {
+        font-size: 17px;
+        line-height: 21px;
+        color: $white;
+    }
+
+    .page-header__title {
+        padding-bottom: 8px;
+        font-family: $font-headers;
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 43px;
+        b {
+            font-family: $font-headers;
+            color: $orange;
+        }
+        span {
+            text-transform: lowercase;
+            font-weight: 400;
+            font-family: $font;
+        }
+    }
+
+    .page-header--nav-opened {
+        background-color: $brown;
+        background-image: url("../../img/stitching-mobile-white.svg");
+        background-size: 27px 428px;
+        background-repeat: no-repeat;
+        background-position: 7.8% -30px;
+        min-height: 900px;
+        flex-direction: column;
+        min-width: 320px;
+        padding-right: 7.8%;
+        padding-left: 7.8%;
+        margin-left: auto;
+        margin-right: auto;
+
+        .page-header__logo-icon {
+            fill: $white;
+            width: 50px;
+            height: 50px;
+          }
+        .page-header__promo {
+            display: none;
+        }
+
+        .page-header__logo {
+            margin-left: auto;
+            margin: auto;
+        }
+    }
+
+
+}
