@@ -58,13 +58,16 @@
           background-position: 79.5% 184px, 0 0;
     }
 
+    .page-header__wrapper {
+        position: relative;
+    }
+
     .page-header__logo {
         position: absolute;
         top: 24px;
         left: 0;
         width: 100px;
         height: 100px;
-        margin-left: 13.19%;
     }
 
     .page-header__promo {
@@ -102,7 +105,7 @@
     }
 }
 
-@media (min-width: $min-mobile-width) {
+@media (min-width: $min-mobile-width) and (max-width: $max-mobile-width) {
     .page-header__logo {
         display: flex;
         width: 50px;

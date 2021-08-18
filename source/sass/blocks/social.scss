@@ -1,0 +1,57 @@
+.social {
+    display: flex;
+    margin-left: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.social__icon {
+    fill: $brown;
+}
+
+.social__item
+.social__link {
+    display: flex;
+}
+
+@media (min-width: $min-tablet-width) {
+    .social {
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 35px;
+        padding-right: 20px;
+        position: relative;
+        height: 68px;
+
+        &::after {
+            position: absolute;
+            content: "";
+            width: 9px;
+            height: 67px;
+            background-image: url("../../img/features-lines-3.svg");
+            background-position: 0 0;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            top: 0;
+            right: 0;
+        }
+    }
+
+    .social__link {
+        width: 30px;
+        height: 30px;
+    }
+
+    .social__item {
+        margin-bottom: 8px;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+
+    .social__item-instagram {
+        padding-left: 2px;
+    }
+}
