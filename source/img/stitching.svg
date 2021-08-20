@@ -1,10 +1,10 @@
 <svg width="93" height="2069" viewBox="0 0 93 2069" fill="none" xmlns="http://www.w3.org/2000/svg">
-<line x1="91.9964" y1="2048.98" x2="89.9963" y2="0.981445" stroke="#5E4338" stroke-width="2" stroke-dasharray="4 2"/>
-<line y1="-1" x2="2065.52" y2="-1" transform="matrix(-0.000484051 -1 0.999996 -0.0029695 41.9955 2066.5)" stroke="#FF6B35" stroke-width="2" stroke-dasharray="4 2"/>
-<line x1="53.9956" y1="2038.98" x2="52.9956" y2="0.97632" stroke="#FF6B35" stroke-width="2" stroke-dasharray="4 2"/>
-<line y1="-1" x2="2065.52" y2="-1" transform="matrix(-0.000484051 -1 0.999996 -0.0029695 66.9955 2066.5)" stroke="#F5F5F5" stroke-width="2" stroke-dasharray="4 2"/>
-<line x1="77.9956" y1="2038.98" x2="77.646" y2="3.45427" stroke="#5E4338" stroke-width="2" stroke-dasharray="4 2"/>
-<line y1="-1" x2="2065.52" y2="-1" transform="matrix(-0.000653355 -1 0.999998 -0.0022001 3.99551 2068.98)" stroke="#5E4338" stroke-width="2" stroke-dasharray="4 2"/>
-<line x1="15.997" y1="2048.98" x2="14.6465" y2="3.45696" stroke="#5E4338" stroke-width="2" stroke-dasharray="4 2"/>
-<line x1="27.9956" y1="2027.98" x2="26.646" y2="3.45476" stroke="#5E4338" stroke-width="2" stroke-dasharray="4 2"/>
+<line x1="91.3506" y1="2048.01" x2="89.3505" y2="0.00561528" stroke="#5E4338" stroke-width="2" stroke-dasharray="4 2"/>
+<line y1="-1" x2="2065.52" y2="-1" transform="matrix(-0.000484051 -1 0.999996 -0.0029695 41.3497 2065.52)" stroke="#FF6B35" stroke-width="2" stroke-dasharray="4 2"/>
+<line x1="53.3498" y1="2038" x2="52.3498" y2="0.000489466" stroke="#FF6B35" stroke-width="2" stroke-dasharray="4 2"/>
+<line y1="-1" x2="2065.52" y2="-1" transform="matrix(-0.000484051 -1 0.999996 -0.0029695 66.3497 2065.52)" stroke="#F5F5F5" stroke-width="2" stroke-dasharray="4 2"/>
+<line x1="77.3498" y1="2038" x2="77.0002" y2="2.47844" stroke="#5E4338" stroke-width="2" stroke-dasharray="4 2"/>
+<line y1="-1" x2="2065.52" y2="-1" transform="matrix(-0.000653355 -1 0.999998 -0.0022001 3.3497 2068)" stroke="#5E4338" stroke-width="2" stroke-dasharray="4 2"/>
+<line x1="15.3512" y1="2048.01" x2="14.0006" y2="2.48113" stroke="#5E4338" stroke-width="2" stroke-dasharray="4 2"/>
+<line x1="27.3498" y1="2027" x2="26.0002" y2="2.47893" stroke="#5E4338" stroke-width="2" stroke-dasharray="4 2"/>
 </svg>

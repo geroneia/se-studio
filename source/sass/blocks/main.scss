@@ -1,0 +1,17 @@
+    @media (min-width: $min-tablet-width) {
+        .main section {
+            background-color: $white;
+            background-image: url("../img/stitching.svg");
+            background-position: 13.19% 0;
+            background-repeat: no-repeat;
+            background-size: auto;
+
+            &:last-child {
+                background-position: bottom 800px left 13.19%;
+            }
+
+            &:nth-child(odd) {
+                background-color: $background-block;
+            }
+        }
+    }
