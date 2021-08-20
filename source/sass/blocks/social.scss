@@ -6,13 +6,13 @@
     padding: 0;
 }
 
-.social__icon {
-    fill: $brown;
-}
-
 .social__item
 .social__link {
     display: flex;
+}
+
+.social__link:active>.social__icon {
+    fill: $active-link-color;
 }
 
 @media (min-width: $min-tablet-width) {
@@ -53,5 +53,30 @@
 
     .social__item-instagram {
         padding-left: 2px;
+    }
+
+    .social__icon {
+        fill: $brown;
+    }
+}
+
+@media (min-width: $min-mobile-width) and (max-width: $max-mobile-width) {
+    .social {
+        flex-direction: row;
+        flex-wrap: wrap;
+        min-width: 70%;
+        margin-top: 20px;
+        margin-left: 0;
+        height: 68px;
+    }
+
+    .social__link {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+
+    .social__icon {
+        fill: $white;
     }
 }

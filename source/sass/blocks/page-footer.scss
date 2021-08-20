@@ -9,9 +9,10 @@
 
   a {
     text-transform: lowercase;
-    color: $brown;
 
-    &:hover,
+    &:hover {
+      font-size: 21px;
+    }
     &:active {
       color: $active-link-color;
     }
@@ -20,6 +21,10 @@
 
 
 @media (min-width: $min-tablet-width) {
+  .page-footer__text {
+    display: none;
+  }
+
   .page-footer {
     min-height: 147px;
     background-color: $background-block;
@@ -38,9 +43,52 @@
     margin-right: auto;
   }
 
+  .page-footer__information,
+.page-footer__social {
+  a {
+    color: $brown;
+  }
+}
+
   .page-footer__logo-icon {
     fill: #5E4338;
     margin-top: 15px;
     margin-right: 75px;
+  }
+}
+
+@media (min-width: $min-mobile-width) and (max-width: $max-mobile-width) {
+  .page-footer {
+    min-height: 292px;
+    background-color: $brown;
+  }
+
+  .page-footer__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    padding-right: 7.8%;
+    padding-left: 7.8%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .page-footer__logo {
+    display: none;
+  }
+
+  .page-footer__text {
+    padding-top: 20px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    margin: 0;
+    font-style: italic;
+    text-transform: lowercase;
+    font-size: 17px;
+    line-height: 21px;
+    color: $white;
   }
 }
