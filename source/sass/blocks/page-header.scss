@@ -43,6 +43,15 @@
           background-repeat: no-repeat, no-repeat;
           background-size: 36,11% auto, 100%;
           background-position: 79.5% 184px, 0 0;
+
+          @media (min-resolution: $retina-dpi),
+          (min-resolution: $retina-dppx) {
+          background-image: url("../../img/bg-header-desktop@2x.jpg"),
+          linear-gradient(to right, $white 55.8%, $brown 55.8%);
+          background-repeat: no-repeat, no-repeat;
+          background-size: 520px auto, 100%;
+          background-position: 79.5% 184px, 0 0;
+          }
     }
 
     .page-header__container {
