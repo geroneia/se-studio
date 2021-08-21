@@ -1,3 +1,7 @@
+    .main section:nth-child(odd) {
+        background-color: $background-block;
+    }
+
     @media (min-width: $min-tablet-width) {
         .main section {
             background-color: $white;
@@ -10,8 +14,5 @@
                 background-position: bottom 800px left 13.19%;
             }
 
-            &:nth-child(odd) {
-                background-color: $background-block;
-            }
         }
     }

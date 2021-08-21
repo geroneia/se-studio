@@ -48,6 +48,20 @@
   flex-direction: column;
 }
 
+.works__item-name {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  background-color: $smoky;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: $font-headers;
+  font-weight: 700;
+  letter-spacing: calc(1em/11);
+}
+
 @keyframes move_text {
   from {
     bottom: -10px;
@@ -126,29 +140,18 @@
   }
 
   .works__item-name {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    display: block;
     opacity: 0;
     visibility: hidden;
     transition: opacity 1s linear;
-    width: 100%;
-    background-color: $smoky;
-    margin-top: 0;
-    margin-bottom: 0;
     padding-top: 11px;
     padding-bottom: 11px;
     padding-left: 10px;
-    font-family: $font-headers;
-    font-weight: 700;
     font-size: 24px;
     line-height: 29px;
-    letter-spacing: calc(1em/11);
   }
 
   .works__to-catalog-link {
-      width: 300px;
+    width: 300px;
     margin-right: 13.8%;
     padding-right: 32px;
     margin-top: 48px;
@@ -166,6 +169,69 @@
       width: 6px;
       height: 6px;
       top: 13px;
+   }
+  }
+}
+
+@media (min-width: $min-mobile-width) and (max-width: $max-mobile-width) {
+  .works {
+    min-height: 920px;
+    padding-top: 80px;
+    background-color: $white;
+    background-image: url("../../img/stitching-mobile-brown.svg");
+    background-position: 7.8% 0;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+
+  .works__list-wrapper {
+    width: 100%;
+    padding-right: 7.8%;
+    padding-left: 7.8%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .works__list,
+  .works__item {
+    width: 100%;
+  }
+
+  .works__item {
+    padding-bottom: 44px;
+
+    &:last-of-type {
+      padding-bottom: 0;
+    }
+  }
+
+  .works__item-name {
+    padding-top: 4px;
+    padding-bottom: 5px;
+    padding-left: 8px;
+    font-size: 17px;
+    line-height: 21px;
+  }
+
+  .works__to-catalog-link {
+    width: 205px;
+    margin-right: 7.8%;
+    padding-right: 20px;
+    margin-top: 44px;
+    margin-bottom: 48px;
+    font-size: 17px;
+    line-height: 21px;
+
+    &::after {
+        width: 13px;
+        height: 2px;
+        top: 11px;
+    }
+
+    &::before {
+      width: 6px;
+      height: 6px;
+      top: 9px;
    }
   }
 }
