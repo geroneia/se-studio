@@ -45,8 +45,15 @@
           background-position: 79.5% 184px, 0 0;
     }
 
-    .page-header__wrapper {
+    .page-header__container {
         position: relative;
+    }
+
+    .page-heder__wrapper {
+         background-image: linear-gradient(to right, $white 55.8%, $brown 55.8%);
+          background-repeat: no-repeat;
+          background-size: 100%;
+          background-position: 0 0;
     }
 
     .page-header__logo {
@@ -59,7 +66,7 @@
 
     .page-header__promo {
         width: 520px;
-        padding-top: 310px;
+        padding-top: 288px;
         font-size: 24px;
         line-height: 29px;
         color: $brown;

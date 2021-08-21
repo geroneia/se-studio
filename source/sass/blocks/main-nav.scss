@@ -11,7 +11,7 @@
         display: none;
     }
     .main-nav__list, .main-nav__nested-list {
-        margin-left: 55.8%;
+        margin-left: 57%;
         font-weight: normal;
     }
 
@@ -29,7 +29,7 @@
     .main-nav__list {
         padding-left: 32px;
         width: 440px;
-        height: 30px;
+        min-height: 30px;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
