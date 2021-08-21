@@ -1,0 +1,30 @@
+.go-top-button {
+    display: none;
+    position: fixed;
+    width: 31px;
+    height: 31px;
+    bottom: 20vh;
+    background-color: $transparent-white;
+    background-image: url("../../img/go_top.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotate(90deg);
+    animation: blinking 1300ms;
+}
+
+@keyframes blinking {
+    0% { background-color: $transparent-white; box-shadow: 0 0 5px $orange; }
+    50% { background-color: $white; box-shadow: 0 0 15px $orange; }
+    100% { background-color: $transparent-white;}
+    }
+
+@media (min-width: $min-mobile-width) and (max-width: $max-mobile-width) {
+    .go-top-button {
+        right: 3.2%;
+    }
+}
+
+.go-top-button--active {
+    display: block;
+}

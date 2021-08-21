@@ -108,14 +108,14 @@
         flex-direction: column;
         text-align: end;
         background-color: $brown;
-        background-image: url("../../img/traveler-holder-mobile@1x.jpg");
+        background-image: url("../../img/bg-about-us_mobile@1x.jpg");
         background-position: top -80px center;
         background-repeat: no-repeat;
         background-size: contain;
 
         @media (min-resolution: $retina-dpi),
         (min-resolution: $retina-dppx) {
-        background-image: url("../../img/traveler-holder-mobile@2x.jpg");
+        background-image: url("../../img/bg-about-us_mobile@2x.jpg");
         background-position: top left ;
         background-repeat: no-repeat;
         background-size: contain;

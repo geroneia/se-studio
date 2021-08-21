@@ -22,7 +22,7 @@
 </div>
 
 <body>
-  <div class="page-heder__wrapper">
+  <div class="page-header__wrapper">
   <header class="page-header page-header--nav-opened">
     <div class="page-header__container">
       <a class="page-header__logo logo">
@@ -209,7 +209,8 @@
       </div>
       </section>
       <section class="main__follow-us follow-us">
-        <h2 class="follow-us__heading">Мы в Инстаграм</h2>
+        <div class="follow-us__wrapper">
+        <h2 class="visually-hidden">Мы в Инстаграм</h2>
         <a class="follow-us__follow-link" href="https://www.instagram.com/s.e.vuychich/">#s.e.vuychich</a>
         <div class="follow-us__images-list">
           <div class="follow-us__column follow-us__column--first">
@@ -220,14 +221,14 @@
                   srcset="img/banana-desktop@2x.jpg 2x" width="250" height="296" alt="Пять поясных сумок разных цветов">
               </picture>
             </div>
-            <div class="follow-us__images-item">
+            <div class="follow-us__images-item follow-us__images-item-mobile-no">
               <picture class="follow-us__images-wrap">
                 <!-- 1x: 250px*175px; 2x: 500px*350px -->
                 <img class="follow-us__image" src="img/bag-grass-desktop@1x.jpg"
                   srcset="img/bag-grass-desktop@2x.jpg 2x" width="250" height="175" alt="Коричневая сумочка на траве">
               </picture>
             </div>
-            <div class="follow-us__images-item">
+            <div class="follow-us__images-item follow-us__images-item-mobile-no">
               <picture class="follow-us__images-wrap">
                 <!-- 1x: 250px*100px; 2x: 500px*200px -->
                 <img class="follow-us__image" src="img/orca-gal-desktop@1x.jpg"
@@ -266,6 +267,8 @@
                   srcset="img/traveler-holder-mobile@2x.jpg 2x" width="130" height="130" alt="Большая документница для путешествий">
               </picture>
             </div>
+          </div>
+          <div class="follow-us__column follow-us__column--third">
             <div class="follow-us__images-item">
               <picture class="follow-us__images-wrap">
                 <!-- 1x: 250px*128px; 2x: 500px*256px -->
@@ -273,7 +276,7 @@
                   srcset="img/cover-with-dog-desktop@1x.jpg 1x, img/cover-with-dog-desktop@2x.jpg 2x">
                 <!-- 1x: 130px*118px; 2x: 260px*236px -->
                 <img class="follow-us__image" src="img/cover-with-dog-mobile@1x.jpg"
-                  srcset="img/cover-with-dog-mobile@2x.jpg 2x" width="130" height="118" alt="Большая документница для путешествий">
+                  srcset="img/cover-with-dog-mobile@2x.jpg 2x" width="130" height="118" alt="Обложка на паспорт с рисунком">
               </picture>
             </div>
             <div class="follow-us__images-item">
@@ -298,7 +301,9 @@
             </div>
           </div>
         </div>
+      </div>
       </section>
+      <button class="main__go-top-button button go-top-button" type="button" aria-label="Прокрутить страницу вверх"></button>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
@@ -342,7 +347,7 @@
       </div>
     </footer>
   </div>
-  <div class="modal modal__feedback feedback modal--close">
+  <div class="modal modal__feedback feedback modal--open">
     <div class="feedback__container">
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <p class="feedback__description">Остались вопросы? Напишите нам.</p>

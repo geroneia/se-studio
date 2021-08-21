@@ -1,0 +1,13 @@
+.feedback__container {
+    position: fixed;
+    display: block;
+    width: 36%;
+    min-height: 439px;
+    margin-left: 32%;
+    top: 187px;
+    background-color: $background-block;
+    background-image: linear-gradient(to right, $background-block 33%, $brown 33%);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0 0;
+  }
