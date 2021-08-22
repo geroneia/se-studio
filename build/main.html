@@ -350,9 +350,10 @@
       </div>
     </footer>
   </div>
-  <div class="modal modal__feedback feedback modal--open">
+  <div class="modal modal__feedback feedback modal--close">
     <div class="feedback__container">
       <h2 class="visually-hidden">Форма обратной связи</h2>
+      <button class="feedback__close-button button" type="button" aria-label="Закрыть форму"></button>
       <p class="feedback__description">Остались вопросы? Напишите нам.</p>
       <form class="feedback__form" method="POST" action="#">
         <ul class="feedback__list">
@@ -369,11 +370,13 @@
             <input type="tel" id="tel" name="tel" placeholder="Введите номер телефона" autofocus="" required="">
           </li>
           <li class="feedback__item">
-            <textarea rows="10" cols="45" id="message" name="message" placeholder="Задайте ваш вопрос" required="">
+            <textarea id="message" name="message" placeholder="Задайте ваш вопрос" required="">
           </textarea></li>
         </ul>
+        <div class="feedback__controls">
         <button class="button" type="button">Очистить</button>
         <button class="button" type="submit">Отправить</button>
+      </div>
       </form>
     </div>
   </div>
