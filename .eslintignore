@@ -1,0 +1,14 @@
+.DS_Store
+.idea
+.vscode
+.eslintrc
+package.json
+gulpfile.js
+package-lock.json
+*.ai
+*.log
+*.pdf
+*.psd
+*.sublime*
+node_modules/
+npm-debug.*

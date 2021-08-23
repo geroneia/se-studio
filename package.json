@@ -17,6 +17,7 @@
     "gulp-rename": "^1.4.0",
     "gulp-sass": "4.0.x",
     "gulp-sourcemaps": "2.6.x",
+    "gulp-uglify": "3.0.2",
     "gulp-svgstore": "^7.0.1",
     "gulp-webp": "^4.0.1",
     "pixel-glass": "^1.0.13",
@@ -35,7 +36,6 @@
   },
   "browserslist": [
     "last 2 versions",
-    "IE 11",
     "Firefox ESR"
   ],
   "editorconfig-cli": [
@@ -45,6 +45,10 @@
     "source/js/**/*.js",
     "source/img/**/*.svg",
     "source/sass/**/*.{sass,scss}"
+  ],
+  "typeRoots": [
+    "./typings",
+    "./node_modules/@types/"
   ],
   "engines": {
     "node": "8.15"

@@ -1,48 +1,95 @@
 .catalog__section {
-    max-width: 1440px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding-right: 13.19%;
-    padding-left: 13.19%;
-    margin-left: auto;
-    margin-right: auto;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-right: 13.19%;
+  padding-left: 13.19%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .catalog__description-wrapper {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  min-width: 0;
 }
 
 .catalog__description-text-wrapper {
-    display: block;
-    text-align: right;
+  display: flex;
+  text-align: right;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .catalog_heading {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-family: $font-headers;
+  font-weight: 700;
+  display: block;
+  text-align: right;
+  letter-spacing: calc(1em / 9);
+  color: $orange;
+}
+
+.catalog__article-heading {
     margin-top: 0;
     margin-bottom: 0;
-    text-transform: uppercase;
     font-family: $font-headers;
     font-weight: 700;
     display: block;
     text-align: right;
-    letter-spacing: calc(1em / 9);
-    color: $orange;
+    letter-spacing: calc(1em / 7);
+    color: $brown;
+
+    &:first-letter {
+        color: $orange;
+    }
+}
+
+.catalog__description-text {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-style: italic;
+    color: $font-color;
+    font-weight: 400;
+
+    &:last-of-type {
+        margin-top: auto;
+    }
 }
 
 @media (min-width: $min-tablet-width) {
-    .catalog__section {
-        padding-top: 6px;
-    }
+  .catalog__section {
+    padding-top: 6px;
+  }
 
-    .catalog_heading {
-        font-size: 24px;
-        line-height: 29px;
-    }
+  .catalog_heading {
+    font-size: 24px;
+    line-height: 29px;
+  }
 
-    .catalog__description-wrapper {
-        flex-direction: row;
-        padding-top: 100px;
+  .catalog__article-heading {
+    margin-bottom: 137px;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.catalog__description-text {
+    padding-left: 30%;
+    font-size: 24px;
+    line-height: 30px;
+
+    &:last-of-type {
+        padding-bottom: 76px;
     }
+}
+
+  .catalog__description-wrapper {
+    flex-direction: row;
+    padding-top: 100px;
+    margin-bottom: 191px;
+  }
 }

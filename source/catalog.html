@@ -7,6 +7,7 @@
   <meta name="description" content="Флористический магазин Весна всегда">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>S.E.Vuychich</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -86,21 +87,29 @@
           <h2 class="catalog_heading">Рюкзаки</h2>
           <div class="catalog__description-wrapper">
           <!-- Slider main container -->
-          <div class="swiper-container">
+          <div class="catalog__image-slider image-slider swiper-container">
             <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
+            <div class="image-slider__wrapper swiper-wrapper">
               <!-- Slides -->
-              <div class="swiper-slide">
-                <img src="img/bagpack-slider-desktop@1x.jpg">
+              <div data-hash="slide-1" class="image-slider__slide swiper-slide">
+                <div class="image-slider__image swiper-zoom-container">
+                <img src="img/bagpack-slider-desktop@1x.jpg" alt="Картинка">
               </div>
-              <div class="swiper-slide">
-                <img src="img/bag-grass-slider-desktop@1x.jpg">
               </div>
-              <div class="swiper-slide">
-                <img src="img/nb-bag-slider-desktop@1x.jpg">
+              <div data-hash="slide-2" class="image-slider__slide swiper-slide">
+                <div class="image-slider__image swiper-zoom-container">
+                <img src="img/bag-grass-slider-desktop@1x.jpg" alt="Картинка">
               </div>
-              <div class="swiper-slide">
-                <img src="img/orca-slider-desktop@1x.jpg">
+              </div>
+              <div data-hash="slide-3" class="image-slider__slide swiper-slide">
+                <div class="image-slider__image swiper-zoom-container">
+                <img src="img/nb-bag-slider-desktop@1x.jpg" alt="Картинка">
+              </div>
+              </div>
+              <div data-hash="slide-4" class="image-slider__slide swiper-slide">
+                <div class="image-slider__image swiper-zoom-container">
+                <img src="img/orca-slider-desktop@1x.jpg" alt="Картинка">
+              </div>
               </div>
             </div>
             <!-- If we need pagination -->
@@ -110,11 +119,9 @@
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
 
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
           </div>
           <div class="catalog__description-text-wrapper">
-            <h3 class="catalog__heading">Рэйн</h3>
+            <h3 class="catalog__article-heading">Рэйн</h3>
             <p class="catalog__description-text">Однообъёмный, без подкладки, магнитная застёжка, фиксаторы - кнопки, лямки дублированы прочной стропой и надёжно вшиты четырьмя рядами прочной нити.
             </p>
             <p class="catalog__description-text">Размер 30 * 23,5 * 8 см.</p>
@@ -122,287 +129,8 @@
         </div>
         </article>
       </section>
-      <section class="catalog__section">
-        <article>
-          <h2 class="catalog_heading">Рюкзаки</h2>
-          <div class="catalog__description-wrapper">
-          <!-- Slider main container -->
-          <div class="swiper-container">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide">
-                <img src="img/bagpack-slider-desktop@1x.jpg">
-              </div>
-              <div class="swiper-slide">
-                <img src="img/bag-grass-slider-desktop@1x.jpg">
-              </div>
-              <div class="swiper-slide">
-                <img src="img/nb-bag-slider-desktop@1x.jpg">
-              </div>
-              <div class="swiper-slide">
-                <img src="img/orca-slider-desktop@1x.jpg">
-              </div>
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
 
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
 
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
-          </div>
-          <div class="catalog__description-text-wrapper">
-            <h3 class="catalog__heading">Рэйн</h3>
-            <p class="catalog__description-text">Однообъёмный, без подкладки, магнитная застёжка, фиксаторы - кнопки, лямки дублированы прочной стропой и надёжно вшиты четырьмя рядами прочной нити.
-            </p>
-            <p class="catalog__description-text">Размер 30 * 23,5 * 8 см.</p>
-          </div>
-        </div>
-        </article>
-      </section>
-      <section class="catalog__section">
-        <article>
-          <h2 class="catalog_heading">Рюкзаки</h2>
-          <div class="catalog__description-wrapper">
-          <!-- Slider main container -->
-          <div class="swiper-container">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide">
-                <img src="img/bagpack-slider-desktop@1x.jpg">
-              </div>
-              <div class="swiper-slide">
-                <img src="img/bag-grass-slider-desktop@1x.jpg">
-              </div>
-              <div class="swiper-slide">
-                <img src="img/nb-bag-slider-desktop@1x.jpg">
-              </div>
-              <div class="swiper-slide">
-                <img src="img/orca-slider-desktop@1x.jpg">
-              </div>
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
-          </div>
-          <div class="catalog__description-text-wrapper">
-            <h3 class="catalog__heading"></h3>
-            <p class="catalog__description-text"></p>
-            <p class="catalog__description-text"></p>
-          </div>
-        </div>
-        </article>
-      </section>
-      <section class="catalog__section">
-        <article>
-          <h2 class="catalog_heading">Рюкзаки</h2>
-          <div class="catalog__description-wrapper">
-          <!-- Slider main container -->
-          <div class="swiper-container">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide">
-                <img src="img/bagpack-slider-desktop@1x.jpg">
-              </div>
-              <div class="swiper-slide">
-                <img src="img/bag-grass-slider-desktop@1x.jpg">
-              </div>
-              <div class="swiper-slide">
-                <img src="img/nb-bag-slider-desktop@1x.jpg">
-              </div>
-              <div class="swiper-slide">
-                <img src="img/orca-slider-desktop@1x.jpg">
-              </div>
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
-          </div>
-          <div class="catalog__description-text-wrapper">
-            <h3 class="catalog__heading"></h3>
-            <p class="catalog__description-text"></p>
-            <p class="catalog__description-text"></p>
-          </div>
-        </div>
-        </article>
-      </section>
-      <section class="catalog__section">
-        <article>
-          <h2 class="catalog_heading">Рюкзаки</h2>
-          <div class="catalog__description-wrapper">
-          <!-- Slider main container -->
-          <div class="swiper-container">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide">
-                <img src="img/bagpack-slider-desktop@1x.jpg">
-              </div>
-              <div class="swiper-slide">
-                <img src="img/bag-grass-slider-desktop@1x.jpg">
-              </div>
-              <div class="swiper-slide">
-                <img src="img/nb-bag-slider-desktop@1x.jpg">
-              </div>
-              <div class="swiper-slide">
-                <img src="img/orca-slider-desktop@1x.jpg">
-              </div>
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
-          </div>
-          <div class="catalog__description-text-wrapper">
-            <h3 class="catalog__heading"></h3>
-            <p class="catalog__description-text"></p>
-            <p class="catalog__description-text"></p>
-          </div>
-        </div>
-        </article>
-      </section>
-      <section class="catalog__section">
-        <article>
-          <h2 class="catalog_heading">Рюкзаки</h2>
-          <div class="catalog__description-wrapper">
-          <!-- Slider main container -->
-          <div class="swiper-container">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide">
-                <img src="img/bagpack-slider-desktop@1x.jpg">
-              </div>
-              <div class="swiper-slide">
-                <img src="img/bag-grass-slider-desktop@1x.jpg">
-              </div>
-              <div class="swiper-slide">
-                <img src="img/nb-bag-slider-desktop@1x.jpg">
-              </div>
-              <div class="swiper-slide">
-                <img src="img/orca-slider-desktop@1x.jpg">
-              </div>
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
-          </div>
-          <div class="catalog__description-text-wrapper">
-            <h3 class="catalog__heading"></h3>
-            <p class="catalog__description-text"></p>
-            <p class="catalog__description-text"></p>
-          </div>
-        </div>
-        </article>
-      </section>
-      <section class="catalog__section">
-        <article>
-          <h2 class="catalog_heading">Рюкзаки</h2>
-          <div class="catalog__description-wrapper">
-          <!-- Slider main container -->
-          <div class="swiper-container">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide">
-                <img src="img/bagpack-slider-desktop@1x.jpg">
-              </div>
-              <div class="swiper-slide">
-                <img src="img/bag-grass-slider-desktop@1x.jpg">
-              </div>
-              <div class="swiper-slide">
-                <img src="img/nb-bag-slider-desktop@1x.jpg">
-              </div>
-              <div class="swiper-slide">
-                <img src="img/orca-slider-desktop@1x.jpg">
-              </div>
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
-          </div>
-          <div class="catalog__description-text-wrapper">
-            <h3 class="catalog__heading"></h3>
-            <p class="catalog__description-text"></p>
-            <p class="catalog__description-text"></p>
-          </div>
-        </div>
-        </article>
-      </section>
-      <section class="catalog__section">
-        <article>
-          <h2 class="catalog_heading">Рюкзаки</h2>
-          <div class="catalog__description-wrapper">
-          <!-- Slider main container -->
-          <div class="swiper-container">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide">
-                <img src="img/bagpack-slider-desktop@1x.jpg">
-              </div>
-              <div class="swiper-slide">
-                <img src="img/bag-grass-slider-desktop@1x.jpg">
-              </div>
-              <div class="swiper-slide">
-                <img src="img/nb-bag-slider-desktop@1x.jpg">
-              </div>
-              <div class="swiper-slide">
-                <img src="img/orca-slider-desktop@1x.jpg">
-              </div>
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
-          </div>
-          <div class="catalog__description-text-wrapper">
-            <h3 class="catalog__heading"></h3>
-            <p class="catalog__description-text"></p>
-            <p class="catalog__description-text"></p>
-          </div>
-        </div>
-        </article>
-      </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
@@ -477,6 +205,7 @@
       </form>
     </div>
   </div>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
