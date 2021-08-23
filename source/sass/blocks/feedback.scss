@@ -35,7 +35,6 @@
     background-color: $white;
     bottom: 50%;
     left: 0;
-
   }
 
   &::after {
@@ -57,7 +56,7 @@
   font-style: italic;
   font-size: 16px;
   line-height: 19px;
-  letter-spacing: calc(1em/11);
+  letter-spacing: calc(1em / 11);
   color: $white;
 }
 

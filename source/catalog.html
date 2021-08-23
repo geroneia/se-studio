@@ -23,63 +23,386 @@
 
 <body>
   <div class="page-header__wrapper page-header__wrapper--inner-page">
-  <header class="page-header page-header--nav-opened page-header--inner-page">
-    <div class="page-header__container">
-      <a class="page-header__logo logo" href="main.html">
-        <svg class="page-header__logo-icon" width="100" height="100" role="img" aria-label="Логотип мастерской S.E.Vuychich.">
-          <use xlink:href="#icon-logo"></use>
-        </svg>
-      </a>
-      <nav class="page-header__main-nav main-nav main-nav--nav-opened main-nav--inner-page">
-        <button class="main-nav__toggle main-nav__toggle--nav-opened button" type="button" aria-label="Меню">
-        </button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__item-link" href="main.html">О нас</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__item-link main-nav__item-link--active" href="#">Каталог</a>
-            <ul class="main-nav__nested-list">
-              <li class="main-nav__item">
-                <a class="main-nav__item-link" href="#">Рюкзаки</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__item-link" href="#">Сумки</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__item-link" href="#">Кошельки</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__item-link" href="#">Документницы</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__item-link" href="#">Работы на заказ</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__item-link" href="#">Обложки</br> с гравировкой</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__item-link" href="#">Обложки</br> с печатью</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__item-link" href="#">Ремни и ключницы</a>
-              </li>
-            </ul>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__item-link" href="order.html">Заказ</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__item-link" href="delivery.html">Доставка</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-</div>
+    <header class="page-header page-header--nav-opened page-header--inner-page">
+      <div class="page-header__container">
+        <a class="page-header__logo logo" href="main.html">
+          <svg class="page-header__logo-icon" width="100" height="100" role="img"
+            aria-label="Логотип мастерской S.E.Vuychich.">
+            <use xlink:href="#icon-logo"></use>
+          </svg>
+        </a>
+        <nav class="page-header__main-nav main-nav main-nav--nav-opened main-nav--inner-page">
+          <button class="main-nav__toggle main-nav__toggle--nav-opened button" type="button" aria-label="Меню">
+          </button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__item-link" href="main.html">О нас</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__item-link main-nav__item-link--active" href="#">Каталог</a>
+              <ul class="main-nav__nested-list">
+                <li class="main-nav__item">
+                  <a class="main-nav__item-link" href="#">Рюкзаки</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__item-link" href="#">Сумки</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__item-link" href="#">Кошельки</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__item-link" href="#">Документницы</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__item-link" href="#">Работы на заказ</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__item-link" href="#">Обложки</br> с гравировкой</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__item-link" href="#">Обложки</br> с печатью</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__item-link" href="#">Ремни и ключницы</a>
+                </li>
+              </ul>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__item-link" href="order.html">Заказ</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__item-link" href="delivery.html">Доставка</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  </div>
   <div class="page-wrapper">
-    <main class="main main--inner-page" id="main">
+    <main class="main main--inner-page main__catalog catalog" id="main">
+      <h2 class="visually-hidden">Каталог</h2>
+      <section class="catalog__section">
+        <article>
+          <h2 class="catalog_heading">Рюкзаки</h2>
+          <div class="catalog__description-wrapper">
+          <!-- Slider main container -->
+          <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img src="img/bagpack-slider-desktop@1x.jpg">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/bag-grass-slider-desktop@1x.jpg">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/nb-bag-slider-desktop@1x.jpg">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/orca-slider-desktop@1x.jpg">
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
 
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+          <div class="catalog__description-text-wrapper">
+            <h3 class="catalog__heading">Рэйн</h3>
+            <p class="catalog__description-text">Однообъёмный, без подкладки, магнитная застёжка, фиксаторы - кнопки, лямки дублированы прочной стропой и надёжно вшиты четырьмя рядами прочной нити.
+            </p>
+            <p class="catalog__description-text">Размер 30 * 23,5 * 8 см.</p>
+          </div>
+        </div>
+        </article>
+      </section>
+      <section class="catalog__section">
+        <article>
+          <h2 class="catalog_heading">Рюкзаки</h2>
+          <div class="catalog__description-wrapper">
+          <!-- Slider main container -->
+          <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img src="img/bagpack-slider-desktop@1x.jpg">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/bag-grass-slider-desktop@1x.jpg">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/nb-bag-slider-desktop@1x.jpg">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/orca-slider-desktop@1x.jpg">
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+          <div class="catalog__description-text-wrapper">
+            <h3 class="catalog__heading">Рэйн</h3>
+            <p class="catalog__description-text">Однообъёмный, без подкладки, магнитная застёжка, фиксаторы - кнопки, лямки дублированы прочной стропой и надёжно вшиты четырьмя рядами прочной нити.
+            </p>
+            <p class="catalog__description-text">Размер 30 * 23,5 * 8 см.</p>
+          </div>
+        </div>
+        </article>
+      </section>
+      <section class="catalog__section">
+        <article>
+          <h2 class="catalog_heading">Рюкзаки</h2>
+          <div class="catalog__description-wrapper">
+          <!-- Slider main container -->
+          <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img src="img/bagpack-slider-desktop@1x.jpg">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/bag-grass-slider-desktop@1x.jpg">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/nb-bag-slider-desktop@1x.jpg">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/orca-slider-desktop@1x.jpg">
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+          <div class="catalog__description-text-wrapper">
+            <h3 class="catalog__heading"></h3>
+            <p class="catalog__description-text"></p>
+            <p class="catalog__description-text"></p>
+          </div>
+        </div>
+        </article>
+      </section>
+      <section class="catalog__section">
+        <article>
+          <h2 class="catalog_heading">Рюкзаки</h2>
+          <div class="catalog__description-wrapper">
+          <!-- Slider main container -->
+          <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img src="img/bagpack-slider-desktop@1x.jpg">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/bag-grass-slider-desktop@1x.jpg">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/nb-bag-slider-desktop@1x.jpg">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/orca-slider-desktop@1x.jpg">
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+          <div class="catalog__description-text-wrapper">
+            <h3 class="catalog__heading"></h3>
+            <p class="catalog__description-text"></p>
+            <p class="catalog__description-text"></p>
+          </div>
+        </div>
+        </article>
+      </section>
+      <section class="catalog__section">
+        <article>
+          <h2 class="catalog_heading">Рюкзаки</h2>
+          <div class="catalog__description-wrapper">
+          <!-- Slider main container -->
+          <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img src="img/bagpack-slider-desktop@1x.jpg">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/bag-grass-slider-desktop@1x.jpg">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/nb-bag-slider-desktop@1x.jpg">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/orca-slider-desktop@1x.jpg">
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+          <div class="catalog__description-text-wrapper">
+            <h3 class="catalog__heading"></h3>
+            <p class="catalog__description-text"></p>
+            <p class="catalog__description-text"></p>
+          </div>
+        </div>
+        </article>
+      </section>
+      <section class="catalog__section">
+        <article>
+          <h2 class="catalog_heading">Рюкзаки</h2>
+          <div class="catalog__description-wrapper">
+          <!-- Slider main container -->
+          <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img src="img/bagpack-slider-desktop@1x.jpg">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/bag-grass-slider-desktop@1x.jpg">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/nb-bag-slider-desktop@1x.jpg">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/orca-slider-desktop@1x.jpg">
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+          <div class="catalog__description-text-wrapper">
+            <h3 class="catalog__heading"></h3>
+            <p class="catalog__description-text"></p>
+            <p class="catalog__description-text"></p>
+          </div>
+        </div>
+        </article>
+      </section>
+      <section class="catalog__section">
+        <article>
+          <h2 class="catalog_heading">Рюкзаки</h2>
+          <div class="catalog__description-wrapper">
+          <!-- Slider main container -->
+          <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img src="img/bagpack-slider-desktop@1x.jpg">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/bag-grass-slider-desktop@1x.jpg">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/nb-bag-slider-desktop@1x.jpg">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/orca-slider-desktop@1x.jpg">
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+          <div class="catalog__description-text-wrapper">
+            <h3 class="catalog__heading"></h3>
+            <p class="catalog__description-text"></p>
+            <p class="catalog__description-text"></p>
+          </div>
+        </div>
+        </article>
+      </section>
+      <section class="catalog__section">
+        <article>
+          <h2 class="catalog_heading">Рюкзаки</h2>
+          <div class="catalog__description-wrapper">
+          <!-- Slider main container -->
+          <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img src="img/bagpack-slider-desktop@1x.jpg">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/bag-grass-slider-desktop@1x.jpg">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/nb-bag-slider-desktop@1x.jpg">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/orca-slider-desktop@1x.jpg">
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+          <div class="catalog__description-text-wrapper">
+            <h3 class="catalog__heading"></h3>
+            <p class="catalog__description-text"></p>
+            <p class="catalog__description-text"></p>
+          </div>
+        </div>
+        </article>
+      </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
@@ -88,42 +411,42 @@
             <use xlink:href="#icon-logo"></use>
           </svg>
         </a>
-          <ul class="page-footer__information information">
-            <li class="information__item">
-              <a class="information__item-link" href="#">О нас</a>
-            </li>
-            <li class="information__item">
-              <a class="information__item-link" href="catalog.html">Каталог</a>
-            </li>
-            <li class="information__item">
-              <a class="information__item-link" href="order.html">Заказ</a>
-            </li>
-            <li class="information__item">
-              <a class="information__item-link" href="delivery.html">Доставка</a>
-            </li>
-          </ul>
-          <p class="page-footer__text">Напишите нам</p>
-            <ul class="page-footer__social social">
-            <li class="social__item social__item-instagram">
-              <a class="social__link" href="https://www.instagram.com/s.e.vuychich/">
-                <svg class="social__icon social__icon-inst" width="25" height="27" role="img"
-                  aria-label="Мы в Instagram">
-                  <use xlink:href="#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item social__item-email">
-              <a class="social__link" href="#">
-                <svg class="social__icon social__icon-email" width="30" height="30" role="img" aria-label="Напишите нам">
-                  <use xlink:href="#icon-email"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+        <ul class="page-footer__information information">
+          <li class="information__item">
+            <a class="information__item-link" href="#">О нас</a>
+          </li>
+          <li class="information__item">
+            <a class="information__item-link" href="catalog.html">Каталог</a>
+          </li>
+          <li class="information__item">
+            <a class="information__item-link" href="order.html">Заказ</a>
+          </li>
+          <li class="information__item">
+            <a class="information__item-link" href="delivery.html">Доставка</a>
+          </li>
+        </ul>
+        <p class="page-footer__text">Напишите нам</p>
+        <ul class="page-footer__social social">
+          <li class="social__item social__item-instagram">
+            <a class="social__link" href="https://www.instagram.com/s.e.vuychich/">
+              <svg class="social__icon social__icon-inst" width="25" height="27" role="img" aria-label="Мы в Instagram">
+                <use xlink:href="#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item social__item-email">
+            <a class="social__link" href="#">
+              <svg class="social__icon social__icon-email" width="30" height="30" role="img" aria-label="Напишите нам">
+                <use xlink:href="#icon-email"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </footer>
   </div>
-  <button class="main__go-top-button button go-top-button" type="button" aria-label="Прокрутить страницу вверх"></button>
+  <button class="main__go-top-button button go-top-button" type="button"
+    aria-label="Прокрутить страницу вверх"></button>
   <div class="modal modal__feedback feedback modal--close">
     <div class="feedback__container">
       <h2 class="visually-hidden">Форма обратной связи</h2>

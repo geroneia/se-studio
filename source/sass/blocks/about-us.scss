@@ -55,7 +55,7 @@
     background-size: 36.1% auto;
 
     @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
+      (min-resolution: $retina-dppx) {
       background-image: url("../../img/bg-about-us_desktop@2x.jpg");
       background-position: top 231px left 20.5%;
       background-repeat: no-repeat;
@@ -114,7 +114,7 @@
     background-size: contain;
 
     @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
+      (min-resolution: $retina-dppx) {
       background-image: url("../../img/bg-about-us_mobile@2x.jpg");
       background-position: top left;
       background-repeat: no-repeat;

@@ -111,7 +111,6 @@
         width: 100%;
         margin-right: 0;
         margin-bottom: 0;
-
       }
     }
   }
@@ -148,7 +147,6 @@
     flex-wrap: wrap;
     width: 23.5%;
     max-height: 730px;
-    justify-content: flex-start;
     justify-content: space-between;
 
     .follow-us__images-item {
@@ -160,7 +158,6 @@
 }
 
 @media (min-width: $min-mobile-width) and (max-width: $max-mobile-width) {
-
   .follow-us__images-item-mobile-no {
     display: none;
   }
@@ -245,5 +242,4 @@
       }
     }
   }
-
 }

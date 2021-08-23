@@ -23,158 +23,149 @@
 
 <body>
   <div class="page-header__wrapper">
-  <header class="page-header page-header--nav-opened">
-    <div class="page-header__container">
-      <a class="page-header__logo logo">
-        <svg class="page-header__logo-icon" width="100" height="100" role="img" aria-label="Логотип мастерской S.E.Vuychich.">
-          <use xlink:href="#icon-logo"></use>
-        </svg>
-      </a>
-      <nav class="page-header__main-nav main-nav main-nav--nav-opened">
-        <button class="main-nav__toggle main-nav__toggle--nav-opened button" type="button" aria-label="Меню">
-        </button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__item-link" href="#">О нас</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__item-link" href="catalog.html">Каталог</a>
-            <ul class="main-nav__nested-list">
-              <li class="main-nav__item">
-                <a class="main-nav__item-link" href="#">Рюкзаки</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__item-link" href="#">Сумки</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__item-link" href="#">Кошельки</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__item-link" href="#">Документницы</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__item-link" href="#">Работы на заказ</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__item-link" href="#">Обложки</br> с гравировкой</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__item-link" href="#">Обложки</br> с печатью</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__item-link" href="#">Ремни и ключницы</a>
-              </li>
-            </ul>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__item-link" href="order.html">Заказ</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__item-link" href="delivery.html">Доставка</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+    <header class="page-header page-header--nav-opened">
+      <div class="page-header__container">
+        <a class="page-header__logo logo">
+          <svg class="page-header__logo-icon" width="100" height="100" role="img"
+            aria-label="Логотип мастерской S.E.Vuychich.">
+            <use xlink:href="#icon-logo"></use>
+          </svg>
+        </a>
+        <nav class="page-header__main-nav main-nav main-nav--nav-opened">
+          <button class="main-nav__toggle main-nav__toggle--nav-opened button" type="button" aria-label="Меню">
+          </button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__item-link" href="#">О нас</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__item-link" href="catalog.html">Каталог</a>
+              <ul class="main-nav__nested-list">
+                <li class="main-nav__item">
+                  <a class="main-nav__item-link" href="#">Рюкзаки</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__item-link" href="#">Сумки</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__item-link" href="#">Кошельки</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__item-link" href="#">Документницы</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__item-link" href="#">Работы на заказ</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__item-link" href="#">Обложки</br> с гравировкой</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__item-link" href="#">Обложки</br> с печатью</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__item-link" href="#">Ремни и ключницы</a>
+                </li>
+              </ul>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__item-link" href="order.html">Заказ</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__item-link" href="delivery.html">Доставка</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
       <section class="page-header__promo">
         <h1 class="page-header__title"><span>Семейная мастерская </span>S.E.<b>VUYCHICH</b></h1>
         <p class="page-header__text">изделия из кожи ручной работы</p>
         <a class="page-header__promo-button scroll-link" href="#" tabindex="0"
           aria-label="Перейти к просмотру работ"></a>
       </section>
-  </header>
-</div>
+    </header>
+  </div>
   <div class="page-wrapper">
     <main class="main" id="main">
       <section class="main__works works">
         <h2 class="visually-hidden">Наши работы</h2>
         <div class="works__list-wrapper">
-        <ul class="works__list">
-          <li class="works__item">
-            <a class="works__item-link" href="#">
-              <picture class="works__item-img-wrapper">
-                <!-- 1x: 437px*271px; 2x: 874*542px -->
-                <source media="(min-width: 768px)" type="image/webp"
-                  srcset="img/nb-bag-desktop@1x.webp 1x, img/nb-bag-desktop@2x.webp 2x">
-                <!-- 1x: 271px*169px; 2x: 542*338px -->
-                <source type="image/webp"
-                  srcset="img/nb-bag-mobile@1x.webp, img/nb-bag-mobile@2x.webp 2x">
+          <ul class="works__list">
+            <li class="works__item">
+              <a class="works__item-link" href="#">
+                <picture class="works__item-img-wrapper">
+                  <!-- 1x: 437px*271px; 2x: 874*542px -->
+                  <source media="(min-width: 768px)" type="image/webp"
+                    srcset="img/nb-bag-desktop@1x.webp 1x, img/nb-bag-desktop@2x.webp 2x">
+                  <!-- 1x: 271px*169px; 2x: 542*338px -->
+                  <source type="image/webp" srcset="img/nb-bag-mobile@1x.webp, img/nb-bag-mobile@2x.webp 2x">
 
-                <!-- 1x: 437px*271px; 2x: 874*542px -->
-                <source media="(min-width: 768px)"
-                  srcset="img/nb-bag-desktop@1x.jpg 1x, img/nb-bag-desktop@2x.jpg 2x">
-                <!-- 1x: 271px*169px; 2x: 542*338px -->
-                <img class="works__item-img" src="img/nb-bag-mobile@1x.jpg"
-                  srcset="img/nb-bag-mobile@2x.jpg 2x" width="271" height="169"
-                  alt="Черная сумка для ноутбука">
-              </picture>
-              <p class="works__item-name">Сумки и рюкзаки</p>
-            </a>
-          </li>
-          <li class="works__item">
-            <a class="works__item-link" href="#">
-              <picture class="works__item-img-wrapper">
-                <!-- 1x: 437px*271px; 2x: 874*542px -->
-                <source media="(min-width: 768px)" type="image/webp"
-                  srcset="img/antuan-desktop@1x.webp 1x, img/antuan-desktop@2x.webp 2x">
-                <!-- 1x: 271px*169px; 2x: 542*338px -->
-                <source type="image/webp"
-                  srcset="img/antuan-mobile@1x.webp, img/antuan-mobile@2x.webp 2x">
+                  <!-- 1x: 437px*271px; 2x: 874*542px -->
+                  <source media="(min-width: 768px)"
+                    srcset="img/nb-bag-desktop@1x.jpg 1x, img/nb-bag-desktop@2x.jpg 2x">
+                  <!-- 1x: 271px*169px; 2x: 542*338px -->
+                  <img class="works__item-img" src="img/nb-bag-mobile@1x.jpg" srcset="img/nb-bag-mobile@2x.jpg 2x"
+                    width="271" height="169" alt="Черная сумка для ноутбука">
+                </picture>
+                <p class="works__item-name">Сумки и рюкзаки</p>
+              </a>
+            </li>
+            <li class="works__item">
+              <a class="works__item-link" href="#">
+                <picture class="works__item-img-wrapper">
+                  <!-- 1x: 437px*271px; 2x: 874*542px -->
+                  <source media="(min-width: 768px)" type="image/webp"
+                    srcset="img/antuan-desktop@1x.webp 1x, img/antuan-desktop@2x.webp 2x">
+                  <!-- 1x: 271px*169px; 2x: 542*338px -->
+                  <source type="image/webp" srcset="img/antuan-mobile@1x.webp, img/antuan-mobile@2x.webp 2x">
 
-                <!-- 1x: 437px*271px; 2x: 874*542px -->
-                <source media="(min-width: 768px)"
-                  srcset="img/antuan-desktop@1x.jpg 1x, img/antuan-desktop@2x.jpg 2x">
-                <!-- 1x: 271px*169px; 2x: 542*338px -->
-                <img class="works__item-img" src="img/antuan-mobile@1x.jpg"
-                  srcset="img/antuan-mobile@2x.jpg 2x" width="271" height="169"
-                  alt="Книга отзывов для ресторана в кожаном переплете">
-              </picture>
-              <p class="works__item-name">Шьем на заказ</p>
-            </a>
-          </li>
-          <li class="works__item">
-            <a class="works__item-link" href="#">
-              <picture class="works__item-img-wrapper">
-                <!-- 1x: 437px*271px; 2x: 874*542px -->
-                <source media="(min-width: 768px)" type="image/webp"
-                  srcset="img/orca-desktop@1x.webp 1x, img/orca-desktop@2x.webp 2x">
-                <!-- 1x: 271px*169px; 2x: 542*338px -->
-                <source type="image/webp"
-                  srcset="img/orca-mobile@1x.webp, img/orca-mobile@2x.webp 2x">
+                  <!-- 1x: 437px*271px; 2x: 874*542px -->
+                  <source media="(min-width: 768px)"
+                    srcset="img/antuan-desktop@1x.jpg 1x, img/antuan-desktop@2x.jpg 2x">
+                  <!-- 1x: 271px*169px; 2x: 542*338px -->
+                  <img class="works__item-img" src="img/antuan-mobile@1x.jpg" srcset="img/antuan-mobile@2x.jpg 2x"
+                    width="271" height="169" alt="Книга отзывов для ресторана в кожаном переплете">
+                </picture>
+                <p class="works__item-name">Шьем на заказ</p>
+              </a>
+            </li>
+            <li class="works__item">
+              <a class="works__item-link" href="#">
+                <picture class="works__item-img-wrapper">
+                  <!-- 1x: 437px*271px; 2x: 874*542px -->
+                  <source media="(min-width: 768px)" type="image/webp"
+                    srcset="img/orca-desktop@1x.webp 1x, img/orca-desktop@2x.webp 2x">
+                  <!-- 1x: 271px*169px; 2x: 542*338px -->
+                  <source type="image/webp" srcset="img/orca-mobile@1x.webp, img/orca-mobile@2x.webp 2x">
 
-                <!-- 1x: 437px*271px; 2x: 874*542px -->
-                <source media="(min-width: 768px)"
-                  srcset="img/orca-desktop@1x.jpg 1x, img/orca-desktop@2x.jpg 2x">
-                <!-- 1x: 271px*169px; 2x: 542*338px -->
-                <img class="works__item-img" src="img/orca-mobile@1x.jpg"
-                  srcset="img/orca-mobile@2x.jpg 2x" width="271" height="169"
-                  alt="Кошелек из темно-зеленой кожи">
-              </picture>
-              <p class="works__item-name">Кошельки</p>
-            </a>
-          </li>
-          <li class="works__item">
-            <a class="works__item-link" href="#">
-              <picture class="works__item-img-wrapper">
-                <!-- 1x: 437px*271px; 2x: 874*542px -->
-                <source media="(min-width: 768px)" type="image/webp"
-                  srcset="img/cover-desktop@1x.webp 1x, img/cover-desktop@2x.webp 2x">
-                <!-- 1x: 271px*169px; 2x: 542*338px -->
-                <source type="image/webp"
-                  srcset="img/cover-mobile@1x.webp, img/cover-mobile@2x.webp 2x">
+                  <!-- 1x: 437px*271px; 2x: 874*542px -->
+                  <source media="(min-width: 768px)" srcset="img/orca-desktop@1x.jpg 1x, img/orca-desktop@2x.jpg 2x">
+                  <!-- 1x: 271px*169px; 2x: 542*338px -->
+                  <img class="works__item-img" src="img/orca-mobile@1x.jpg" srcset="img/orca-mobile@2x.jpg 2x"
+                    width="271" height="169" alt="Кошелек из темно-зеленой кожи">
+                </picture>
+                <p class="works__item-name">Кошельки</p>
+              </a>
+            </li>
+            <li class="works__item">
+              <a class="works__item-link" href="#">
+                <picture class="works__item-img-wrapper">
+                  <!-- 1x: 437px*271px; 2x: 874*542px -->
+                  <source media="(min-width: 768px)" type="image/webp"
+                    srcset="img/cover-desktop@1x.webp 1x, img/cover-desktop@2x.webp 2x">
+                  <!-- 1x: 271px*169px; 2x: 542*338px -->
+                  <source type="image/webp" srcset="img/cover-mobile@1x.webp, img/cover-mobile@2x.webp 2x">
 
-                <!-- 1x: 437px*271px; 2x: 874*542px -->
-                <source media="(min-width: 768px)"
-                  srcset="img/cover-desktop@1x.jpg 1x, img/cover-desktop@2x.jpg 2x">
-                <!-- 1x: 271px*169px; 2x: 542*338px -->
-                <img class="works__item-img" src="img/cover-mobile@1x.jpg"
-                  srcset="img/cover-mobile@2x.jpg 2x" width="271" height="169"
-                  alt="Документница из зеленого нубука">
-              </picture>
-              <p class="works__item-name">Документницы и обложки</p>
-            </a>
-          </li>
-        </ul>
-      </div>
+                  <!-- 1x: 437px*271px; 2x: 874*542px -->
+                  <source media="(min-width: 768px)" srcset="img/cover-desktop@1x.jpg 1x, img/cover-desktop@2x.jpg 2x">
+                  <!-- 1x: 271px*169px; 2x: 542*338px -->
+                  <img class="works__item-img" src="img/cover-mobile@1x.jpg" srcset="img/cover-mobile@2x.jpg 2x"
+                    width="271" height="169" alt="Документница из зеленого нубука">
+                </picture>
+                <p class="works__item-name">Документницы и обложки</p>
+              </a>
+            </li>
+          </ul>
+        </div>
         <a class="works__to-catalog-link" href="catalog.html">Подробнее в каталоге</a>
       </section>
       <section class="main__preferences preferences">
@@ -193,115 +184,118 @@
       </section>
       <section class="main__about-us about-us">
         <div class="about-us__wrapper">
-        <h2 class="about-us__heading">О нас</h2>
-        <p class="about-us__text">
-          Какое-то количество текста про то, какие мы классные и как любим то, что делаем.
-        </p>
-        <p class="about-us__text">
-          И немного об истории.
-        </p>
-        <p class="about-us__text">
-          Можно что-нибудь о фестивалях и заказах для ресторанов
-        </p>
-        <p class="about-us__questions">
-          Оставьте свои <a class="about-us__form-link">контакты</a>, и мы свяжемся с вами.
-        </p>
-      </div>
+          <h2 class="about-us__heading">О нас</h2>
+          <p class="about-us__text">
+            Какое-то количество текста про то, какие мы классные и как любим то, что делаем.
+          </p>
+          <p class="about-us__text">
+            И немного об истории.
+          </p>
+          <p class="about-us__text">
+            Можно что-нибудь о фестивалях и заказах для ресторанов
+          </p>
+          <p class="about-us__questions">
+            Оставьте свои <a class="about-us__form-link">контакты</a>, и мы свяжемся с вами.
+          </p>
+        </div>
       </section>
       <section class="main__follow-us follow-us">
         <div class="follow-us__wrapper">
-        <h2 class="visually-hidden">Мы в Инстаграм</h2>
-        <a class="follow-us__follow-link" href="https://www.instagram.com/s.e.vuychich/">#s.e.vuychich</a>
-        <div class="follow-us__images-list">
-          <div class="follow-us__column follow-us__column--first">
-            <div class="follow-us__images-item follow-us__images-item-mobile-no">
-              <picture class="follow-us__images-wrap">
-                <!-- 1x: 250px*296px; 2x: 500px*592px -->
-                <img class="follow-us__image" src="img/banana-desktop@1x.jpg"
-                  srcset="img/banana-desktop@2x.jpg 2x" width="250" height="296" alt="Пять поясных сумок разных цветов">
-              </picture>
+          <h2 class="visually-hidden">Мы в Инстаграм</h2>
+          <a class="follow-us__follow-link" href="https://www.instagram.com/s.e.vuychich/">#s.e.vuychich</a>
+          <div class="follow-us__images-list">
+            <div class="follow-us__column follow-us__column--first">
+              <div class="follow-us__images-item follow-us__images-item-mobile-no">
+                <picture class="follow-us__images-wrap">
+                  <!-- 1x: 250px*296px; 2x: 500px*592px -->
+                  <img class="follow-us__image" src="img/banana-desktop@1x.jpg" srcset="img/banana-desktop@2x.jpg 2x"
+                    width="250" height="296" alt="Пять поясных сумок разных цветов">
+                </picture>
+              </div>
+              <div class="follow-us__images-item follow-us__images-item-mobile-no">
+                <picture class="follow-us__images-wrap">
+                  <!-- 1x: 250px*175px; 2x: 500px*350px -->
+                  <img class="follow-us__image" src="img/bag-grass-desktop@1x.jpg"
+                    srcset="img/bag-grass-desktop@2x.jpg 2x" width="250" height="175" alt="Коричневая сумочка на траве">
+                </picture>
+              </div>
+              <div class="follow-us__images-item follow-us__images-item-mobile-no">
+                <picture class="follow-us__images-wrap">
+                  <!-- 1x: 250px*100px; 2x: 500px*200px -->
+                  <img class="follow-us__image" src="img/orca-gal-desktop@1x.jpg"
+                    srcset="img/orca-gal-desktop@2x.jpg 2x" width="250" height="100" alt="Зеленый кошелек">
+                </picture>
+              </div>
+              <div class="follow-us__images-item">
+                <picture class="follow-us__images-wrap">
+                  <!-- 1x: 520px*208px; 2x: 1040px*416px -->
+                  <source media="(min-width: 768px)" srcset="img/mega-desktop@1x.jpg 1x, img/mega-desktop@2x.jpg 2x">
+                  <!-- 1x: 270px*121px; 2x: 540px*282px -->
+                  <img class="follow-us__image" src="img/mega-mobile@1x.jpg" srcset="img/mega-mobile@2x.jpg 2x"
+                    width="270" height="141" alt="Витрина с изделиями на ярмарке">
+                </picture>
+              </div>
             </div>
-            <div class="follow-us__images-item follow-us__images-item-mobile-no">
-              <picture class="follow-us__images-wrap">
-                <!-- 1x: 250px*175px; 2x: 500px*350px -->
-                <img class="follow-us__image" src="img/bag-grass-desktop@1x.jpg"
-                  srcset="img/bag-grass-desktop@2x.jpg 2x" width="250" height="175" alt="Коричневая сумочка на траве">
-              </picture>
+            <div class="follow-us__column follow-us__column--second">
+              <div class="follow-us__images-item">
+                <picture class="follow-us__images-wrap">
+                  <!-- 1x: 250px*344px; 2x: 500px*688px -->
+                  <source media="(min-width: 768px)"
+                    srcset="img/bagpack-desktop@1x.jpg 1x, img/bagpack-desktop@2x.jpg 2x">
+                  <!-- 1x: 130px*221px; 2x: 260px*442px -->
+                  <img class="follow-us__image" src="img/bagpack-mobile@1x.jpg" srcset="img/bagpack-mobile@2x.jpg 2x"
+                    width="130" height="221" alt="Черно-оранжевый рюкзак">
+                </picture>
+              </div>
+              <div class="follow-us__images-item">
+                <picture class="follow-us__images-wrap">
+                  <!-- 1x: 250px*160px; 2x: 500px*320px -->
+                  <source media="(min-width: 768px)"
+                    srcset="img/traveler-holder-desktop@1x.jpg 1x, img/traveler-holder-desktop@2x.jpg 2x">
+                  <!-- 1x: 130px*130px; 2x: 260px*260px -->
+                  <img class="follow-us__image" src="img/traveler-holder-mobile@1x.jpg"
+                    srcset="img/traveler-holder-mobile@2x.jpg 2x" width="130" height="130"
+                    alt="Большая документница для путешествий">
+                </picture>
+              </div>
             </div>
-            <div class="follow-us__images-item follow-us__images-item-mobile-no">
-              <picture class="follow-us__images-wrap">
-                <!-- 1x: 250px*100px; 2x: 500px*200px -->
-                <img class="follow-us__image" src="img/orca-gal-desktop@1x.jpg"
-                  srcset="img/orca-gal-desktop@2x.jpg 2x" width="250" height="100" alt="Зеленый кошелек">
-              </picture>
-            </div>
-            <div class="follow-us__images-item">
-              <picture class="follow-us__images-wrap">
-                <!-- 1x: 520px*208px; 2x: 1040px*416px -->
-                <source media="(min-width: 768px)"
-                  srcset="img/mega-desktop@1x.jpg 1x, img/mega-desktop@2x.jpg 2x">
-                <!-- 1x: 270px*121px; 2x: 540px*282px -->
-                <img class="follow-us__image" src="img/mega-mobile@1x.jpg"
-                  srcset="img/mega-mobile@2x.jpg 2x" width="270" height="141" alt="Витрина с изделиями на ярмарке">
-              </picture>
-            </div>
-          </div>
-          <div class="follow-us__column follow-us__column--second">
-            <div class="follow-us__images-item">
-              <picture class="follow-us__images-wrap">
-                <!-- 1x: 250px*344px; 2x: 500px*688px -->
-                <source media="(min-width: 768px)"
-                  srcset="img/bagpack-desktop@1x.jpg 1x, img/bagpack-desktop@2x.jpg 2x">
-                <!-- 1x: 130px*221px; 2x: 260px*442px -->
-                <img class="follow-us__image" src="img/bagpack-mobile@1x.jpg"
-                  srcset="img/bagpack-mobile@2x.jpg 2x" width="130" height="221" alt="Черно-оранжевый рюкзак">
-              </picture>
-            </div>
-            <div class="follow-us__images-item">
-              <picture class="follow-us__images-wrap">
-                <!-- 1x: 250px*160px; 2x: 500px*320px -->
-                <source media="(min-width: 768px)"
-                  srcset="img/traveler-holder-desktop@1x.jpg 1x, img/traveler-holder-desktop@2x.jpg 2x">
-                <!-- 1x: 130px*130px; 2x: 260px*260px -->
-                <img class="follow-us__image" src="img/traveler-holder-mobile@1x.jpg"
-                  srcset="img/traveler-holder-mobile@2x.jpg 2x" width="130" height="130" alt="Большая документница для путешествий">
-              </picture>
-            </div>
-          </div>
-          <div class="follow-us__column follow-us__column--third">
-            <div class="follow-us__images-item">
-              <picture class="follow-us__images-wrap">
-                <!-- 1x: 250px*128px; 2x: 500px*256px -->
-                <source media="(min-width: 768px)"
-                  srcset="img/cover-with-dog-desktop@1x.jpg 1x, img/cover-with-dog-desktop@2x.jpg 2x">
-                <!-- 1x: 130px*118px; 2x: 260px*236px -->
-                <img class="follow-us__image" src="img/cover-with-dog-mobile@1x.jpg"
-                  srcset="img/cover-with-dog-mobile@2x.jpg 2x" width="130" height="118" alt="Обложка на паспорт с рисунком">
-              </picture>
-            </div>
-            <div class="follow-us__images-item">
-              <picture class="follow-us__images-wrap">
-                <!-- 1x: 250px*250px; 2x: 500px*500px -->
-                <source media="(min-width: 768px)"
-                  srcset="img/document-cover-desktop@1x.jpg 1x, img/document-cover-desktop@2x.jpg 2x">
-                <!-- 1x: 130px*93px; 2x: 260px*186px -->
-                <img class="follow-us__image" src="img/document-cover-mobile@1x.jpg"
-                  srcset="img/document-cover-mobile@2x.jpg 2x" width="130" height="93" alt="Документница из зеленого нубука">
-              </picture>
-            </div>
-            <div class="follow-us__images-item">
-              <picture class="follow-us__images-wrap">
-                <!-- 1x: 250px*105px; 2x: 500px*210px -->
-                <source media="(min-width: 768px)"
-                  srcset="img/leather-samples-desktop@1x.png 1x, img/leather-samples-desktop@2x.png 2x">
-                <!-- 1x: 130px*130px; 2x: 260px*260px -->
-                <img class="follow-us__image" src="img/leather-samples-mobile@1x.png"
-                  srcset="img/leather-samples-mobile@2x.png 2x" width="130" height="130" alt="Разноцветные образцы кожи">
-              </picture>
+            <div class="follow-us__column follow-us__column--third">
+              <div class="follow-us__images-item">
+                <picture class="follow-us__images-wrap">
+                  <!-- 1x: 250px*128px; 2x: 500px*256px -->
+                  <source media="(min-width: 768px)"
+                    srcset="img/cover-with-dog-desktop@1x.jpg 1x, img/cover-with-dog-desktop@2x.jpg 2x">
+                  <!-- 1x: 130px*118px; 2x: 260px*236px -->
+                  <img class="follow-us__image" src="img/cover-with-dog-mobile@1x.jpg"
+                    srcset="img/cover-with-dog-mobile@2x.jpg 2x" width="130" height="118"
+                    alt="Обложка на паспорт с рисунком">
+                </picture>
+              </div>
+              <div class="follow-us__images-item">
+                <picture class="follow-us__images-wrap">
+                  <!-- 1x: 250px*250px; 2x: 500px*500px -->
+                  <source media="(min-width: 768px)"
+                    srcset="img/document-cover-desktop@1x.jpg 1x, img/document-cover-desktop@2x.jpg 2x">
+                  <!-- 1x: 130px*93px; 2x: 260px*186px -->
+                  <img class="follow-us__image" src="img/document-cover-mobile@1x.jpg"
+                    srcset="img/document-cover-mobile@2x.jpg 2x" width="130" height="93"
+                    alt="Документница из зеленого нубука">
+                </picture>
+              </div>
+              <div class="follow-us__images-item">
+                <picture class="follow-us__images-wrap">
+                  <!-- 1x: 250px*105px; 2x: 500px*210px -->
+                  <source media="(min-width: 768px)"
+                    srcset="img/leather-samples-desktop@1x.png 1x, img/leather-samples-desktop@2x.png 2x">
+                  <!-- 1x: 130px*130px; 2x: 260px*260px -->
+                  <img class="follow-us__image" src="img/leather-samples-mobile@1x.png"
+                    srcset="img/leather-samples-mobile@2x.png 2x" width="130" height="130"
+                    alt="Разноцветные образцы кожи">
+                </picture>
+              </div>
             </div>
           </div>
         </div>
-      </div>
       </section>
     </main>
     <footer class="page-footer">
@@ -311,42 +305,42 @@
             <use xlink:href="#icon-logo"></use>
           </svg>
         </a>
-          <ul class="page-footer__information information">
-            <li class="information__item">
-              <a class="information__item-link" href="#">О нас</a>
-            </li>
-            <li class="information__item">
-              <a class="information__item-link" href="catalog.html">Каталог</a>
-            </li>
-            <li class="information__item">
-              <a class="information__item-link" href="order.html">Заказ</a>
-            </li>
-            <li class="information__item">
-              <a class="information__item-link" href="delivery.html">Доставка</a>
-            </li>
-          </ul>
-          <p class="page-footer__text">Напишите нам</p>
-            <ul class="page-footer__social social">
-            <li class="social__item social__item-instagram">
-              <a class="social__link" href="https://www.instagram.com/s.e.vuychich/">
-                <svg class="social__icon social__icon-inst" width="25" height="27" role="img"
-                  aria-label="Мы в Instagram">
-                  <use xlink:href="#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item social__item-email">
-              <a class="social__link" href="#">
-                <svg class="social__icon social__icon-email" width="30" height="30" role="img" aria-label="Напишите нам">
-                  <use xlink:href="#icon-email"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+        <ul class="page-footer__information information">
+          <li class="information__item">
+            <a class="information__item-link" href="#">О нас</a>
+          </li>
+          <li class="information__item">
+            <a class="information__item-link" href="catalog.html">Каталог</a>
+          </li>
+          <li class="information__item">
+            <a class="information__item-link" href="order.html">Заказ</a>
+          </li>
+          <li class="information__item">
+            <a class="information__item-link" href="delivery.html">Доставка</a>
+          </li>
+        </ul>
+        <p class="page-footer__text">Напишите нам</p>
+        <ul class="page-footer__social social">
+          <li class="social__item social__item-instagram">
+            <a class="social__link" href="https://www.instagram.com/s.e.vuychich/">
+              <svg class="social__icon social__icon-inst" width="25" height="27" role="img" aria-label="Мы в Instagram">
+                <use xlink:href="#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item social__item-email">
+            <a class="social__link" href="#">
+              <svg class="social__icon social__icon-email" width="30" height="30" role="img" aria-label="Напишите нам">
+                <use xlink:href="#icon-email"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </footer>
   </div>
-  <button class="main__go-top-button button go-top-button" type="button" aria-label="Прокрутить страницу вверх"></button>
+  <button class="main__go-top-button button go-top-button" type="button"
+    aria-label="Прокрутить страницу вверх"></button>
   <div class="modal modal__feedback feedback modal--close">
     <div class="feedback__container">
       <h2 class="visually-hidden">Форма обратной связи</h2>

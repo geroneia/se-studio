@@ -8,17 +8,17 @@
 }
 
 .main-nav--inner-page .main-nav__item-link {
-    color: $brown;
+  color: $brown;
 }
 
 .main-nav__item-link.main-nav__item-link--active {
-    color: $orange;
+  color: $orange;
 
-    &:hover,
-    &:active {
-      color: $orange;
-      font-size: 18px;
-    }
+  &:hover,
+  &:active {
+    color: $orange;
+    font-size: 18px;
+  }
 }
 
 @media (min-width: $min-tablet-width) {
