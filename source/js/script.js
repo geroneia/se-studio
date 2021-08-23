@@ -32,7 +32,7 @@ new Swiper(`.image-slider`, {
   },
   watchOverflow: true,
   zoom: {
-    maxRatio: 5,
+    maxRatio: 2,
     minRatio: 1,
   },
   ally: {
@@ -45,5 +45,19 @@ new Swiper(`.image-slider`, {
     containerMessage: ``,
     containerRoleDescriprionMessage: ``,
     itemRoleDescriptionMessage: ``,
+  },
+  breakpoints: {
+    320: {
+      zoom: {
+        maxRatio: 2,
+        minRatio: 1,
+      },
+    },
+    768: {
+      zoom: {
+        maxRatio: 2,
+        minRatio: 1,
+      },
+    }
   },
 });

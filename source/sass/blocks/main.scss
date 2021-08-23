@@ -10,7 +10,7 @@
     background-repeat: no-repeat;
     background-size: auto;
 
-    &:nth-child(4) {
+    &:last-child {
       background-position: bottom 800px left 14.2%;
     }
 
@@ -19,6 +19,18 @@
       background-repeat: no-repeat;
       background-size: 100%;
       background-position: 0 0;
+    }
+  }
+
+  .main--inner-page section {
+    &:nth-child(3) {
+      background-image: url("../img/stitching-gorizontal.svg");
+      background-position: 0 0;
+      background-size: 30%;
+    }
+
+    &:last-child {
+      background-position: 14.2% 0;
     }
   }
 
@@ -31,8 +43,19 @@
 
 @media (min-width: $min-mobile-width) and (max-width: $max-mobile-width) {
   .main section {
+    background-image: url("../img/stitching-gorizontal-mobile.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 40%;
+
     &:nth-child(3) {
       background-color: $brown;
+    }
+  }
+
+  .main--inner-page section {
+    &:nth-child(3) {
+      background-color: $background-block;
     }
   }
 }
