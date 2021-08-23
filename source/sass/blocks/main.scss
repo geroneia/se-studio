@@ -1,34 +1,33 @@
     .main section:nth-child(odd) {
-        background-color: $background-block;
+      background-color: $background-block;
     }
 
     @media (min-width: $min-tablet-width) {
-        .main section {
-            background-color: $white;
-            background-image: url("../img/stitching.svg");
-            background-position: 14.2% 0;
-            background-repeat: no-repeat;
-            background-size: auto;
+      .main section {
+        background-color: $white;
+        background-image: url("../img/stitching.svg");
+        background-position: 14.2% 0;
+        background-repeat: no-repeat;
+        background-size: auto;
 
-            &:nth-child(4) {
-                background-position: bottom 800px left 14.2%;
-            }
-
-            &:nth-child(3) {
-                background-image: linear-gradient(to right, $brown 44.1%, $background-block 44.1%);
-                background-repeat: no-repeat;
-                background-size: 100%;
-                background-position: 0 0;
-            }
-
+        &:nth-child(4) {
+          background-position: bottom 800px left 14.2%;
         }
+
+        &:nth-child(3) {
+          background-image: linear-gradient(to right, $brown 44.1%, $background-block 44.1%);
+          background-repeat: no-repeat;
+          background-size: 100%;
+          background-position: 0 0;
+        }
+      }
     }
 
     @media (min-width: $min-mobile-width) and (max-width: $max-mobile-width) {
-        .main section {
-            &:nth-child(3) {
-                background-color: $brown;
-            }
-
+      .main section {
+        &:nth-child(3) {
+          background-color: $brown;
         }
+
+      }
     }

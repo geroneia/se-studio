@@ -1,82 +1,81 @@
 .social {
-    display: flex;
-    margin-left: auto;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 0;
+  display: flex;
+  margin-left: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
 }
 
-.social__item
-.social__link {
-    display: flex;
+.social__item .social__link {
+  display: flex;
 }
 
-.social__link:active>.social__icon {
-    fill: $active-link-color;
+.social__link:active > .social__icon {
+  fill: $active-link-color;
 }
 
 @media (min-width: $min-tablet-width) {
-    .social {
-        flex-direction: column;
-        flex-wrap: wrap;
-        margin-top: 35px;
-        padding-right: 20px;
-        position: relative;
-        height: 68px;
+  .social {
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 35px;
+    padding-right: 20px;
+    position: relative;
+    height: 68px;
 
-        &::after {
-            position: absolute;
-            content: "";
-            width: 9px;
-            height: 67px;
-            background-image: url("../../img/features-lines-3.svg");
-            background-position: 0 0;
-            background-size: 100%;
-            background-repeat: no-repeat;
-            top: 0;
-            right: 0;
-        }
+    &::after {
+      position: absolute;
+      content: "";
+      width: 9px;
+      height: 67px;
+      background-image: url("../../img/features-lines-3.svg");
+      background-position: 0 0;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      top: 0;
+      right: 0;
     }
+  }
 
-    .social__link {
-        width: 30px;
-        height: 30px;
+  .social__link {
+    width: 30px;
+    height: 30px;
+  }
+
+  .social__item {
+    margin-bottom: 8px;
+
+    &:last-of-type {
+      margin-bottom: 0;
     }
+  }
 
-    .social__item {
-        margin-bottom: 8px;
+  .social__item-instagram {
+    padding-left: 2px;
+  }
 
-        &:last-of-type {
-            margin-bottom: 0;
-        }
-    }
-
-    .social__item-instagram {
-        padding-left: 2px;
-    }
-
-    .social__icon {
-        fill: $brown;
-    }
+  .social__icon {
+    fill: $brown;
+  }
 }
 
 @media (min-width: $min-mobile-width) and (max-width: $max-mobile-width) {
-    .social {
-        flex-direction: row;
-        flex-wrap: wrap;
-        min-width: 70%;
-        margin-top: 20px;
-        margin-left: 0;
-        height: 68px;
-    }
+  .social {
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 70%;
+    margin-top: 20px;
+    margin-left: 0;
+    height: 68px;
+  }
 
-    .social__link {
-        width: 30px;
-        height: 30px;
-        margin-right: 10px;
-    }
+  .social__link {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
 
-    .social__icon {
-        fill: $white;
-    }
+  .social__icon {
+    fill: $white;
+  }
 }

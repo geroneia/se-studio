@@ -1,156 +1,156 @@
 .feedback__container {
-    position: fixed;
-    flex-direction: column;
-    justify-content: space-between;
-    display: block;
-    width: 36.9%;
-    min-height: 390px;
-    margin-left: 31.2%;
-    top: 187px;
-    background-color: $background-block;
-    background-image: url("../../img/stitching.svg"), linear-gradient(to right, $background-block 33.9%, $brown 33.9%);
-    background-repeat: no-repeat, no-repeat;
-    background-size: 52.6% auto 100%;
-    background-position: bottom 47px left, 0 0;
-    border-radius: 0 25px 25px 25px;
-    box-shadow: 0 0 8px rgba(0,0,0, 0.5);
-  }
+  position: fixed;
+  flex-direction: column;
+  justify-content: space-between;
+  display: block;
+  width: 36.9%;
+  min-height: 390px;
+  margin-left: 31.2%;
+  top: 187px;
+  background-color: $background-block;
+  background-image: url("../../img/stitching.svg"), linear-gradient(to right, $background-block 33.9%, $brown 33.9%);
+  background-repeat: no-repeat, no-repeat;
+  background-size: 52.6% auto 100%;
+  background-position: bottom 47px left, 0 0;
+  border-radius: 0 25px 25px 25px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
 
-  .feedback__close-button {
+.feedback__close-button {
+  position: absolute;
+  display: block;
+  right: 2.6%;
+  top: 15px;
+  width: 12px;
+  height: 10px;
+  padding: 0;
+  background-color: transparent;
+
+  &::after,
+  &::before {
     position: absolute;
+    content: "";
+    width: 13px;
+    height: 1px;
+    background-color: $white;
+    bottom: 50%;
+    left: 0;
+
+  }
+
+  &::after {
+    transform: rotate(45deg);
+  }
+
+  &::before {
+    transform: rotate(-45deg);
+  }
+}
+
+.feedback__description {
+  text-align: end;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-right: 6.8%;
+  padding-left: 58.5%;
+  padding-top: 25px;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: calc(1em/11);
+  color: $white;
+}
+
+.feedback__form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-left: 34%;
+  padding-right: 6.9%;
+  margin-top: 34px;
+
+  input {
+    height: 27px;
+    width: 100%;
+    border: none;
+    border-radius: 25px;
+    margin-left: 18%;
+    margin-bottom: 32px;
+    padding-bottom: 2px;
+    padding-left: 8px;
+    background-color: $white;
+  }
+
+  ::placeholder {
     display: block;
-    right: 2.6%;
-    top: 15px;
-    width: 12px;
-    height: 10px;
-    padding: 0;
-    background-color: transparent;
-
-    &::after,
-    &::before {
-      position: absolute;
-      content: "";
-      width: 13px;
-      height: 1px;
-      background-color: $white;
-      bottom: 50%;
-      left: 0;
-
-    }
-
-    &::after {
-      transform: rotate(45deg);
-    }
-
-    &::before {
-      transform: rotate(-45deg);
-    }
+    font-family: $font;
+    text-transform: lowercase;
+    font-size: 12px;
+    line-height: 15px;
+    color: $brown;
   }
 
-  .feedback__description {
-    text-align: end;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-right: 6.8%;
-    padding-left: 58.5%;
-    padding-top: 25px;
-    font-style: italic;
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: calc(1em/11);
-    color: $white;
-  }
-
-  .feedback__form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    padding-left: 34%;
-    padding-right: 6.9%;
-    margin-top: 34px;
-
-    input {
-      height: 27px;
-      width: 100%;
-      border: none;
-      border-radius: 25px;
-      margin-left: 18%;
-      margin-bottom: 32px;
-      padding-bottom: 2px;
-      padding-left: 8px;
-      background-color: $white;
-    }
-
-    ::placeholder {
-      display: block;
-      font-family: $font;
-      text-transform: lowercase;
-      font-size: 12px;
-      line-height: 15px;
-      color: $brown;
-    }
-
-    textarea {
-      display: block;
-      border: none;
-      width: 100%;
-      min-height: 118px;
-      margin-left: 18%;
-      margin-bottom: 17px;
-      border-radius: 8px;
-      background-color: $white;
-      padding-left: 8px;
-      padding-top: 4px;
-    }
-  }
-
-  .feedback__list {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    list-style: none;
-    padding-left: 0;
-    margin-top: 0;
-    margin-bottom: 0;
+  textarea {
+    display: block;
+    border: none;
     width: 100%;
+    min-height: 118px;
+    margin-left: 18%;
+    margin-bottom: 17px;
+    border-radius: 8px;
+    background-color: $white;
+    padding-left: 8px;
+    padding-top: 4px;
   }
+}
 
-  .feedback__item {
-    display: flex;
-    width: 100%;
-  }
+.feedback__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 100%;
+}
 
-  .feedback__controls {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-between;
-    align-items: flex-end;
-    padding-left: 18%;
-    margin-bottom: 24px;
+.feedback__item {
+  display: flex;
+  width: 100%;
+}
 
-    button {
-      width: 78px;
-      min-height: 27px;
-      border: none;
-      border-radius: 25px;
-      padding-top: 5px;
-      padding-bottom: 6px;
-      text-transform: lowercase;
-      font-size: 12px;
-      line-height: 12px;
-      color: $brown;
+.feedback__controls {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-left: 18%;
+  margin-bottom: 24px;
 
-      &:first-of-type {
-        background-color: $background-block;
-      }
+  button {
+    width: 78px;
+    min-height: 27px;
+    border: none;
+    border-radius: 25px;
+    padding-top: 5px;
+    padding-bottom: 6px;
+    text-transform: lowercase;
+    font-size: 12px;
+    line-height: 12px;
+    color: $brown;
 
-      &:last-of-type {
-        background-color: $orange;
-      }
+    &:first-of-type {
+      background-color: $background-block;
+    }
 
-      &:active {
-        box-shadow: inset 0 4px 22px rgba(0,0,0, 0.25), inset 0 3px 0 rgba(0,0,0, 0.1), inset 0 3px 0 rgba(0,0,0, 0.1), inset 0 0 22px rgba(0,0,0, 0.1);
-      }
+    &:last-of-type {
+      background-color: $orange;
+    }
+
+    &:active {
+      box-shadow: inset 0 4px 22px rgba(0, 0, 0, 0.25), inset 0 3px 0 rgba(0, 0, 0, 0.1), inset 0 3px 0 rgba(0, 0, 0, 0.1), inset 0 0 22px rgba(0, 0, 0, 0.1);
     }
   }
+}

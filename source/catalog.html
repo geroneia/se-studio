@@ -1,12 +1,159 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Флористический магазин Весна всегда">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>S.E.Vuychich</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,400;1,700&family=Montserrat:wght@700&display=swap"
+    rel="stylesheet">
 </head>
+<div style="display:none;">
+  <include src="build/img/sprite_auto.svg"></include>
+</div>
+
 <body>
+  <div class="page-header__wrapper page-header__wrapper--inner-page">
+  <header class="page-header page-header--nav-opened page-header--inner-page">
+    <div class="page-header__container">
+      <a class="page-header__logo logo" href="main.html">
+        <svg class="page-header__logo-icon" width="100" height="100" role="img" aria-label="Логотип мастерской S.E.Vuychich.">
+          <use xlink:href="#icon-logo"></use>
+        </svg>
+      </a>
+      <nav class="page-header__main-nav main-nav main-nav--nav-opened main-nav--inner-page">
+        <button class="main-nav__toggle main-nav__toggle--nav-opened button" type="button" aria-label="Меню">
+        </button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__item-link" href="main.html">О нас</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__item-link main-nav__item-link--active" href="#">Каталог</a>
+            <ul class="main-nav__nested-list">
+              <li class="main-nav__item">
+                <a class="main-nav__item-link" href="#">Рюкзаки</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__item-link" href="#">Сумки</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__item-link" href="#">Кошельки</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__item-link" href="#">Документницы</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__item-link" href="#">Работы на заказ</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__item-link" href="#">Обложки</br> с гравировкой</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__item-link" href="#">Обложки</br> с печатью</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__item-link" href="#">Ремни и ключницы</a>
+              </li>
+            </ul>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__item-link" href="order.html">Заказ</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__item-link" href="delivery.html">Доставка</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+</div>
+  <div class="page-wrapper">
+    <main class="main main--inner-page" id="main">
+
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo logo">
+          <svg class="page-footer__logo-icon" width="100" height="100" role="img" aria-label="CH shop logo">
+            <use xlink:href="#icon-logo"></use>
+          </svg>
+        </a>
+          <ul class="page-footer__information information">
+            <li class="information__item">
+              <a class="information__item-link" href="#">О нас</a>
+            </li>
+            <li class="information__item">
+              <a class="information__item-link" href="catalog.html">Каталог</a>
+            </li>
+            <li class="information__item">
+              <a class="information__item-link" href="order.html">Заказ</a>
+            </li>
+            <li class="information__item">
+              <a class="information__item-link" href="delivery.html">Доставка</a>
+            </li>
+          </ul>
+          <p class="page-footer__text">Напишите нам</p>
+            <ul class="page-footer__social social">
+            <li class="social__item social__item-instagram">
+              <a class="social__link" href="https://www.instagram.com/s.e.vuychich/">
+                <svg class="social__icon social__icon-inst" width="25" height="27" role="img"
+                  aria-label="Мы в Instagram">
+                  <use xlink:href="#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item social__item-email">
+              <a class="social__link" href="#">
+                <svg class="social__icon social__icon-email" width="30" height="30" role="img" aria-label="Напишите нам">
+                  <use xlink:href="#icon-email"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+      </div>
+    </footer>
+  </div>
+  <button class="main__go-top-button button go-top-button" type="button" aria-label="Прокрутить страницу вверх"></button>
+  <div class="modal modal__feedback feedback modal--close">
+    <div class="feedback__container">
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+      <button class="feedback__close-button button" type="button" aria-label="Закрыть форму"></button>
+      <p class="feedback__description">Остались вопросы? Напишите нам.</p>
+      <form class="feedback__form" method="POST" action="#">
+        <ul class="feedback__list">
+          <li class="feedback__item">
+            <label for="name">
+              <span class="visually-hidden">Введите ваше имя</span>
+            </label>
+            <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+          </li>
+          <li class="feedback__item">
+            <label for="tel">
+              <span class="visually-hidden">Введите номер телефона</span>
+            </label>
+            <input type="tel" id="tel" name="tel" placeholder="Введите номер телефона" autofocus required>
+          </li>
+          <li class="feedback__item">
+            <textarea id="message" name="message" placeholder="Задайте ваш вопрос" required>
+          </li>
+        </ul>
+        <div class="feedback__controls">
+        <button class="button" type="button">Очистить</button>
+        <button class="button" type="submit">Отправить</button>
+      </div>
+      </form>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
 </body>
 </html>

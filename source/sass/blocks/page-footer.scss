@@ -13,6 +13,7 @@
     &:hover {
       font-size: 21px;
     }
+
     &:active {
       color: $active-link-color;
     }
@@ -44,14 +45,14 @@
   }
 
   .page-footer__information,
-.page-footer__social {
-  a {
-    color: $brown;
+  .page-footer__social {
+    a {
+      color: $brown;
+    }
   }
-}
 
   .page-footer__logo-icon {
-    fill: #5E4338;
+    fill: #5e4338;
     margin-top: 15px;
     margin-right: 75px;
   }

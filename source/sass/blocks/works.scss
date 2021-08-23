@@ -12,11 +12,6 @@
   flex-wrap: wrap;
 }
 
-.works__list-wrapper {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .works__item,
 .works__item-link,
 .works__list-wrapper,
@@ -25,6 +20,8 @@
 }
 
 .works__list-wrapper {
+  margin-left: auto;
+  margin-right: auto;
   overflow: hidden;
 }
 
@@ -34,17 +31,13 @@
   height: 100%;
 }
 
-.works__item-link {
-  position: relative;
-}
-
-
 .works__item-img {
   width: 100%;
   height: auto;
 }
 
 .works__item-link {
+  position: relative;
   flex-direction: column;
 }
 
@@ -59,7 +52,7 @@
   margin-bottom: 0;
   font-family: $font-headers;
   font-weight: 700;
-  letter-spacing: calc(1em/11);
+  letter-spacing: calc(1em / 11);
 }
 
 @keyframes move_text {
@@ -88,8 +81,8 @@
   }
 
   &::after {
-      background-color: $brown;
-      right: 0;
+    background-color: $brown;
+    right: 0;
   }
 
   &::before {
@@ -97,23 +90,23 @@
     border-right: 2px solid $brown;
     transform: rotate(-45deg);
     right: 0;
- }
+  }
 }
 
 .works__to-catalog-link:hover {
-    &::after {
-        right: -5px;
-    }
+  &::after {
+    right: -5px;
+  }
 
-    &::before {
-        right: -5px;
-     }
-   }
+  &::before {
+    right: -5px;
+  }
+}
 
 @media (min-width: $min-tablet-width) {
-    .works {
-        min-height: 836px;
-    }
+  .works {
+    min-height: 836px;
+  }
 
   .works__list-wrapper {
     width: 61.8%;
@@ -160,16 +153,16 @@
     line-height: 29px;
 
     &::after {
-        width: 30px;
-        height: 2px;
-        top: 15px;
+      width: 30px;
+      height: 2px;
+      top: 15px;
     }
 
     &::before {
       width: 6px;
       height: 6px;
       top: 13px;
-   }
+    }
   }
 }
 
@@ -178,7 +171,7 @@
     min-height: 920px;
     padding-top: 80px;
     background-color: $white;
-    background-image: url("../../img/stitching-mobile-brown.svg");
+    background-image: url(".. / .. / img / stitching-mobile-brown.svg");
     background-position: 7.8% 0;
     background-repeat: no-repeat;
     background-size: auto;
@@ -223,15 +216,15 @@
     line-height: 21px;
 
     &::after {
-        width: 13px;
-        height: 2px;
-        top: 11px;
+      width: 13px;
+      height: 2px;
+      top: 11px;
     }
 
     &::before {
       width: 6px;
       height: 6px;
       top: 9px;
-   }
+    }
   }
 }

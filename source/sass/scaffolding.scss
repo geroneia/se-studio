@@ -1,72 +1,72 @@
 html {
-    box-sizing: border-box;
-    height: 100%;
-  }
+  box-sizing: border-box;
+  height: 100%;
+}
 
-  *,
-  *::before,
-  *::after {
-    box-sizing: inherit;
-  }
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
 
-  body {
-    min-width: 320px;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    color: $font-color;
-    background-color: $white;
-    font-family: $font;
-    font-weight: 400;
-    font-size: 24px;
-    font-style: normal;
-    line-height: 30px;
-  }
+body {
+  min-width: 320px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color: $font-color;
+  background-color: $white;
+  font-family: $font;
+  font-weight: 400;
+  font-size: 24px;
+  font-style: normal;
+  line-height: 30px;
+}
 
-  a {
-    text-decoration: none;
-    color: $white;
-  }
+a {
+  text-decoration: none;
+  color: $white;
+}
 
-  img {
-    max-width: 100%;
-    height: auto;
-  }
+img {
+  max-width: 100%;
+  height: auto;
+}
 
-  .visually-hidden:not(:focus):not(:active) {
-    position: absolute;
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
 
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
 
-    overflow: hidden;
-    clip: rect(0 0 0 0);
+  overflow: hidden;
+  clip: rect(0 0 0 0);
 
-    border: 0;
+  border: 0;
 
-    white-space: nowrap;
+  white-space: nowrap;
 
-    clip-path: inset(100%);
-  }
+  clip-path: inset(100%);
+}
 
-  .button {
-    color: $brown;
-    background-color: $background-block;
-    text-align: center;
-    border: none;
-    cursor: pointer;
-  }
+.button {
+  color: $brown;
+  background-color: $background-block;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
 
-  .page-wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-  }
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
 
-  .body--modal-open {
-    height: 100vh;
-    overflow: hidden;
-  }
+.body--modal-open {
+  height: 100vh;
+  overflow: hidden;
+}
