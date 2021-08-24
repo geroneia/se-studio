@@ -12,11 +12,11 @@
 }
 
 .main-nav__item-link.main-nav__item-link--active {
-  color: $orange;
+  color: $active-link-color;
 
   &:hover,
   &:active {
-    color: $orange;
+    color: $active-link-color;
     font-size: 18px;
   }
 }
@@ -171,6 +171,7 @@
     .main-nav__item-link {
       display: block;
       padding-bottom: 48px;
+      color: $white;
 
       &:hover,
       &:active {

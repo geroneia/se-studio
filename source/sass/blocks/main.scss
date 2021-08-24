@@ -43,10 +43,10 @@
 
 @media (min-width: $min-mobile-width) and (max-width: $max-mobile-width) {
   .main section {
-    background-image: url("../img/stitching-gorizontal-mobile.svg");
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    background-size: 40%;
+    // background-image: url("../../img/stitching-horisontal-mobile.svg");
+    // background-position: 0 0;
+    // background-repeat: no-repeat;
+    // background-size: 40%;
 
     &:nth-child(3) {
       background-color: $brown;
