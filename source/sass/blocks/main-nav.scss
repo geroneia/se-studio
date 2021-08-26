@@ -1,3 +1,7 @@
+.main-nav {
+  outline: 1px soid green;
+}
+
 .main-nav__list,
 .main-nav__nested-list {
   list-style: none;
@@ -30,6 +34,7 @@
   .main-nav__nested-list {
     margin-left: 57%;
     font-weight: normal;
+    z-index: 1;
   }
 
   .main-nav__item-link {
@@ -51,7 +56,7 @@
     min-height: 30px;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-end;
     position: relative;
     padding-top: 30px;
     font-size: 18px;

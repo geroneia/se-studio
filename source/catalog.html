@@ -37,7 +37,7 @@
           </button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__item-link" href="main.html">О нас</a>
+              <a class="main-nav__item-link" href="main.html#about-us">О нас</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__item-link main-nav__item-link--active" href="#">Каталог</a>
@@ -1095,7 +1095,7 @@
         </a>
         <ul class="page-footer__information information">
           <li class="information__item">
-            <a class="information__item-link" href="#">О нас</a>
+            <a class="information__item-link" href="main.html#about-us">О нас</a>
           </li>
           <li class="information__item">
             <a class="information__item-link" href="catalog.html">Каталог</a>
@@ -1117,11 +1117,11 @@
             </a>
           </li>
           <li class="social__item social__item-email">
-            <a class="social__link" href="#">
+            <button type="button" class="social__link form-link">
               <svg class="social__icon social__icon-email" width="30" height="30" role="img" aria-label="Напишите нам">
                 <use xlink:href="#icon-email"></use>
               </svg>
-            </a>
+            </button>
           </li>
         </ul>
       </div>
@@ -1140,7 +1140,7 @@
             <label for="name">
               <span class="visually-hidden">Введите ваше имя</span>
             </label>
-            <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+            <input type="text" id="name" name="name" placeholder="Введите ваше имя" autofocus required>
           </li>
           <li class="feedback__item">
             <label for="tel">

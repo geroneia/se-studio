@@ -1,4 +1,5 @@
 .conditions__description {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -29,6 +30,7 @@
 
 .conditions__text {
   font-style: italic;
+  color: $font-color;
 }
 
 .conditions_tel {
@@ -36,6 +38,10 @@
 }
 
 .conditions__form-link {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  font: inherit;
   color: $orange;
 
   &:active {
@@ -63,5 +69,46 @@
     line-height: 30px;
     padding-right: 50%;
     padding-bottom: 18px;
+  }
+}
+
+@media (min-width: $min-mobile-width) and (max-width: $max-mobile-width) {
+  .conditions__wrapper {
+    max-width: 375px;
+    min-height: 430px;
+    padding-right: 7.8%;
+    padding-left: 7.8%;
+    margin-bottom: 25px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      display: block;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      min-height: 193px;
+      background-size: $white;
+      background-image: url("../../img/bg-shipping-mobile@1x.jpg");
+      background-position: bottom left;
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .conditions__heading {
+    padding-top: 0;
+    text-align: right;
+    font-size: 17px;
+    line-height: 21px;
+  }
+
+  .conditions__text {
+    text-align: right;
+    font-size: 17px;
+    line-height: 21px;
+    padding-top: 35px;
+    background-color: $white;
+    border-radius: 15px;
   }
 }

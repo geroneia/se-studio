@@ -37,7 +37,7 @@
           </button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__item-link" href="#">О нас</a>
+              <a class="main-nav__item-link" href="#about-us">О нас</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__item-link" href="catalog.html">Каталог</a>
@@ -92,7 +92,7 @@
         <div class="works__list-wrapper">
           <ul class="works__list">
             <li class="works__item">
-              <a class="works__item-link" href="#">
+              <a class="works__item-link" href="catalog.html#bagpacks">
                 <picture class="works__item-img-wrapper">
                   <!-- 1x: 437px*271px; 2x: 874*542px -->
                   <source media="(min-width: 768px)" type="image/webp"
@@ -111,7 +111,7 @@
               </a>
             </li>
             <li class="works__item">
-              <a class="works__item-link" href="#">
+              <a class="works__item-link" href="catalog.html#custom-works">
                 <picture class="works__item-img-wrapper">
                   <!-- 1x: 437px*271px; 2x: 874*542px -->
                   <source media="(min-width: 768px)" type="image/webp"
@@ -130,7 +130,7 @@
               </a>
             </li>
             <li class="works__item">
-              <a class="works__item-link" href="#">
+              <a class="works__item-link" href="catalog.html#wallets">
                 <picture class="works__item-img-wrapper">
                   <!-- 1x: 437px*271px; 2x: 874*542px -->
                   <source media="(min-width: 768px)" type="image/webp"
@@ -148,7 +148,7 @@
               </a>
             </li>
             <li class="works__item">
-              <a class="works__item-link" href="#">
+              <a class="works__item-link" href="catalog.html#engraved-covers">
                 <picture class="works__item-img-wrapper">
                   <!-- 1x: 437px*271px; 2x: 874*542px -->
                   <source media="(min-width: 768px)" type="image/webp"
@@ -185,7 +185,7 @@
       </section>
       <section class="main__about-us about-us">
         <div class="about-us__wrapper">
-          <h2 class="about-us__heading">О нас</h2>
+          <a id="about-us"><h2 class="about-us__heading">О нас</h2></a>
           <p class="about-us__text">
             Какое-то количество текста про то, какие мы классные и как любим то, что делаем.
           </p>
@@ -196,7 +196,7 @@
             Можно что-нибудь о фестивалях и заказах для ресторанов
           </p>
           <p class="about-us__questions">
-            Оставьте свои <a class="about-us__form-link">контакты</a>, и мы свяжемся с вами.
+            Оставьте свои <button type="button" class="about-us__form-link form-link">контакты</button>, и мы свяжемся с вами.
           </p>
         </div>
       </section>
@@ -308,7 +308,7 @@
         </a>
         <ul class="page-footer__information information">
           <li class="information__item">
-            <a class="information__item-link" href="#">О нас</a>
+            <a class="information__item-link" href="#about-us">О нас</a>
           </li>
           <li class="information__item">
             <a class="information__item-link" href="catalog.html">Каталог</a>
@@ -330,11 +330,11 @@
             </a>
           </li>
           <li class="social__item social__item-email">
-            <a class="social__link" href="#">
+            <button type="button" class="social__link form-link">
               <svg class="social__icon social__icon-email" width="30" height="30" role="img" aria-label="Напишите нам">
                 <use xlink:href="#icon-email"></use>
               </svg>
-            </a>
+            </button>
           </li>
         </ul>
       </div>
