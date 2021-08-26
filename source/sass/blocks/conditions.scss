@@ -1,0 +1,25 @@
+.conditions {
+    background-color: $white;
+}
+
+.conditions__heading,
+.conditions__text {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.conditions__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: $min-tablet-width) {
+    .conditions__description {
+        max-width: 1440px;
+        padding-right: 13.19%;
+        padding-left: 13.19%;
+    }
+}

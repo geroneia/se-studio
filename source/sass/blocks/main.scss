@@ -2,6 +2,10 @@
   background-color: $background-block;
 }
 
+.main section.conditions__description {
+  background-color: $white;
+}
+
 @media (min-width: $min-tablet-width) {
   .main section {
     background-color: $white;
@@ -20,6 +24,12 @@
       background-size: 100%;
       background-position: 0 0;
     }
+  }
+
+  .main.main__conditions {
+    background-image: url("../img/stitching-gorizontal.svg");
+    background-position: 0 0;
+    background-size: 30%;
   }
 
   .main--inner-page section {
