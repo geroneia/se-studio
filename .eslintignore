@@ -12,3 +12,4 @@ package-lock.json
 *.sublime*
 node_modules/
 npm-debug.*
+swiper-bundle.min.js

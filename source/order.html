@@ -22,7 +22,7 @@
 </div>
 
 <body>
-  <div class="page-header__wrapper page-header__wrapper--inner-page">
+  <div class="page-header__wrapper">
     <header class="page-header page-header--nav-opened page-header--inner-page">
       <div class="page-header__container">
         <a class="page-header__logo logo" href="main.html">
@@ -31,7 +31,7 @@
             <use xlink:href="#icon-logo"></use>
           </svg>
         </a>
-        <nav class="page-header__main-nav main-nav main-nav--nav-opened main-nav--inner-page">
+        <nav class="page-header__main-nav main-nav main-nav--nav-opened">
           <button class="main-nav__toggle main-nav__toggle--nav-opened button" type="button" aria-label="Меню">
           </button>
           <ul class="main-nav__list">
@@ -79,10 +79,13 @@
   </header>
 </div>
   <div class="page-wrapper">
-    <main class="main main--inner-page main__conditions conditions" id="main">
+    <main class="main main__conditions conditions" id="main">
       <section class="conditions__description">
+        <div class="conditions__wrapper">
         <h1 class="conditions__heading">Заказ</h1>
-        <p class="conditions__text">Рассказать о том, что об условиях заказа можно договориться по телефону или заполнив форму, тогда мы ответим письменно на указанный электронный адрес</p>
+        <p class="conditions__text">Что-нибудь про то, что это не магазин, а мастерская. На складе не товары, а материалы.</p>
+        <p class="conditions__text">Узнать подробности, уточнить сроки и расценки, сделать заказ вы можете <a class="conditions_tel" href="tel:+380985554433">по телефону</a> или заполнив <a class="conditions__form-link">форму</a></p>
+      </div>
       </section>
     </main>
     <footer class="page-footer">
@@ -94,13 +97,13 @@
         </a>
           <ul class="page-footer__information information">
             <li class="information__item">
-              <a class="information__item-link" href="#">О нас</a>
+              <a class="information__item-link" href="main.html">О нас</a>
             </li>
             <li class="information__item">
               <a class="information__item-link" href="catalog.html">Каталог</a>
             </li>
             <li class="information__item">
-              <a class="information__item-link" href="order.html">Заказ</a>
+              <a class="information__item-link main-nav__item-link--active" href="#">Заказ</a>
             </li>
             <li class="information__item">
               <a class="information__item-link" href="delivery.html">Доставка</a>
@@ -132,7 +135,7 @@
     <div class="feedback__container">
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <button class="feedback__close-button button" type="button" aria-label="Закрыть форму"></button>
-      <p class="feedback__description">Остались вопросы? Напишите нам.</p>
+      <p class="feedback__description">Оставьте ваши данные, и мы ответим вам на почту.</p>
       <form class="feedback__form" method="POST" action="#">
         <ul class="feedback__list">
           <li class="feedback__item">

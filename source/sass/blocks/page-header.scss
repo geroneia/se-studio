@@ -56,7 +56,8 @@
   }
 
   .page-header--inner-page {
-    min-height: 268px;
+    // min-height: 268px; this was for catalog - to high
+    min-height: 185px;
     background-image: none;
   }
 

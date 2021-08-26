@@ -15,6 +15,8 @@ headerToggle.addEventListener(`click`, function () {
 
 // eslint-disable-next-line no-new
 new Swiper(`.image-slider`, {
+  observer: true,
+  observeParents: true,
   navigation: {
     nextEl: `.swiper-button-next`,
     prevEl: `.swiper-button-prev`
@@ -45,19 +47,5 @@ new Swiper(`.image-slider`, {
     containerMessage: ``,
     containerRoleDescriprionMessage: ``,
     itemRoleDescriptionMessage: ``,
-  },
-  breakpoints: {
-    320: {
-      zoom: {
-        maxRatio: 2,
-        minRatio: 1,
-      },
-    },
-    768: {
-      zoom: {
-        maxRatio: 2,
-        minRatio: 1,
-      },
-    }
   },
 });
