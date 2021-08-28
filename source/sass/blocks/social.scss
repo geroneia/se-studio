@@ -24,22 +24,27 @@ button.social__link{
   .social {
     flex-direction: column;
     flex-wrap: wrap;
-    margin-top: 35px;
+    align-self: center;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 9px;
     padding-right: 20px;
     position: relative;
-    height: 68px;
+    min-height: 68px;
+    align-self: center;
+    border-right: 1px dashed $orange;
 
     &::after {
       position: absolute;
+      display: block;
       content: "";
-      width: 9px;
-      height: 67px;
-      background-image: url("../../img/features-lines-3.svg");
-      background-position: 0 0;
-      background-size: 100%;
-      background-repeat: no-repeat;
-      top: 0;
-      right: 0;
+      width: 5px;
+      height: 100%;
+      min-height: 68px;
+      right: 3px;
+      bottom: 0;
+      border-right: 1px dashed $orange;
+      border-left: 1px dashed $orange;
     }
   }
 
