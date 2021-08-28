@@ -24,6 +24,15 @@ body {
   line-height: 30px;
 }
 
+main {
+  flex: 1 0 auto;
+}
+
+.page-footer {
+  width: 100%;
+  flex: 0 0 auto;
+}
+
 a {
   text-decoration: none;
   color: $white;
