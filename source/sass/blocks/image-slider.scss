@@ -23,6 +23,7 @@
 @media (min-width: $min-tablet-width) {
   .image-slider {
     max-width: 520px;
+    min-width: 50%;
     padding-bottom: 70px;
   }
 

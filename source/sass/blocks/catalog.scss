@@ -65,6 +65,7 @@
 @media (min-width: $min-tablet-width) {
   .catalog__section article {
     max-width: 1440px;
+    min-width: 1024px;
     padding-right: 13.19%;
     padding-left: 13.19%;
   }
@@ -72,6 +73,7 @@
   .catalog__section {
     padding-top: 18px;
     padding-bottom: 190px;
+    min-width: 1024px;
   }
 
   .catalog_heading {

@@ -101,6 +101,7 @@
 @media (min-width: $min-mobile-width) and (max-width: $max-mobile-width) {
   .about-us {
     min-height: 760px;
+    justify-content: flex-end;
   }
 
   .about-us__wrapper {
@@ -109,27 +110,29 @@
     padding-right: 7.8%;
     padding-left: 7.8%;
     padding-bottom: 30px;
+    padding-top: 386px;
     flex-direction: column;
     text-align: end;
-    background-color: $brown;
+    align-self: flex-end;
     background-image: url("../../img/bg-about-us_mobile@1x.jpg");
-    background-position: top -80px center;
+    background-position: 0 0;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100%;
+    background-color: $brown;
 
     @media (min-resolution: $retina-dpi),
       (min-resolution: $retina-dppx) {
       background-image: url("../../img/bg-about-us_mobile@2x.jpg");
       background-position: top left;
       background-repeat: no-repeat;
-      background-size: contain;
+      background-size: 100%;
     }
   }
 
   .about-us__heading {
     display: block;
     margin-top: auto;
-    padding-top: 20px;
+    padding-top: 40px;
     padding-bottom: 40px;
     color: $white;
     font-size: 34px;

@@ -54,7 +54,7 @@
     }
 
     &:last-child {
-      background-position: 14.2% 0;
+      background-position: top left;
     }
   }
 
@@ -65,11 +65,11 @@
   }
 }
 
-.main__conditions section {
-  background-image: url("../img/stitching-gorizontal.svg");
-  background-position: 0 0;
-  background-size: 30%;
-}
+// .main__conditions section {
+//   background-image: url("../img/stitching-gorizontal.svg");
+//   background-position: 0 0;
+//   background-size: 30%;
+// }
 
 @media (min-width: $min-mobile-width) and (max-width: $max-mobile-width) {
   .main section {
