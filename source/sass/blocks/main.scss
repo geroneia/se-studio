@@ -29,7 +29,7 @@
   .main__conditions section,
   .main__conditions section:last-child {
     background-image: url("../img/bg-shipping-desktop@1x.jpg"),
-    url("../img/stitching-gorizontal.svg"),
+    url("../img/stitching-horizontal.svg"),
   linear-gradient(to right, $white 55.8%, $brown 55.8%);
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position: top left 79.5%, 0 0, 0 0;
@@ -38,7 +38,7 @@
     @media (min-resolution: $retina-dpi),
     (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-shipping-desktop@2x.jpg"),
-      url("../img/stitching-gorizontal.svg"),
+      url("../img/stitching-horizontal.svg"),
       linear-gradient(to right, $white 55.8%, $brown 55.8%);
       background-repeat: no-repeat, no-repeat, no-repeat;
       background-position: top left 79.5%, 0 0, 0 0;
@@ -48,7 +48,7 @@
 
   .main--inner-page section {
     &:nth-child(3) {
-      background-image: url("../img/stitching-gorizontal.svg");
+      background-image: url("../img/stitching-horizontal.svg");
       background-position: 0 0;
       background-size: 30%;
     }
@@ -59,14 +59,14 @@
   }
 
   .main__catalog section {
-    background-image: url("../img/stitching-gorizontal.svg");
+    background-image: url("../img/stitching-horizontal.svg");
     background-position: 0 0;
     background-size: 30%;
   }
 }
 
 // .main__conditions section {
-//   background-image: url("../img/stitching-gorizontal.svg");
+//   background-image: url("../img/stitching-horizontal.svg");
 //   background-position: 0 0;
 //   background-size: 30%;
 // }
