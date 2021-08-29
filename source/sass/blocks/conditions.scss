@@ -15,8 +15,6 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .conditions__heading {
@@ -50,11 +48,13 @@
 }
 
 @media (min-width: $min-tablet-width) {
+  .conditions {
+    min-width: $min-desktop-width;
+  }
   .conditions__wrapper {
     max-width: 1440px;
     min-height: 651px;
-    padding-right: 13.19%;
-    padding-left: 13.19%;
+    @include centered($padding-desktop);
   }
 
   .conditions__heading {
@@ -76,8 +76,7 @@
   .conditions__wrapper {
     max-width: 375px;
     min-height: 430px;
-    padding-right: 7.8%;
-    padding-left: 7.8%;
+    @include centered($padding-mobile);
     margin-bottom: 25px;
 
     &::after {

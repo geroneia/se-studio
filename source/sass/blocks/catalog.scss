@@ -2,8 +2,6 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .catalog__description-wrapper {
@@ -22,8 +20,6 @@
 .catalog_heading {
   flex-direction: column;
   justify-content: flex-start;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
   text-transform: uppercase;
@@ -65,21 +61,19 @@
 @media (min-width: $min-tablet-width) {
   .catalog__section article {
     max-width: 1440px;
-    min-width: 1024px;
-    padding-right: 13.19%;
-    padding-left: 13.19%;
+    min-width: $min-desktop-width;
+    @include centered($padding-desktop);
   }
 
   .catalog__section {
     padding-top: 18px;
     padding-bottom: 190px;
-    min-width: 1024px;
+    min-width: $min-desktop-width;
   }
 
   .catalog_heading {
     max-width: 1440px;
-    padding-right: 13.19%;
-    padding-left: 13.19%;
+    @include centered($padding-desktop);
     font-size: 24px;
     line-height: 29px;
   }
@@ -109,8 +103,7 @@
 @media (min-width: $min-mobile-width) and (max-width: $max-mobile-width) {
   .catalog__section article {
     max-width: 375px;
-    padding-right: 7.8%;
-    padding-left: 7.8%;
+    @include centered($padding-mobile);
   }
 
   .catalog__description-wrapper {
@@ -133,8 +126,7 @@
   .catalog_heading {
     white-space: pre;
     max-width: 375px;
-    padding-right: 7.8%;
-    padding-left: 7.8%;
+    @include centered($padding-mobile);
     padding-top: 20px;
     font-size: 17px;
     line-height: 21px;

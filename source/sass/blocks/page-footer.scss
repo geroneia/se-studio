@@ -23,19 +23,18 @@
   .page-footer {
     min-height: 147px;
     background-color: $background-block;
+    min-width: $min-desktop-width;
   }
 
   .page-footer__wrapper {
     max-width: 1440px;
+    min-width: $min-desktop-width;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
     text-align: center;
-    padding-right: 13.19%;
-    padding-left: 13.19%;
-    margin-left: auto;
-    margin-right: auto;
+    @include centered($padding-desktop);
   }
 
   .page-footer__information,
@@ -64,10 +63,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     text-align: left;
-    padding-right: 7.8%;
-    padding-left: 7.8%;
-    margin-left: auto;
-    margin-right: auto;
+    @include centered($padding-mobile);
   }
 
   .page-footer__logo {

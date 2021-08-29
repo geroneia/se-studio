@@ -24,8 +24,6 @@
 
 .about-us__wrapper {
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .about-us__form-link {
@@ -43,13 +41,13 @@
 @media (min-width: $min-tablet-width) {
   .about-us {
     min-height: 836px;
+    min-width: $min-desktop-width;
   }
 
   .about-us__wrapper {
     width: 100%;
     max-width: 1440px;
-    padding-right: 13.19%;
-    padding-left: 13.19%;
+    @include centered($padding-desktop);
     padding-bottom: 92px;
     flex-direction: column;
     text-align: end;
@@ -107,8 +105,7 @@
   .about-us__wrapper {
     width: 100%;
     max-width: 375px;
-    padding-right: 7.8%;
-    padding-left: 7.8%;
+    @include centered($padding-mobile);
     padding-bottom: 30px;
     padding-top: 386px;
     flex-direction: column;

@@ -44,8 +44,8 @@
 @media (min-width: $min-tablet-width) {
   .preferences {
     min-height: 291px;
-    padding-right: 13.19%;
-    padding-left: 13.19%;
+    min-width: $min-desktop-width;
+    @include centered($padding-desktop);
   }
 
   .preferences__list {
@@ -73,8 +73,7 @@
 @media (min-width: $min-mobile-width) and (max-width: $max-mobile-width) {
   .preferences {
     min-height: 291px;
-    padding-right: 13.19%;
-    padding-left: 13.19%;
+    @include centered($padding-mobile);
     background-color: $white;
     background-image: url("../../img/stitching-mobile-brown.svg");
     background-position: bottom 42px left 7.8%;

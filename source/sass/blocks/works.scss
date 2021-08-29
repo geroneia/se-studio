@@ -106,6 +106,7 @@
 @media (min-width: $min-tablet-width) {
   .works {
     min-height: 836px;
+    min-width: $min-desktop-width;
   }
 
   .works__list-wrapper {
@@ -179,10 +180,7 @@
 
   .works__list-wrapper {
     width: 100%;
-    padding-right: 7.8%;
-    padding-left: 7.8%;
-    margin-left: auto;
-    margin-right: auto;
+    @include centered($padding-mobile);
   }
 
   .works__list,

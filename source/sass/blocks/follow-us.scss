@@ -2,11 +2,6 @@
   display: flex;
 }
 
-.follow-us__wrapper {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .follow-us__follow-link {
   color: $brown;
   margin-left: auto;
@@ -54,9 +49,9 @@
     flex-direction: column;
     width: 100%;
     max-width: 1440px;
+    min-width: $min-desktop-width;
     max-height: 520px;
-    padding-right: 13.19%;
-    padding-left: 13.19%;
+    @include centered($padding-desktop);
   }
 
   .follow-us__follow-link {
@@ -171,8 +166,7 @@
     flex-direction: column;
     width: 100%;
     min-width: 320px;
-    padding-right: 7.8%;
-    padding-left: 7.8%;
+    @include centered($padding-mobile);
   }
 
   .follow-us__follow-link {
