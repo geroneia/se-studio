@@ -16,6 +16,7 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
 var concat = require('gulp-concat');
+const babel = require('gulp-babel');
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -92,18 +93,20 @@ gulp.task("html", function () {
 });
 
 gulp.task("js", function () {
-  // source/js/*.js
-  return gulp.src('source/js/**/*.js')
-      .pipe(concat('bundle.js'))
-      .pipe(uglify())
-      .pipe(gulp.dest("build/js/"));
+  return gulp.src([
+    'source/js/**/*.js'
+])
+.pipe(babel({
+    presets: ['@babel/preset-env']
+}))
+.pipe(concat('scripts.js'))
+.pipe(gulp.dest('build/js/'))
 });
 
 gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2,ttf}",
     "source/img/**",
-    "source/js/modules/*.js",
     "source/js/*.js",
     "source//*.ico"
   ], {
@@ -116,5 +119,5 @@ gulp.task("clean", function () {
   return del("build");
 });
 
-gulp.task("build", gulp.series('clean', 'images', 'copy', 'css', 'webp', 'sprite', 'html'));
+gulp.task("build", gulp.series('clean', 'js', 'copy', 'css', 'webp', 'sprite', 'html'));
 gulp.task("start", gulp.series('build', 'server'));
