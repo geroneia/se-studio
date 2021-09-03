@@ -23,6 +23,13 @@
   display: flex;
 }
 
+.follow-us__images-item {
+  padding: 0;
+  background-image: url('../../img/spinner.gif');
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
 .follow-us__images-wrap {
   width: 100%;
 }

@@ -3,6 +3,13 @@
   flex-direction: column;
 }
 
+.works__item-link {
+  padding: 0;
+  background-image: url('../../img/spinner.gif');
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
 .works__list {
   list-style: none;
   margin-top: 0;
@@ -107,6 +114,11 @@
   .works {
     min-height: 836px;
     min-width: $min-desktop-width;
+  }
+
+  .works__item-link {
+    min-width: 435px;
+    min-height: 271px;
   }
 
   .works__list-wrapper {

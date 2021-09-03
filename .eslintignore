@@ -13,3 +13,4 @@ package-lock.json
 node_modules/
 npm-debug.*
 swiper-bundle.min.js
+lazysizes.min.js

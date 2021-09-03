@@ -96,10 +96,12 @@ gulp.task("js", function () {
   return gulp.src([
     'source/js/**/*.js'
 ])
+.pipe(sourcemap.init())
 .pipe(babel({
     presets: ['@babel/preset-env']
 }))
 .pipe(concat('scripts.js'))
+.pipe(sourcemap.write("."))
 .pipe(gulp.dest('build/js/'))
 });
 

@@ -8,10 +8,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>S.E.Vuychich</title>
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="prefetch" href="fonts/lora/Lora-BoldItalic.ttf" as="font" crossorigin="anonymous">
-    <link rel="prefetch" href="fonts/lora/Lora-Italic.ttf" as="font" crossorigin="anonymous">
-    <link rel="prefetch" href="fonts/lora/Lora-Regular.ttf" as="font" crossorigin="anonymous">
-    <link rel="prefetch" href="fonts/montserrat/Montserrat-Bold.ttf" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/lora/lora-v17-cyrillic-700italic.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/lora/lora-v17-cyrillic-700italic.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/lora/lora-v17-cyrillic-italic.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/lora/lora-v17-cyrillic-italic.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/lora/lora-v17-cyrillic-regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/lora/lora-v17-cyrillic-regular.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/lora/lora-v17-cyrillic-700.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/lora/lora-v17-cyrillic-700.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat/montserrat-v18-cyrillic-700.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat/montserrat-v18-cyrillic-700.woff" as="font" crossorigin="anonymous">
   </head>
 <div style="display:none;">
   <include src="build/img/sprite_auto.svg"></include>
@@ -91,15 +97,15 @@
                 <picture class="works__item-img-wrapper">
                   <!-- 1x: 437px*271px; 2x: 874*542px -->
                   <source media="(min-width: 768px)" type="image/webp"
-                    srcset="img/nb-bag-desktop@1x.webp 1x, img/nb-bag-desktop@2x.webp 2x">
+                    data-srcset="img/nb-bag-desktop@1x.webp 1x, img/nb-bag-desktop@2x.webp 2x" srcset="img/1x1.png">
                   <!-- 1x: 271px*169px; 2x: 542*338px -->
-                  <source type="image/webp" srcset="img/nb-bag-mobile@1x.webp, img/nb-bag-mobile@2x.webp 2x">
+                  <source type="image/webp" data-srcset="img/nb-bag-mobile@1x.webp, img/nb-bag-mobile@2x.webp 2x" srcset="img/1x1.png">
 
                   <!-- 1x: 437px*271px; 2x: 874*542px -->
                   <source media="(min-width: 768px)"
-                    srcset="img/nb-bag-desktop@1x.jpg 1x, img/nb-bag-desktop@2x.jpg 2x">
+                    data-srcset="img/nb-bag-desktop@1x.jpg 1x, img/nb-bag-desktop@2x.jpg 2x" srcset="img/1x1.png">
                   <!-- 1x: 271px*169px; 2x: 542*338px -->
-                  <img class="works__item-img" src="img/nb-bag-mobile@1x.jpg" srcset="img/nb-bag-mobile@2x.jpg 2x"
+                  <img class="works__item-img lazyload" data-src="img/nb-bag-mobile@1x.jpg" src="img/1x1.png" srcset="img/nb-bag-mobile@2x.jpg 2x"
                     width="271" height="169" alt="Черная сумка для ноутбука">
                 </picture>
                 <p class="works__item-name">Сумки и рюкзаки</p>
@@ -110,16 +116,16 @@
                 <picture class="works__item-img-wrapper">
                   <!-- 1x: 437px*271px; 2x: 874*542px -->
                   <source media="(min-width: 768px)" type="image/webp"
-                    srcset="img/antuan-desktop@1x.webp 1x, img/antuan-desktop@2x.webp 2x">
+                    data-srcset="img/antuan-desktop@1x.webp 1x, img/antuan-desktop@2x.webp 2x" srcset="img/1x1.png">
                   <!-- 1x: 271px*169px; 2x: 542*338px -->
-                  <source type="image/webp" srcset="img/antuan-mobile@1x.webp, img/antuan-mobile@2x.webp 2x">
+                  <source type="image/webp" data-srcset="img/antuan-mobile@1x.webp, img/antuan-mobile@2x.webp 2x" srcset="img/1x1.png">
 
                   <!-- 1x: 437px*271px; 2x: 874*542px -->
                   <source media="(min-width: 768px)"
-                    srcset="img/antuan-desktop@1x.jpg 1x, img/antuan-desktop@2x.jpg 2x">
+                    data-srcset="img/antuan-desktop@1x.jpg 1x, img/antuan-desktop@2x.jpg 2x" srcset="img/1x1.png">
                   <!-- 1x: 271px*169px; 2x: 542*338px -->
-                  <img class="works__item-img" src="img/antuan-mobile@1x.jpg" srcset="img/antuan-mobile@2x.jpg 2x"
-                    width="271" height="169" alt="Книга отзывов для ресторана в кожаном переплете">
+                  <img class="works__item-img lazyload" data-src="img/antuan-mobile@1x.jpg" src="img/1x1.png" data-srcset="img/antuan-mobile@2x.jpg 2x"
+                    width="271" height="169" alt="Книга отзывов для ресторана в кожаном переплете" srcset="img/1x1.png">
                 </picture>
                 <p class="works__item-name">Шьем на заказ</p>
               </a>
@@ -129,15 +135,15 @@
                 <picture class="works__item-img-wrapper">
                   <!-- 1x: 437px*271px; 2x: 874*542px -->
                   <source media="(min-width: 768px)" type="image/webp"
-                    srcset="img/orca-desktop@1x.webp 1x, img/orca-desktop@2x.webp 2x">
+                    data-srcset="img/orca-desktop@1x.webp 1x, img/orca-desktop@2x.webp 2x" srcset="img/1x1.png">
                   <!-- 1x: 271px*169px; 2x: 542*338px -->
-                  <source type="image/webp" srcset="img/orca-mobile@1x.webp, img/orca-mobile@2x.webp 2x">
+                  <source type="image/webp" data-srcset="img/orca-mobile@1x.webp, img/orca-mobile@2x.webp 2x" srcset="img/1x1.png">
 
                   <!-- 1x: 437px*271px; 2x: 874*542px -->
-                  <source media="(min-width: 768px)" srcset="img/orca-desktop@1x.jpg 1x, img/orca-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" data-srcset="img/orca-desktop@1x.jpg 1x, img/orca-desktop@2x.jpg 2x" srcset="img/1x1.png">
                   <!-- 1x: 271px*169px; 2x: 542*338px -->
-                  <img class="works__item-img" src="img/orca-mobile@1x.jpg" srcset="img/orca-mobile@2x.jpg 2x"
-                    width="271" height="169" alt="Кошелек из темно-зеленой кожи">
+                  <img class="works__item-img lazyload" data-src="img/orca-mobile@1x.jpg" src="img/1x1.png" data-srcset="img/orca-mobile@2x.jpg 2x"
+                    width="271" height="169" alt="Кошелек из темно-зеленой кожи" srcset="img/1x1.png">
                 </picture>
                 <p class="works__item-name">Кошельки</p>
               </a>
@@ -147,15 +153,15 @@
                 <picture class="works__item-img-wrapper">
                   <!-- 1x: 437px*271px; 2x: 874*542px -->
                   <source media="(min-width: 768px)" type="image/webp"
-                    srcset="img/cover-desktop@1x.webp 1x, img/cover-desktop@2x.webp 2x">
+                    data-srcset="img/cover-desktop@1x.webp 1x, img/cover-desktop@2x.webp 2x" srcset="img/1x1.png">
                   <!-- 1x: 271px*169px; 2x: 542*338px -->
-                  <source type="image/webp" srcset="img/cover-mobile@1x.webp, img/cover-mobile@2x.webp 2x">
+                  <source type="image/webp" data-srcset="img/cover-mobile@1x.webp, img/cover-mobile@2x.webp 2x" srcset="img/1x1.png">
 
                   <!-- 1x: 437px*271px; 2x: 874*542px -->
-                  <source media="(min-width: 768px)" srcset="img/cover-desktop@1x.jpg 1x, img/cover-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" data-srcset="img/cover-desktop@1x.jpg 1x, img/cover-desktop@2x.jpg 2x" srcset="img/1x1.png">
                   <!-- 1x: 271px*169px; 2x: 542*338px -->
-                  <img class="works__item-img" src="img/cover-mobile@1x.jpg" srcset="img/cover-mobile@2x.jpg 2x"
-                    width="271" height="169" alt="Документница из зеленого нубука">
+                  <img class="works__item-img lazyload" data-src="img/cover-mobile@1x.jpg" src="img/1x1.png" data-srcset="img/cover-mobile@2x.jpg 2x"
+                    width="271" height="169" alt="Документница из зеленого нубука" srcset="img/1x1.png">
                 </picture>
                 <p class="works__item-name">Документницы и обложки</p>
               </a>
@@ -204,31 +210,31 @@
               <div class="follow-us__images-item follow-us__images-item-mobile-no">
                 <picture class="follow-us__images-wrap">
                   <!-- 1x: 250px*296px; 2x: 500px*592px -->
-                  <img class="follow-us__image" src="img/banana-desktop@1x.jpg" srcset="img/banana-desktop@2x.jpg 2x"
-                    width="250" height="296" alt="Пять поясных сумок разных цветов">
+                  <img class="follow-us__image lazyload" data-src="img/banana-desktop@1x.jpg" src="img/1x1.png" data-srcset="img/banana-desktop@2x.jpg 2x"
+                    width="250" height="296" alt="Пять поясных сумок разных цветов" srcset="img/1x1.png">
                 </picture>
               </div>
               <div class="follow-us__images-item follow-us__images-item-mobile-no">
                 <picture class="follow-us__images-wrap">
                   <!-- 1x: 250px*175px; 2x: 500px*350px -->
-                  <img class="follow-us__image" src="img/bag-grass-desktop@1x.jpg"
-                    srcset="img/bag-grass-desktop@2x.jpg 2x" width="250" height="175" alt="Коричневая сумочка на траве">
+                  <img class="follow-us__image lazyload" data-src="img/bag-grass-desktop@1x.jpg" src="img/1x1.png"
+                    data-srcset="img/bag-grass-desktop@2x.jpg 2x" width="250" height="175" alt="Коричневая сумочка на траве" srcset="img/1x1.png">
                 </picture>
               </div>
               <div class="follow-us__images-item follow-us__images-item-mobile-no">
                 <picture class="follow-us__images-wrap">
                   <!-- 1x: 250px*100px; 2x: 500px*200px -->
-                  <img class="follow-us__image" src="img/orca-gal-desktop@1x.jpg"
-                    srcset="img/orca-gal-desktop@2x.jpg 2x" width="250" height="100" alt="Зеленый кошелек">
+                  <img class="follow-us__image lazyload" data-src="img/orca-gal-desktop@1x.jpg" src="img/1x1.png"
+                    data-srcset="img/orca-gal-desktop@2x.jpg 2x" width="250" height="100" alt="Зеленый кошелек" srcset="img/1x1.png">
                 </picture>
               </div>
               <div class="follow-us__images-item">
                 <picture class="follow-us__images-wrap">
                   <!-- 1x: 520px*208px; 2x: 1040px*416px -->
-                  <source media="(min-width: 768px)" srcset="img/mega-desktop@1x.jpg 1x, img/mega-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" data-srcset="img/mega-desktop@1x.jpg 1x, img/mega-desktop@2x.jpg 2x" srcset="img/1x1.png">
                   <!-- 1x: 270px*121px; 2x: 540px*282px -->
-                  <img class="follow-us__image" src="img/mega-mobile@1x.jpg" srcset="img/mega-mobile@2x.jpg 2x"
-                    width="270" height="141" alt="Витрина с изделиями на ярмарке">
+                  <img class="follow-us__image lazyload" data-src="img/mega-mobile@1x.jpg" src="img/1x1.png" data-srcset="img/mega-mobile@2x.jpg 2x"
+                    width="270" height="141" alt="Витрина с изделиями на ярмарке" srcset="img/1x1.png">
                 </picture>
               </div>
             </div>
@@ -237,21 +243,21 @@
                 <picture class="follow-us__images-wrap">
                   <!-- 1x: 250px*344px; 2x: 500px*688px -->
                   <source media="(min-width: 768px)"
-                    srcset="img/bagpack-desktop@1x.jpg 1x, img/bagpack-desktop@2x.jpg 2x">
+                    data-srcset="img/bagpack-desktop@1x.jpg 1x, img/bagpack-desktop@2x.jpg 2x">
                   <!-- 1x: 130px*221px; 2x: 260px*442px -->
-                  <img class="follow-us__image" src="img/bagpack-gal-mobile@1x.jpg" srcset="img/bagpack-gal-mobile@2x.jpg 2x"
-                    width="130" height="221" alt="Черно-оранжевый рюкзак">
+                  <img class="follow-us__image lazyload" data-src="img/bagpack-gal-mobile@1x.jpg" src="img/1x1.png" data-srcset="img/bagpack-gal-mobile@2x.jpg 2x"
+                    width="130" height="221" alt="Черно-оранжевый рюкзак" srcset="img/1x1.png">
                 </picture>
               </div>
               <div class="follow-us__images-item">
                 <picture class="follow-us__images-wrap">
                   <!-- 1x: 250px*160px; 2x: 500px*320px -->
                   <source media="(min-width: 768px)"
-                    srcset="img/traveler-holder-desktop@1x.jpg 1x, img/traveler-holder-desktop@2x.jpg 2x">
+                    data-srcset="img/traveler-holder-desktop@1x.jpg 1x, img/traveler-holder-desktop@2x.jpg 2x" srcset="img/1x1.png">
                   <!-- 1x: 130px*130px; 2x: 260px*260px -->
-                  <img class="follow-us__image" src="img/traveler-holder-mobile@1x.jpg"
-                    srcset="img/traveler-holder-mobile@2x.jpg 2x" width="130" height="130"
-                    alt="Большая документница для путешествий">
+                  <img class="follow-us__image lazyload" data-src="img/traveler-holder-mobile@1x.jpg" src="img/1x1.png"
+                    data-srcset="img/traveler-holder-mobile@2x.jpg 2x" width="130" height="130"
+                    alt="Большая документница для путешествий" srcset="img/1x1.png">
                 </picture>
               </div>
             </div>
@@ -260,33 +266,33 @@
                 <picture class="follow-us__images-wrap">
                   <!-- 1x: 250px*128px; 2x: 500px*256px -->
                   <source media="(min-width: 768px)"
-                    srcset="img/cover-with-dog-desktop@1x.jpg 1x, img/cover-with-dog-desktop@2x.jpg 2x">
+                    data-srcset="img/cover-with-dog-desktop@1x.jpg 1x, img/cover-with-dog-desktop@2x.jpg 2x" srcset="img/1x1.png">
                   <!-- 1x: 130px*118px; 2x: 260px*236px -->
-                  <img class="follow-us__image" src="img/cover-with-dog-mobile@1x.jpg"
-                    srcset="img/cover-with-dog-mobile@2x.jpg 2x" width="130" height="118"
-                    alt="Обложка на паспорт с рисунком">
+                  <img class="follow-us__image lazyload" data-src="img/cover-with-dog-mobile@1x.jpg" src="img/1x1.png"
+                    data-srcset="img/cover-with-dog-mobile@2x.jpg 2x" width="130" height="118"
+                    alt="Обложка на паспорт с рисунком" srcset="img/1x1.png">
                 </picture>
               </div>
               <div class="follow-us__images-item">
                 <picture class="follow-us__images-wrap">
                   <!-- 1x: 250px*250px; 2x: 500px*500px -->
                   <source media="(min-width: 768px)"
-                    srcset="img/document-cover-desktop@1x.jpg 1x, img/document-cover-desktop@2x.jpg 2x">
+                    data-srcset="img/document-cover-desktop@1x.jpg 1x, img/document-cover-desktop@2x.jpg 2x" srcset="img/1x1.png">
                   <!-- 1x: 130px*93px; 2x: 260px*186px -->
-                  <img class="follow-us__image" src="img/document-cover-mobile@1x.jpg"
-                    srcset="img/document-cover-mobile@2x.jpg 2x" width="130" height="93"
-                    alt="Документница из зеленого нубука">
+                  <img class="follow-us__image lazyload" data-src="img/document-cover-mobile@1x.jpg" src="img/1x1.png"
+                    data-srcset="img/document-cover-mobile@2x.jpg 2x" width="130" height="93"
+                    alt="Документница из зеленого нубука" srcset="img/1x1.png">
                 </picture>
               </div>
               <div class="follow-us__images-item">
                 <picture class="follow-us__images-wrap">
                   <!-- 1x: 250px*105px; 2x: 500px*210px -->
                   <source media="(min-width: 768px)"
-                    srcset="img/leather-samples-desktop@1x.png 1x, img/leather-samples-desktop@2x.png 2x">
+                    data-srcset="img/leather-samples-desktop@1x.png 1x, img/leather-samples-desktop@2x.png 2x" srcset="img/1x1.png">
                   <!-- 1x: 130px*130px; 2x: 260px*260px -->
-                  <img class="follow-us__image" src="img/leather-samples-mobile@1x.png"
-                    srcset="img/leather-samples-mobile@2x.png 2x" width="130" height="130"
-                    alt="Разноцветные образцы кожи">
+                  <img class="follow-us__image lazyload" data-src="img/leather-samples-mobile@1x.png" src="img/1x1.png"
+                    data-srcset="img/leather-samples-mobile@2x.png 2x" width="130" height="130"
+                    alt="Разноцветные образцы кожи" srcset="img/1x1.png">
                 </picture>
               </div>
             </div>
@@ -369,8 +375,6 @@
     </div>
   </div>
   <script src="js/scripts.js"></script>
-  <!-- <script src="js/modules/mobile-menu.js" type="text/javascript"></script>
-  <script src="js/modules/control-buttons.js" type="text/javascript"></script>
-  <script src="js/modules/form.js" type="text/javascript"></script> -->
+  <script src="js/lazysizes.min.js" async=""></script>
 </body>
 </html>

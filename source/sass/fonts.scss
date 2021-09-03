@@ -1,50 +1,51 @@
-/* Montserrat-bold - cyrillic */
+/* montserrat-700 - cyrillic */
 @font-face {
-  font-family: "Montserrat";
-  font-style: Bold;
+  font-family: 'Montserrat';
+  font-style: normal;
   font-weight: 700;
-  src: local("Montserrat Bold"),
-  local("Montserrat-Bold"),
-    url("../fonts//montserrat/Montserrat-Bold.ttf") format("truetype");
+  src: local(''),
+       url('../fonts/montserrat/montserrat-v18-cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/montserrat/montserrat-v18-cyrillic-700.woff') format('woff'); /* Modern Browsers */
   font-display: swap;
 }
 
+/* lora-regular - cyrillic */
 @font-face {
-  font-family: "Lora";
-  font-style: bold italic;
-  font-weight: 700;
-  src: local("Lora bold italic"),
-  local("Lora-BoldItalic"),
-    url("../fonts/lora/Lora-BoldItalic.ttf") format("truetype");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Lora";
-  font-style: italic;
-  font-weight: 400;
-  src: local("Lora-Italic"),
-  local("Lora Italic"),
-    url("../fonts/lora/Lora-Italic.ttf") format("truetype");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Lora";
-  font-style: bold;
-  font-weight: 700;
-  src: local("Lora-Bold"),
-  local("Lora Bold"),
-    url("../fonts/lora/Lora-Bold.ttf") format("truetype");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Lora";
+  font-family: 'Lora';
   font-style: normal;
   font-weight: 400;
-  src: local("Lora-Regular"),
-  local("Lora Regular"),
-    url("../fonts/lora/Lora-Regular.ttf") format("truetype");
+  src: local(''),
+       url('../fonts/lora/lora-v17-cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/lora/lora-v17-cyrillic-regular.woff') format('woff'); /* Modern Browsers */
   font-display: swap;
+}
+/* lora-italic - cyrillic */
+@font-face {
+  font-family: 'Lora';
+  font-style: italic;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/lora/lora-v17-cyrillic-italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/lora/lora-v17-cyrillic-italic.woff') format('woff'); /* Modern Browsers */
+       font-display: swap;
+}
+/* lora-700italic - cyrillic */
+@font-face {
+  font-family: 'Lora';
+  font-style: italic;
+  font-weight: 700;
+  src: local(''),
+       url('../fonts/lora/lora-v17-cyrillic-700italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/lora/lora-v17-cyrillic-700italic.woff') format('woff'); /* Modern Browsers */
+       font-display: swap;
+}
+/* lora-700 - cyrillic */
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('../fonts/lora/lora-v17-cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/lora/lora-v17-cyrillic-700.woff') format('woff'); /* Modern Browsers */
+       font-display: swap;
 }
