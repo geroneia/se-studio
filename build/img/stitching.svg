@@ -1,10 +1,1 @@
-<svg width="93" height="2069" viewBox="0 0 93 2069" fill="none" xmlns="http://www.w3.org/2000/svg">
-<line x1="91.3506" y1="2048.01" x2="89.3505" y2="0.00561528" stroke="#5E4338" stroke-width="2" stroke-dasharray="4 2"/>
-<line y1="-1" x2="2065.52" y2="-1" transform="matrix(-0.000484051 -1 0.999996 -0.0029695 41.3497 2065.52)" stroke="#FF6B35" stroke-width="2" stroke-dasharray="4 2"/>
-<line x1="53.3498" y1="2038" x2="52.3498" y2="0.000489466" stroke="#FF6B35" stroke-width="2" stroke-dasharray="4 2"/>
-<line y1="-1" x2="2065.52" y2="-1" transform="matrix(-0.000484051 -1 0.999996 -0.0029695 66.3497 2065.52)" stroke="#F5F5F5" stroke-width="2" stroke-dasharray="4 2"/>
-<line x1="77.3498" y1="2038" x2="77.0002" y2="2.47844" stroke="#5E4338" stroke-width="2" stroke-dasharray="4 2"/>
-<line y1="-1" x2="2065.52" y2="-1" transform="matrix(-0.000653355 -1 0.999998 -0.0022001 3.3497 2068)" stroke="#5E4338" stroke-width="2" stroke-dasharray="4 2"/>
-<line x1="15.3512" y1="2048.01" x2="14.0006" y2="2.48113" stroke="#5E4338" stroke-width="2" stroke-dasharray="4 2"/>
-<line x1="27.3498" y1="2027" x2="26.0002" y2="2.47893" stroke="#5E4338" stroke-width="2" stroke-dasharray="4 2"/>
-</svg>
+<svg width="93" height="2069" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#5E4338" stroke-width="2" stroke-dasharray="4 2" d="M91.351 2048.01L89.35.006"/><path transform="matrix(-.00048 -1 1 -.00297 41.35 2065.52)" stroke="#FF6B35" stroke-width="2" stroke-dasharray="4 2" d="M0-1h2065.52"/><path stroke="#FF6B35" stroke-width="2" stroke-dasharray="4 2" d="M53.35 2038l-1-2038"/><path transform="rotate(-90.028 1065.44 999.6) skewX(.143)" stroke="#F5F5F5" stroke-width="2" stroke-dasharray="4 2" d="M0-1h2065.52"/><path stroke="#5E4338" stroke-width="2" stroke-dasharray="4 2" d="M77.35 2038L77 2.478"/><path transform="matrix(-.00065 -1 1 -.0022 3.35 2068)" stroke="#5E4338" stroke-width="2" stroke-dasharray="4 2" d="M0-1h2065.52"/><path stroke="#5E4338" stroke-width="2" stroke-dasharray="4 2" d="M15.351 2048.01L14.001 2.481M27.35 2027L26 2.479"/></svg>

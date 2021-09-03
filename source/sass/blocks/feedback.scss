@@ -34,6 +34,19 @@
   }
 }
 
+.feedback__note{
+  font-family: font;
+  font-size: 9px;
+  line-height: 12px;
+  text-transform: lowercase;
+  color:#f5f5f5
+}
+
+.feedback__note.error {
+  font-weight: 700;
+  color:tomato;
+}
+
 .feedback__description {
   text-align: end;
   margin-top: 0;

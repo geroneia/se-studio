@@ -1,10 +1,1 @@
-<svg width="28" height="1822" viewBox="0 0 28 1822" fill="none" xmlns="http://www.w3.org/2000/svg">
-<line y1="-0.5" x2="1802.4" y2="-0.5" transform="matrix(-0.000356119 -1 0.999996 -0.00267794 28 1803.4)" stroke="#5E4338" stroke-dasharray="4 2"/>
-<line y1="-0.5" x2="1817.82" y2="-0.5" transform="matrix(-0.000164304 -1 0.999962 -0.00874517 12.7593 1818.82)" stroke="#FF6B35" stroke-dasharray="4 2"/>
-<line y1="-0.5" x2="1793.6" y2="-0.5" transform="matrix(-0.000166547 -1 0.999999 -0.00144518 16.644 1794.6)" stroke="#FF6B35" stroke-dasharray="4 2"/>
-<line y1="-0.5" x2="1817.82" y2="-0.5" transform="matrix(-0.000164304 -1 0.999962 -0.00874517 20.23 1818.82)" stroke="#F5F5F5" stroke-dasharray="4 2"/>
-<line y1="-0.5" x2="1791.42" y2="-0.5" transform="matrix(-5.8261e-05 -1 1 -0.000505984 23.8159 1794.6)" stroke="#5E4338" stroke-dasharray="4 2"/>
-<line y1="-0.5" x2="1817.82" y2="-0.5" transform="matrix(-0.000195183 -1 0.999973 -0.00736231 1.40332 1821)" stroke="#5E4338" stroke-dasharray="4 2"/>
-<line y1="-0.5" x2="1800.22" y2="-0.5" transform="matrix(-0.000224126 -1 0.999998 -0.00194457 5.28857 1803.41)" stroke="#5E4338" stroke-dasharray="4 2"/>
-<line y1="-0.5" x2="1781.74" y2="-0.5" transform="matrix(-0.000226298 -1 0.999998 -0.00196341 8.87451 1784.92)" stroke="#5E4338" stroke-dasharray="4 2"/>
-</svg>
+<svg width="28" height="1822" fill="none" xmlns="http://www.w3.org/2000/svg"><path transform="matrix(-.00036 -1 1 -.00268 28 1803.4)" stroke="#5E4338" stroke-dasharray="4 2" d="M0-.5h1802.4"/><path transform="matrix(-.00016 -1 .99996 -.00875 12.76 1818.82)" stroke="#FF6B35" stroke-dasharray="4 2" d="M0-.5h1817.82"/><path transform="rotate(-90.01 905.473 888.98) skewX(.073)" stroke="#FF6B35" stroke-dasharray="4 2" d="M0-.5h1793.6"/><path transform="matrix(-.00016 -1 .99996 -.00875 20.23 1818.82)" stroke="#F5F5F5" stroke-dasharray="4 2" d="M0-.5h1817.82"/><path transform="matrix(-.00006 -1 1 -.0005 23.816 1794.6)" stroke="#5E4338" stroke-dasharray="4 2" d="M0-.5h1791.42"/><path transform="matrix(-.0002 -1 .99997 -.00736 1.403 1821)" stroke="#5E4338" stroke-dasharray="4 2" d="M0-.5h1817.82"/><path transform="matrix(-.00022 -1 1 -.00194 5.289 1803.41)" stroke="#5E4338" stroke-dasharray="4 2" d="M0-.5h1800.22"/><path transform="rotate(-90.013 896.695 888.024) skewX(.1)" stroke="#5E4338" stroke-dasharray="4 2" d="M0-.5h1781.74"/></svg>
