@@ -47,6 +47,7 @@
   .about-us__wrapper {
     width: 100%;
     max-width: 1440px;
+
     @include centered($padding-desktop);
     padding-bottom: 92px;
     flex-direction: column;
@@ -105,6 +106,7 @@
   .about-us__wrapper {
     width: 100%;
     max-width: 375px;
+
     @include centered($padding-mobile);
     padding-bottom: 30px;
     padding-top: 386px;

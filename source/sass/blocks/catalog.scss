@@ -62,6 +62,7 @@
   .catalog__section article {
     max-width: 1440px;
     min-width: $min-desktop-width;
+
     @include centered($padding-desktop);
   }
 
@@ -73,6 +74,7 @@
 
   .catalog_heading {
     max-width: 1440px;
+
     @include centered($padding-desktop);
     font-size: 24px;
     line-height: 29px;
@@ -103,6 +105,7 @@
 @media (min-width: $min-mobile-width) and (max-width: $max-mobile-width) {
   .catalog__section article {
     max-width: 375px;
+
     @include centered($padding-mobile);
   }
 
@@ -126,6 +129,7 @@
   .catalog_heading {
     white-space: pre;
     max-width: 375px;
+
     @include centered($padding-mobile);
     padding-top: 20px;
     font-size: 17px;

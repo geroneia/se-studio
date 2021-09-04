@@ -25,7 +25,7 @@
 
 .follow-us__images-item {
   padding: 0;
-  background-image: url('../../img/spinner.gif');
+  background-image: url("../../img/spinner.gif");
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -58,6 +58,7 @@
     max-width: 1440px;
     min-width: $min-desktop-width;
     max-height: 520px;
+
     @include centered($padding-desktop);
   }
 
@@ -173,6 +174,7 @@
     flex-direction: column;
     width: 100%;
     min-width: 320px;
+
     @include centered($padding-mobile);
   }
 

@@ -5,7 +5,9 @@
 
 .works__item-link {
   padding: 0;
-  background-image: url('../../img/spinner.gif');
+  position: relative;
+  flex-direction: column;
+  background-image: url("../../img/spinner.gif");
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -41,11 +43,6 @@
 .works__item-img {
   width: 100%;
   height: auto;
-}
-
-.works__item-link {
-  position: relative;
-  flex-direction: column;
 }
 
 .works__item-name {
@@ -192,6 +189,7 @@
 
   .works__list-wrapper {
     width: 100%;
+
     @include centered($padding-mobile);
   }
 

@@ -51,9 +51,11 @@
   .conditions {
     min-width: $min-desktop-width;
   }
+
   .conditions__wrapper {
     max-width: 1440px;
     min-height: 651px;
+
     @include centered($padding-desktop);
   }
 
@@ -76,6 +78,7 @@
   .conditions__wrapper {
     max-width: 375px;
     min-height: 430px;
+
     @include centered($padding-mobile);
     margin-bottom: 25px;
 
@@ -87,7 +90,6 @@
       bottom: 0;
       width: 100%;
       min-height: 193px;
-      background-size: $white;
       background-image: url("../../img/bg-shipping-mobile@1x.jpg");
       background-position: bottom left;
       background-size: 100% auto;

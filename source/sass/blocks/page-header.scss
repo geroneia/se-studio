@@ -36,6 +36,7 @@
     min-height: 836px;
     max-width: 1440px;
     min-width: $min-desktop-width;
+
     @include centered($padding-desktop);
     background-image: url("../../img/bg-header-desktop@1x.jpg"),
       linear-gradient(to right, $white 55.8%, $brown 55.8%);
@@ -45,6 +46,7 @@
 
     @media (min-resolution: $retina-dpi),
       (min-resolution: $retina-dppx) {
+
       background-image: url("../../img/bg-header-desktop@2x.jpg"),
         linear-gradient(to right, $white 55.8%, $brown 55.8%);
       background-repeat: no-repeat, no-repeat;
@@ -171,6 +173,7 @@
     flex-direction: column;
     min-width: 320px;
     max-width: 420px;
+
     @include centered($padding-mobile);
 
     @media (min-resolution: $retina-dpi),
