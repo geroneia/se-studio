@@ -1,1 +1,10 @@
-<svg width="231" height="28" fill="none" xmlns="http://www.w3.org/2000/svg"><path transform="matrix(1 0 .00248 1 227.776 .32)" stroke="#F5F5F5" stroke-dasharray="4 2" d="M0-.5h227.777"/><path transform="matrix(-1 0 .0002 -1 229.714 15.39)" stroke="#FF6B35" stroke-dasharray="4 2" d="M0-.5h229.725"/><path transform="rotate(179.919 113.328 5.753) skewX(-.065)" stroke="#FF6B35" stroke-dasharray="4 2" d="M0-.5h226.664"/><path transform="matrix(-1 0 .0002 -1 229.72 7.92)" stroke="#F5F5F5" stroke-dasharray="4 2" d="M0-.5h229.725"/><path transform="matrix(-1 0 .0004 -1 226.662 4.236)" stroke="#F5F5F5" stroke-dasharray="4 2" d="M0-.5h226.388"/><path transform="rotate(180 114.994 13.353) skewX(.032)" stroke="#F5F5F5" stroke-dasharray="4 2" d="M0-.5h229.725"/><path transform="matrix(1 0 .00154 1 227.756 22.912)" stroke="#F5F5F5" stroke-dasharray="4 2" d="M0-.5h227.501"/><path transform="matrix(1 0 .00155 1 225.422 19.328)" stroke="#F5F5F5" stroke-dasharray="4 2" d="M0-.5h225.165"/></svg>
+<svg width="231" height="28" viewBox="0 0 231 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line y1="-0.5" x2="227.777" y2="-0.5" transform="matrix(-0.999996 0.00281868 -0.000338444 -1 227.776 0)" stroke="#F5F5F5" stroke-dasharray="4 2"/>
+<line y1="-0.5" x2="229.725" y2="-0.5" transform="matrix(-0.999999 0.00130085 -0.00110522 -0.999999 229.725 15.2407)" stroke="#FF6B35" stroke-dasharray="4 2"/>
+<line y1="-0.5" x2="226.664" y2="-0.5" transform="matrix(-0.999999 0.0013186 -0.000182655 -1 226.663 11.356)" stroke="#FF6B35" stroke-dasharray="4 2"/>
+<line y1="-0.5" x2="229.725" y2="-0.5" transform="matrix(-0.999999 0.00130085 -0.00110522 -0.999999 229.725 7.77002)" stroke="#F5F5F5" stroke-dasharray="4 2"/>
+<line y1="-0.5" x2="226.388" y2="-0.5" transform="matrix(-1 0.000461726 -6.3966e-05 -1 226.663 4.18408)" stroke="#F5F5F5" stroke-dasharray="4 2"/>
+<line y1="-0.5" x2="229.725" y2="-0.5" transform="matrix(-1 0.000951272 -0.00151137 -0.999999 230 26.5967)" stroke="#F5F5F5" stroke-dasharray="4 2"/>
+<line y1="-0.5" x2="227.501" y2="-0.5" transform="matrix(-0.999998 0.00177422 -0.000245766 -1 227.776 22.7114)" stroke="#F5F5F5" stroke-dasharray="4 2"/>
+<line y1="-0.5" x2="225.165" y2="-0.5" transform="matrix(-0.999998 0.00179141 -0.000248147 -1 225.44 19.1255)" stroke="#F5F5F5" stroke-dasharray="4 2"/>
+</svg>
