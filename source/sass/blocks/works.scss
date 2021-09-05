@@ -7,7 +7,7 @@
   padding: 0;
   position: relative;
   flex-direction: column;
-  background-image: url("../../img/spinner.gif");
+  background-image: url("../img/spinner.gif");
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -114,8 +114,8 @@
   }
 
   .works__item-link {
-    min-width: 435px;
-    min-height: 271px;
+    min-width: 300px;
+    min-height: auto;
   }
 
   .works__list-wrapper {
@@ -181,7 +181,7 @@
     min-height: 920px;
     padding-top: 80px;
     background-color: $white;
-    background-image: url("../../img/stitching-mobile-brown.svg");
+    background-image: url("../img/stitching-mobile-brown.svg");
     background-position: 7.8% 0;
     background-repeat: no-repeat;
     background-size: auto;
@@ -193,9 +193,14 @@
     @include centered($padding-mobile);
   }
 
-  .works__list,
+  .works__list {
+    align-content: center;
+  }
+
   .works__item {
-    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
   }
 
   .works__item {

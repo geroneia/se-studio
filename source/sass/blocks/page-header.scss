@@ -35,22 +35,22 @@
     position: relative;
     min-height: 836px;
     max-width: 1440px;
-    min-width: $min-desktop-width;
+    min-width: $min-tablet-width;
 
     @include centered($padding-desktop);
-    background-image: url("../../img/bg-header-desktop@1x.jpg"),
+    background-image: url("../img/bg-header-desktop@1x.jpg"),
       linear-gradient(to right, $white 55.8%, $brown 55.8%);
     background-repeat: no-repeat, no-repeat;
-    background-size: 36, 11% auto, 100%;
+    background-size: 36.11% auto, 100%;
     background-position: 79.5% 184px, 0 0;
 
     @media (min-resolution: $retina-dpi),
       (min-resolution: $retina-dppx) {
 
-      background-image: url("../../img/bg-header-desktop@2x.jpg"),
+      background-image: url("../img/bg-header-desktop@2x.jpg"),
         linear-gradient(to right, $white 55.8%, $brown 55.8%);
       background-repeat: no-repeat, no-repeat;
-      background-size: 520px auto, 100%;
+      background-size: 36.11% auto, 100%;
       background-position: 79.5% 184px, 0 0;
     }
   }
@@ -62,6 +62,7 @@
 
   .page-header__container {
     position: relative;
+    min-width: $min-tablet-width;
   }
 
   .page-header__wrapper {
@@ -164,23 +165,22 @@
 
   .page-header {
     background-color: $white;
-    background-image: url("../../img/bag-grass-mobile@1x.jpg"),
-      url("../../img/stitching-mobile-brown.svg");
-    background-size: 100% auto, auto;
+    background-image: url("../img/main-bg-mobile@1x.png"),
+      url("../img/stitching-mobile-brown.svg");
+    background-size: cover, auto;
     background-repeat: no-repeat, no-repeat;
     background-position: center 83px, top 200px left 7.8%;
     min-height: 544px;
     flex-direction: column;
     min-width: 320px;
-    max-width: 420px;
 
     @include centered($padding-mobile);
 
     @media (min-resolution: $retina-dpi),
       (min-resolution: $retina-dppx) {
-      background-image: url("../../img/bag-grass-mobile@2x.jpg"),
-        url("../../img/stitching-mobile-brown.svg");
-      background-size: 100% auto, auto;
+      background-image: url("../img/main-bg-mobile@2x.png"),
+        url("../img/stitching-mobile-brown.svg");
+      background-size: cover, auto;
       background-repeat: no-repeat, no-repeat;
       background-position: center 83px, top 200px left 7.8%;
     }
@@ -237,7 +237,7 @@
 
   .page-header--nav-opened {
     background-color: $brown;
-    background-image: url("../../img/stitching-mobile-white.svg");
+    background-image: url("../img/stitching-mobile-white.svg");
     background-size: 27px 428px;
     background-repeat: no-repeat;
     background-position: 7.8% -30px;
