@@ -49,27 +49,21 @@
   .main--inner-page section {
     &:nth-child(3) {
       background-image: url("../img/stitching-horizontal.svg");
-      background-position: 0 0;
-      background-size: 30%;
+      background-position: top 15px left;
+      background-size: 40%;
     }
 
     &:last-child {
-      background-position: top left;
+      background-position: top 15px left;
     }
   }
 
   .main__catalog section {
     background-image: url("../img/stitching-horizontal.svg");
-    background-position: 0 0;
-    background-size: 30%;
+    background-position: top 15px left;
+    background-size: 40%;
   }
 }
-
-// .main__conditions section {
-//   background-image: url("../img/stitching-horizontal.svg");
-//   background-position: 0 0;
-//   background-size: 30%;
-// }
 
 @media (min-width: $min-mobile-width) and (max-width: $max-mobile-width) {
   .main section {
