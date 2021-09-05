@@ -1,1 +1,10 @@
-<svg width="28" height="1822" fill="none" xmlns="http://www.w3.org/2000/svg"><path transform="matrix(-.00036 -1 1 -.00268 28 1803.4)" stroke="#5E4338" stroke-dasharray="4 2" d="M0-.5h1802.4"/><path transform="matrix(-.00016 -1 .99996 -.00875 12.76 1818.82)" stroke="#FF6B35" stroke-dasharray="4 2" d="M0-.5h1817.82"/><path transform="rotate(-90.01 905.473 888.98) skewX(.073)" stroke="#FF6B35" stroke-dasharray="4 2" d="M0-.5h1793.6"/><path transform="matrix(-.00016 -1 .99996 -.00875 20.23 1818.82)" stroke="#F5F5F5" stroke-dasharray="4 2" d="M0-.5h1817.82"/><path transform="matrix(-.00006 -1 1 -.0005 23.816 1794.6)" stroke="#5E4338" stroke-dasharray="4 2" d="M0-.5h1791.42"/><path transform="matrix(-.0002 -1 .99997 -.00736 1.403 1821)" stroke="#5E4338" stroke-dasharray="4 2" d="M0-.5h1817.82"/><path transform="matrix(-.00022 -1 1 -.00194 5.289 1803.41)" stroke="#5E4338" stroke-dasharray="4 2" d="M0-.5h1800.22"/><path transform="rotate(-90.013 896.695 888.024) skewX(.1)" stroke="#5E4338" stroke-dasharray="4 2" d="M0-.5h1781.74"/></svg>
+<svg width="28" height="2020" viewBox="0 0 28 2020" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line y1="-0.5" x2="1999.48" y2="-0.5" transform="matrix(-0.00032101 -1 0.999996 -0.00297075 27.9517 1999.48)" stroke="#5E4338" stroke-dasharray="4 2"/>
+<line y1="-0.5" x2="2016.58" y2="-0.5" transform="matrix(-0.000148101 -1 0.999953 -0.0097013 12.7109 2016.58)" stroke="#FF6B35" stroke-dasharray="4 2"/>
+<line y1="-0.5" x2="1989.71" y2="-0.5" transform="matrix(-0.000150123 -1 0.999999 -0.0016032 16.5957 1989.71)" stroke="#FF6B35" stroke-dasharray="4 2"/>
+<line y1="-0.5" x2="2016.58" y2="-0.5" transform="matrix(-0.000148101 -1 0.999953 -0.0097013 20.1816 2016.58)" stroke="#F5F5F5" stroke-dasharray="4 2"/>
+<line y1="-0.5" x2="1987.29" y2="-0.5" transform="matrix(-5.251e-05 -1 1 -0.000561318 23.7676 1989.71)" stroke="#5E4338" stroke-dasharray="4 2"/>
+<line y1="-0.5" x2="2016.58" y2="-0.5" transform="matrix(-0.000175937 -1 0.999967 -0.00816727 1.35498 2019)" stroke="#5E4338" stroke-dasharray="4 2"/>
+<line y1="-0.5" x2="1997.06" y2="-0.5" transform="matrix(-0.000202027 -1 0.999998 -0.0021572 5.24023 1999.48)" stroke="#5E4338" stroke-dasharray="4 2"/>
+<line y1="-0.5" x2="1976.55" y2="-0.5" transform="matrix(-0.000203985 -1 0.999998 -0.0021781 8.82617 1978.97)" stroke="#5E4338" stroke-dasharray="4 2"/>
+</svg>
