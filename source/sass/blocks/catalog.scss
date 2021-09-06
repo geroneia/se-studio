@@ -1,3 +1,12 @@
+.catalog__list {
+  margin-top: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .catalog__section article {
   display: flex;
   flex-direction: column;
@@ -99,6 +108,19 @@
   .catalog__description-wrapper {
     flex-direction: row;
     padding-top: 88px;
+  }
+
+  .catalog__list-wrapper {
+    @include centered($padding-desktop);
+    margin-top: 170px;
+    max-width: 1600px;
+    overflow: hidden;
+  }
+
+  .catalog__list {
+    padding-top: 5px;
+    margin-left: -20px;
+    min-width: $min-desktop-width;
   }
 }
 

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Флористический магазин Весна всегда">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>S.E.Vuychich</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/lora/lora-v17-cyrillic-700italic.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/lora/lora-v17-cyrillic-700italic.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/lora/lora-v17-cyrillic-italic.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/lora/lora-v17-cyrillic-italic.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/lora/lora-v17-cyrillic-regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/lora/lora-v17-cyrillic-regular.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/lora/lora-v17-cyrillic-700.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/lora/lora-v17-cyrillic-700.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat/montserrat-v18-cyrillic-700.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat/montserrat-v18-cyrillic-700.woff" as="font" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+<div style="display:none;">
+  <include src="build/img/sprite_auto.svg"></include>
+</div>
+
+<body id="body">
+  <div class="page-header__wrapper page-header__wrapper--inner-page">
+    <header class="page-header page-header--nav-opened page-header--inner-page">
+      <div class="page-header__container">
+        <a class="page-header__logo logo" href="index.html">
+          <svg class="page-header__logo-icon" width="100" height="100" role="img"
+            aria-label="Логотип мастерской S.E.Vuychich.">
+            <use xlink:href="#icon-logo"></use>
+          </svg>
+        </a>
+        <nav class="page-header__main-nav main-nav main-nav--nav-opened main-nav--inner-page">
+          <button class="main-nav__toggle main-nav__toggle--nav-opened button" type="button" aria-label="Меню">
+          </button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__item-link" href="index.html#about-us">О нас</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__item-link main-nav__item-link--active" href="#">Каталог</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__item-link" href="order.html">Заказ</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__item-link" href="delivery.html">Доставка</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__item-link main-nav__cart-link" href="cart.html">
+                <svg class="main-nav__cart-icon" width="18" height="18" role="img"
+                aria-label="Корзина">
+                <use xlink:href="#icon-cart"></use>
+              </svg><span class="main-nav__cart-counter">10</span></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  </div>
+  <div class="page-wrapper">
+    <main class="main main--inner-page main__catalog catalog" id="main">
+      <h1 class="visually-hidden">Информация о товаре</h1>
+      <section class="catalog__section">
+        <a id="bagpacks">
+          <h2 class="catalog_heading">Рюкзаки</h2>
+        </a>
+        <article>
+          <div class="catalog__description-wrapper">
+            <!-- Slider main container -->
+            <div class="catalog__image-slider image-slider swiper swiper-container">
+              <!-- Additional required wrapper -->
+              <div class="image-slider__wrapper swiper-wrapper">
+                <!-- Slides -->
+                <div data-hash="slide-1" class="image-slider__slide swiper-slide">
+                  <div class="image-slider__image swiper-zoom-container">
+                    <picture>
+                      <!-- 1x: 520px*520px; 2x: 1040px*1040px -->
+                      <source media="(min-width: 768px)"
+                        srcset="img/bagpack-slider-desktop@1x.jpg 1x, img/bagpack-slider-desktop@2x.jpg 2x">
+                      <!-- 1x: 240px*222px; 2x: 480px*444px -->
+                      <img src="img/bagpack-slider-mobile@1x.jpg" srcset="img/bagpack-slider-mobile@2x.png 2x"
+                        alt="Черно-оранжевый рюкзак">
+                    </picture>
+                  </div>
+                </div>
+                <div data-hash="slide-2" class="image-slider__slide swiper-slide">
+                  <div class="image-slider__image swiper-zoom-container">
+                    <picture>
+                      <!-- 1x: 520px*520px; 2x: 1040px*1040px -->
+                      <source media="(min-width: 768px)"
+                        srcset="img/bag-grass-slider-desktop@1x.jpg 1x, img/bag-grass-slider-desktop@2x.jpg 2x">
+                      <!-- 1x: 240px*222px; 2x: 480px*444px -->
+                      <img src="img/woman-bag-slider-mobile@1x.jpg" srcset="img/woman-bag-slider-mobile@2x.jpg 2x"
+                        alt="Коричневая дамская сумочка">
+                    </picture>
+                  </div>
+                </div>
+                <div data-hash="slide-3" class="image-slider__slide swiper-slide">
+                  <div class="image-slider__image swiper-zoom-container">
+                    <picture>
+                      <!-- 1x: 520px*520px; 2x: 1040px*1040px -->
+                      <source media="(min-width: 768px)"
+                        srcset="img/nb-bag-slider-desktop@1x.jpg 1x, img/nb-bag-slider-desktop@2x.jpg 2x">
+                      <!-- 1x: 240px*222px; 2x: 480px*444px -->
+                      <img src="img/nb-bag-slider-mobile@1x.png" srcset="img/nb-bag-slider-mobile@2x.png 2x"
+                        alt="Стильная черная сумка для ноутбука">
+                    </picture>
+                  </div>
+                </div>
+                <div data-hash="slide-4" class="image-slider__slide swiper-slide">
+                  <div class="image-slider__image swiper-zoom-container">
+                    <picture>
+                      <!-- 1x: 520px*520px; 2x: 1040px*1040px -->
+                      <source media="(min-width: 768px)"
+                        srcset="img/orca-slider-desktop@1x.jpg 1x, img/orca-slider-desktop@2x.jpg 2x">
+                      <!-- 1x: 240px*222px; 2x: 480px*444px -->
+                      <img src="img/orca-slider-mobile@1x.png" srcset="img/orca-slider-mobile@2x.png 2x"
+                        alt="Вместительный темно-зеленый кошелек">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+
+            </div>
+            <div class="catalog__description-text-wrapper">
+              <h3 class="catalog__article-heading">Рэйн</h3>
+              <p class="catalog__description-text">Однообъёмный, без подкладки, магнитная застёжка, фиксаторы - кнопки,
+                лямки дублированы прочной стропой и надёжно вшиты четырьмя рядами прочной нити.
+              </p>
+              <p class="catalog__description-text">Размер 30 * 23,5 * 8 см.</p>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo logo" href="index.html">
+          <svg class="page-footer__logo-icon" width="100" height="100" role="img" aria-label="Логотип мастерской S.E.Vuychich.">
+            <use xlink:href="#icon-logo"></use>
+          </svg>
+        </a>
+        <ul class="page-footer__information information">
+          <li class="information__item">
+            <a class="information__item-link" href="index.html#about-us">О нас</a>
+          </li>
+          <li class="information__item">
+            <a class="information__item-link" href="catalog.html">Каталог</a>
+          </li>
+          <li class="information__item">
+            <a class="information__item-link" href="order.html">Заказ</a>
+          </li>
+          <li class="information__item">
+            <a class="information__item-link" href="delivery.html">Доставка</a>
+          </li>
+        </ul>
+        <p class="page-footer__text">Напишите нам</p>
+        <ul class="page-footer__social social">
+          <li class="social__item social__item-instagram">
+            <a class="social__link" href="https://www.instagram.com/s.e.vuychich/" rel="noopener noreferrer">
+              <svg class="social__icon social__icon-inst" width="25" height="27" role="img" aria-label="Мы в Instagram">
+                <use xlink:href="#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item social__item-email">
+            <button type="button" class="social__link form-link">
+              <svg class="social__icon social__icon-email" width="30" height="30" role="img" aria-label="Напишите нам">
+                <use xlink:href="#icon-email"></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+  <button class="main__go-top-button button go-top-button" type="button"
+    aria-label="Прокрутить страницу вверх"></button>
+  <div class="modal modal__feedback feedback modal--close">
+    <div class="feedback__container">
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+      <button class="feedback__close-button button" type="button" aria-label="Закрыть форму"></button>
+      <p class="feedback__description">Остались вопросы? Напишите нам.</p>
+      <form class="feedback__form" method="POST" action="https://formspree.io/f/mvoddkpy">
+        <ul class="feedback__list">
+          <li class="feedback__item">
+            <label for="name">
+              <span class="visually-hidden">Введите ваше имя</span>
+            </label>
+            <input type="text" id="name" name="name" placeholder="Введите ваше имя" autofocus="" required="">
+          </li>
+          <li class="feedback__item">
+            <label for="email">
+              <span class="visually-hidden">Введите электронный адрес</span>
+            </label>
+            <input type="email" id="email" name="email" placeholder="Введите электронный адрес" required="">
+          </li>
+          <li class="feedback__item">
+            <textarea id="message" name="message" required="" minlength="30" maxlength="300" autofocus="">
+          </textarea></li>
+        </ul>
+        <p class="feedback__note">*оставьте ваше сообщение длиной от 30 до 300 символов</p>
+        <div class="feedback__controls">
+        <button class="button button-clear" type="button">Очистить</button>
+        <button class="button button-submit" type="submit">Отправить</button>
+      </div>
+      </form>
+    </div>
+  </div>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>

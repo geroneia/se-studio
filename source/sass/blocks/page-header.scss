@@ -39,7 +39,7 @@
 
     @include centered($padding-desktop);
     background-image: url("../img/bg-header-desktop@1x.jpg"),
-      linear-gradient(to right, $white 55.8%, $brown 55.8%);
+      linear-gradient(to right, $white 53.9%, $brown 53.9%);
     background-repeat: no-repeat, no-repeat;
     background-size: 36.11% auto, 100%;
     background-position: 79.5% 184px, 0 0;
@@ -48,7 +48,7 @@
       (min-resolution: $retina-dppx) {
 
       background-image: url("../img/bg-header-desktop@2x.jpg"),
-        linear-gradient(to right, $white 55.8%, $brown 55.8%);
+        linear-gradient(to right, $white 53.9%, $brown 53.9%);
       background-repeat: no-repeat, no-repeat;
       background-size: 36.11% auto, 100%;
       background-position: 79.5% 184px, 0 0;
@@ -87,7 +87,7 @@
 
   .page-header__promo {
     width: 520px;
-    padding-top: 288px;
+    padding-top: 280px;
     font-size: 24px;
     line-height: 29px;
     color: $brown;

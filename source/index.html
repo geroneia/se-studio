@@ -18,6 +18,13 @@
     <link rel="preload" href="fonts/lora/lora-v17-cyrillic-700.woff" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/montserrat/montserrat-v18-cyrillic-700.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/montserrat/montserrat-v18-cyrillic-700.woff" as="font" crossorigin="anonymous">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
   </head>
 <div style="display:none;">
   <include src="build/img/sprite_auto.svg"></include>
@@ -42,38 +49,19 @@
             </li>
             <li class="main-nav__item">
               <a class="main-nav__item-link" href="catalog.html">Каталог</a>
-              <ul class="main-nav__nested-list">
-                <li class="main-nav__item">
-                  <a class="main-nav__item-link" href="catalog.html#bagpacks">Рюкзаки</a>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__item-link" href="catalog.html#bags">Сумки</a>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__item-link" href="catalog.html#wallets">Кошельки</a>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__item-link" href="catalog.html#document-holders">Документницы</a>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__item-link" href="catalog.html#custom-works">Работы на заказ</a>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__item-link" href="catalog.html#engraved-covers">Обложки</br> с гравировкой</a>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__item-link" href="catalog.html#printed-covers">Обложки</br> с печатью</a>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__item-link" href="catalog.html#belts-and-keychains">Ремни и ключницы</a>
-                </li>
-              </ul>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__item-link" href="order.html">Заказ</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__item-link" href="delivery.html">Доставка</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__item-link main-nav__cart-link" href="cart.html">
+                <svg class="main-nav__cart-icon" width="18" height="18" role="img"
+                aria-label="Корзина">
+                <use xlink:href="#icon-cart"></use>
+              </svg><span class="main-nav__cart-counter">10</span></a>
             </li>
           </ul>
         </nav>
@@ -303,7 +291,7 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <a class="page-footer__logo logo">
-          <svg class="page-footer__logo-icon" width="100" height="100" role="img" aria-label="CH shop logo">
+          <svg class="page-footer__logo-icon" width="100" height="100" role="img" aria-label="Логотип мастерской S.E.Vuychich.">
             <use xlink:href="#icon-logo"></use>
           </svg>
         </a>

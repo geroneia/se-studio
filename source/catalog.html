@@ -19,6 +19,13 @@
     <link rel="preload" href="fonts/montserrat/montserrat-v18-cyrillic-700.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/montserrat/montserrat-v18-cyrillic-700.woff" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
   </head>
 <div style="display:none;">
   <include src="build/img/sprite_auto.svg"></include>
@@ -43,38 +50,19 @@
             </li>
             <li class="main-nav__item">
               <a class="main-nav__item-link main-nav__item-link--active" href="#">Каталог</a>
-              <ul class="main-nav__nested-list">
-                <li class="main-nav__item">
-                  <a class="main-nav__item-link" href="#bagpacks">Рюкзаки</a>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__item-link" href="#bags">Сумки</a>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__item-link" href="#wallets">Кошельки</a>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__item-link" href="#document-holders">Документницы</a>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__item-link" href="#custom-works">Работы на заказ</a>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__item-link" href="#engraved-covers">Обложки</br> с гравировкой</a>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__item-link" href="#printed-covers">Обложки</br> с печатью</a>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__item-link" href="#belts-and-keychains">Ремни и ключницы</a>
-                </li>
-              </ul>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__item-link" href="order.html">Заказ</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__item-link" href="delivery.html">Доставка</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__item-link main-nav__cart-link" href="cart.html">
+                <svg class="main-nav__cart-icon" width="18" height="18" role="img"
+                aria-label="Корзина">
+                <use xlink:href="#icon-cart"></use>
+              </svg><span class="main-nav__cart-counter">10</span></a>
             </li>
           </ul>
         </nav>
@@ -85,1006 +73,231 @@
     <main class="main main--inner-page main__catalog catalog" id="main">
       <h1 class="visually-hidden">Каталог</h1>
       <section class="catalog__section">
-        <a id="bagpacks">
-          <h2 class="catalog_heading">Рюкзаки</h2>
-        </a>
-        <article>
-          <div class="catalog__description-wrapper">
-            <!-- Slider main container -->
-            <div class="catalog__image-slider image-slider swiper swiper-container">
-              <!-- Additional required wrapper -->
-              <div class="image-slider__wrapper swiper-wrapper">
-                <!-- Slides -->
-                <div data-hash="slide-1" class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image swiper-zoom-container">
-                    <picture>
-                      <!-- 1x: 520px*520px; 2x: 1040px*1040px -->
-                      <source media="(min-width: 768px)"
-                        srcset="img/bagpack-slider-desktop@1x.jpg 1x, img/bagpack-slider-desktop@2x.jpg 2x">
-                      <!-- 1x: 240px*222px; 2x: 480px*444px -->
-                      <img src="img/bagpack-slider-mobile@1x.jpg" srcset="img/bagpack-slider-mobile@2x.png 2x"
-                        alt="Черно-оранжевый рюкзак">
-                    </picture>
-                  </div>
-                </div>
-                <div data-hash="slide-2" class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image swiper-zoom-container">
-                    <picture>
-                      <!-- 1x: 520px*520px; 2x: 1040px*1040px -->
-                      <source media="(min-width: 768px)"
-                        srcset="img/bag-grass-slider-desktop@1x.jpg 1x, img/bag-grass-slider-desktop@2x.jpg 2x">
-                      <!-- 1x: 240px*222px; 2x: 480px*444px -->
-                      <img src="img/woman-bag-slider-mobile@1x.jpg" srcset="img/woman-bag-slider-mobile@2x.jpg 2x"
-                        alt="Коричневая дамская сумочка">
-                    </picture>
-                  </div>
-                </div>
-                <div data-hash="slide-3" class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image swiper-zoom-container">
-                    <picture>
-                      <!-- 1x: 520px*520px; 2x: 1040px*1040px -->
-                      <source media="(min-width: 768px)"
-                        srcset="img/nb-bag-slider-desktop@1x.jpg 1x, img/nb-bag-slider-desktop@2x.jpg 2x">
-                      <!-- 1x: 240px*222px; 2x: 480px*444px -->
-                      <img src="img/nb-bag-slider-mobile@1x.png" srcset="img/nb-bag-slider-mobile@2x.png 2x"
-                        alt="Стильная черная сумка для ноутбука">
-                    </picture>
-                  </div>
-                </div>
-                <div data-hash="slide-4" class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image swiper-zoom-container">
-                    <picture>
-                      <!-- 1x: 520px*520px; 2x: 1040px*1040px -->
-                      <source media="(min-width: 768px)"
-                        srcset="img/orca-slider-desktop@1x.jpg 1x, img/orca-slider-desktop@2x.jpg 2x">
-                      <!-- 1x: 240px*222px; 2x: 480px*444px -->
-                      <img src="img/orca-slider-mobile@1x.png" srcset="img/orca-slider-mobile@2x.png 2x"
-                        alt="Вместительный темно-зеленый кошелек">
-                    </picture>
-                  </div>
-                </div>
-              </div>
-              <!-- If we need pagination -->
-              <div class="swiper-pagination"></div>
+        <div class="catalog__list-wrapper">
+          <ul class="catalog__list">
+            <li class="catalog__item catalog__card card">
+              <a class="card__link" href="good.html">
+                <picture class="card__link-image-wrapper">
+                  <!-- 1x: 250px*250px; 2x: 500*500px -->
+                  <source media="(min-width: 768px)" type="image/webp"
+                    srcset="img/mini01-desktop@1x.webp 1x, img/mini01-desktop@1x.webp 2x">
+                  <!-- 1x: 130px*130px; 2x: 260*260px -->
+                  <source type="image/webp" srcset="img/mini01-mobile@1x.webp, img/mini01-mobile@2x.webp 2x">
 
-              <!-- If we need navigation buttons -->
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
+                  <!-- 1x: 250px*250px; 2x: 500*500px -->
+                  <source media="(min-width: 768px)"
+                    srcset="img/mini01-desktop@1x.jpg 1x, img/mini01-desktop@1x.jpg 2x">
+                  <!-- 1x: 130px*130px; 2x: 260*260px -->
+                  <img class="card__link-img" src="img/mini01-mobile@1x.jpg" srcset="img/mini01-mobile@2x.jpg 2x"
+                    width="130" height="130" alt="Черная сумка для ноутбука">
+                </picture>
+                <p class="card__name">Рюкзак</p>
+                <p class="card__price"><b>10 000</b>р.</p>
+              </a>
+            </li>
+            <li class="catalog__item catalog__card card">
+              <a class="card__link">
+                <picture class="card__link-wrapper">
+                  <!-- 1x: 250px*250px; 2x: 500*500px -->
+                  <source media="(min-width: 768px)" type="image/webp"
+                    srcset="img/mini02-desktop@1x.webp 1x, img/mini02-desktop@1x.webp 2x">
+                  <!-- 1x: 130px*130px; 2x: 260*260px -->
+                  <source type="image/webp" srcset="img/mini02-mobile@1x.webp, img/mini02-mobile@2x.webp 2x">
 
-            </div>
-            <div class="catalog__description-text-wrapper">
-              <h3 class="catalog__article-heading">Рэйн</h3>
-              <p class="catalog__description-text">Однообъёмный, без подкладки, магнитная застёжка, фиксаторы - кнопки,
-                лямки дублированы прочной стропой и надёжно вшиты четырьмя рядами прочной нити.
-              </p>
-              <p class="catalog__description-text">Размер 30 * 23,5 * 8 см.</p>
-            </div>
-          </div>
-        </article>
-      </section>
-      <section class="catalog__section">
-        <a id="bags">
-          <h2 class="catalog_heading">Сумки</h2>
-        </a>
-        <article>
-          <div class="catalog__description-wrapper">
-            <!-- Slider main container -->
-            <div class="catalog__image-slider image-slider swiper swiper-container">
-              <!-- Additional required wrapper -->
-              <div class="image-slider__wrapper swiper-wrapper">
-                <!-- Slides -->
-                <div data-hash="slide-2" class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image swiper-zoom-container">
-                    <picture>
-                      <!-- 1x: 520px*520px; 2x: 1040px*1040px -->
-                      <source media="(min-width: 768px)"
-                        srcset="img/bag-grass-slider-desktop@1x.jpg 1x, img/bag-grass-slider-desktop@2x.jpg 2x">
-                      <!-- 1x: 240px*222px; 2x: 480px*444px -->
-                      <img src="img/woman-bag-slider-mobile@1x.jpg" srcset="img/woman-bag-slider-mobile@2x.jpg 2x"
-                        alt="Коричневая дамская сумочка">
-                    </picture>
-                  </div>
-                </div>
-                <div data-hash="slide-1" class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image swiper-zoom-container">
-                    <picture>
-                      <!-- 1x: 520px*520px; 2x: 1040px*1040px -->
-                      <source media="(min-width: 768px)"
-                        srcset="img/bagpack-slider-desktop@1x.jpg 1x, img/bagpack-slider-desktop@2x.jpg 2x">
-                      <!-- 1x: 240px*222px; 2x: 480px*444px -->
-                      <img src="img/bagpack-slider-mobile@1x.jpg" srcset="img/bagpack-slider-mobile@2x.png 2x"
-                        alt="Черно-оранжевый рюкзак">
-                    </picture>
-                  </div>
-                </div>
-                <div data-hash="slide-3" class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image swiper-zoom-container">
-                    <picture>
-                      <!-- 1x: 520px*520px; 2x: 1040px*1040px -->
-                      <source media="(min-width: 768px)"
-                        srcset="img/nb-bag-slider-desktop@1x.jpg 1x, img/nb-bag-slider-desktop@2x.jpg 2x">
-                      <!-- 1x: 240px*222px; 2x: 480px*444px -->
-                      <img src="img/nb-bag-slider-mobile@1x.png" srcset="img/nb-bag-slider-mobile@2x.png 2x"
-                        alt="Стильная черная сумка для ноутбука">
-                    </picture>
-                  </div>
-                </div>
-                <div data-hash="slide-4" class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image swiper-zoom-container">
-                    <picture>
-                      <!-- 1x: 520px*520px; 2x: 1040px*1040px -->
-                      <source media="(min-width: 768px)"
-                        srcset="img/orca-slider-desktop@1x.jpg 1x, img/orca-slider-desktop@2x.jpg 2x">
-                      <!-- 1x: 240px*222px; 2x: 480px*444px -->
-                      <img src="img/orca-slider-mobile@1x.png" srcset="img/orca-slider-mobile@2x.png 2x"
-                        alt="Вместительный темно-зеленый кошелек">
-                    </picture>
-                  </div>
-                </div>
-              </div>
-              <!-- If we need pagination -->
-              <div class="swiper-pagination"></div>
+                  <!-- 1x: 250px*250px; 2x: 500*500px -->
+                  <source media="(min-width: 768px)"
+                    srcset="img/mini01-desktop@1x.jpg 1x, img/mini01-desktop@1x.jpg 2x">
+                  <!-- 1x: 130px*130px; 2x: 260*260px -->
+                  <img class="card__link-img" src="img/mini02-mobile@1x.jpg" srcset="img/mini02-mobile@2x.jpg 2x"
+                    width="130" height="130" alt="Черная сумка для ноутбука">
+                </picture>
+                <p class="card__name">Бананка</p>
+                <p class="card__price"><b>10 000</b>р.</p>
+              </a>
+            </li>
+            <li class="catalog__item catalog__card card">
+              <a class="card__link">
+                <picture class="card__link-wrapper">
+                  <!-- 1x: 250px*250px; 2x: 500*500px -->
+                  <source media="(min-width: 768px)" type="image/webp"
+                    srcset="img/mini03-desktop@1x.webp 1x, img/mini03-desktop@1x.webp 2x">
+                  <!-- 1x: 130px*130px; 2x: 260*260px -->
+                  <source type="image/webp" srcset="img/mini03-mobile@1x.webp, img/mini03-mobile@2x.webp 2x">
 
-              <!-- If we need navigation buttons -->
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
+                  <!-- 1x: 250px*250px; 2x: 500*500px -->
+                  <source media="(min-width: 768px)"
+                    srcset="img/mini03-desktop@1x.jpg 1x, img/mini03-desktop@1x.jpg 2x">
+                  <!-- 1x: 130px*130px; 2x: 260*260px -->
+                  <img class="card__link-img" src="img/mini03-mobile@1x.jpg" srcset="img/mini03-mobile@2x.jpg 2x"
+                    width="130" height="130" alt="Черная сумка для ноутбука">
+                </picture>
+                <p class="card__name">Койот</p>
+                <p class="card__price"><b>10 000</b>р.</p>
+              </a>
+            </li>
+            <li class="catalog__item catalog__card card">
+              <a class="card__link">
+                <picture class="card__link-wrapper">
+                  <!-- 1x: 250px*250px; 2x: 500*500px -->
+                  <source media="(min-width: 768px)" type="image/webp"
+                    srcset="img/mini04-desktop@1x.webp 1x, img/mini04-desktop@1x.webp 2x">
+                  <!-- 1x: 130px*130px; 2x: 260*260px -->
+                  <source type="image/webp" srcset="img/mini04-mobile@1x.webp, img/mini04-mobile@2x.webp 2x">
 
-            </div>
-            <div class="catalog__description-text-wrapper">
-              <h3 class="catalog__article-heading">Сумка с красивым названием</h3>
-              <p class="catalog__description-text">Однообъёмный, без подкладки, магнитная застёжка, фиксаторы - кнопки,
-                лямки дублированы прочной стропой и надёжно вшиты четырьмя рядами прочной нити.
-              </p>
-              <p class="catalog__description-text">Размер 30 * 23,5 * 8 см.</p>
-            </div>
-          </div>
-        </article>
-        <article>
-          <div class="catalog__description-wrapper">
-            <!-- Slider main container -->
-            <div class="catalog__image-slider image-slider swiper swiper-container">
-              <!-- Additional required wrapper -->
-              <div class="image-slider__wrapper swiper-wrapper">
-                <!-- Slides -->
-                <div data-hash="slide-3" class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image swiper-zoom-container">
-                    <picture>
-                      <!-- 1x: 520px*520px; 2x: 1040px*1040px -->
-                      <source media="(min-width: 768px)"
-                        srcset="img/nb-bag-slider-desktop@1x.jpg 1x, img/nb-bag-slider-desktop@2x.jpg 2x">
-                      <!-- 1x: 240px*222px; 2x: 480px*444px -->
-                      <img src="img/nb-bag-slider-mobile@1x.png" srcset="img/nb-bag-slider-mobile@2x.png 2x"
-                        alt="Стильная черная сумка для ноутбука">
-                    </picture>
-                  </div>
-                </div>
-                <div data-hash="slide-2" class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image swiper-zoom-container">
-                    <picture>
-                      <!-- 1x: 520px*520px; 2x: 1040px*1040px -->
-                      <source media="(min-width: 768px)"
-                        srcset="img/bag-grass-slider-desktop@1x.jpg 1x, img/bag-grass-slider-desktop@2x.jpg 2x">
-                      <!-- 1x: 240px*222px; 2x: 480px*444px -->
-                      <img src="img/woman-bag-slider-mobile@1x.jpg" srcset="img/woman-bag-slider-mobile@2x.jpg 2x"
-                        alt="Коричневая дамская сумочка">
-                    </picture>
-                  </div>
-                </div>
-                <div data-hash="slide-1" class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image swiper-zoom-container">
-                    <picture>
-                      <!-- 1x: 520px*520px; 2x: 1040px*1040px -->
-                      <source media="(min-width: 768px)"
-                        srcset="img/bagpack-slider-desktop@1x.jpg 1x, img/bagpack-slider-desktop@2x.jpg 2x">
-                      <!-- 1x: 240px*222px; 2x: 480px*444px -->
-                      <img src="img/bagpack-slider-mobile@1x.jpg" srcset="img/bagpack-slider-mobile@2x.png 2x"
-                        alt="Черно-оранжевый рюкзак">
-                    </picture>
-                  </div>
-                </div>
-                <div data-hash="slide-4" class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image swiper-zoom-container">
-                    <picture>
-                      <!-- 1x: 520px*520px; 2x: 1040px*1040px -->
-                      <source media="(min-width: 768px)"
-                        srcset="img/orca-slider-desktop@1x.jpg 1x, img/orca-slider-desktop@2x.jpg 2x">
-                      <!-- 1x: 240px*222px; 2x: 480px*444px -->
-                      <img src="img/orca-slider-mobile@1x.png" srcset="img/orca-slider-mobile@2x.png 2x"
-                        alt="Вместительный темно-зеленый кошелек">
-                    </picture>
-                  </div>
-                </div>
-              </div>
-              <!-- If we need pagination -->
-              <div class="swiper-pagination"></div>
+                  <!-- 1x: 250px*250px; 2x: 500*500px -->
+                  <source media="(min-width: 768px)"
+                    srcset="img/mini04-desktop@1x.jpg 1x, img/mini04-desktop@1x.jpg 2x">
+                  <!-- 1x: 130px*130px; 2x: 260*260px -->
+                  <img class="card__link-img" src="img/mini04-mobile@1x.jpg" srcset="img/mini04-mobile@2x.jpg 2x"
+                    width="130" height="130" alt="Черная сумка для ноутбука">
+                </picture>
+                <p class="card__name">Документница</p>
+                <p class="card__price"><b>10 000</b>р.</p>
+              </a>
+            </li>
+            <li class="catalog__item catalog__card card">
+              <a class="card__link">
+                <picture class="card__link-wrapper">
+                  <!-- 1x: 250px*250px; 2x: 500*500px -->
+                  <source media="(min-width: 768px)" type="image/webp"
+                    srcset="img/mini05-desktop@1x.webp 1x, img/mini05-desktop@1x.webp 2x">
+                  <!-- 1x: 130px*130px; 2x: 260*260px -->
+                  <source type="image/webp" srcset="img/mini05-mobile@1x.webp, img/mini05-mobile@2x.webp 2x">
 
-              <!-- If we need navigation buttons -->
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
+                  <!-- 1x: 250px*250px; 2x: 500*500px -->
+                  <source media="(min-width: 768px)"
+                    srcset="img/mini05-desktop@1x.jpg 1x, img/mini05-desktop@1x.jpg 2x">
+                  <!-- 1x: 130px*130px; 2x: 260*260px -->
+                  <img class="card__link-img" src="img/mini05-mobile@1x.jpg" srcset="img/mini05-mobile@2x.jpg 2x"
+                    width="130" height="130" alt="Черная сумка для ноутбука">
+                </picture>
+                <p class="card__name">Обложка</p>
+                <p class="card__price"><b>10 000</b>р.</p>
+              </a>
+            </li>
+            <li class="catalog__item catalog__card card">
+              <a class="card__link">
+                <picture class="card__link-wrapper">
+                  <!-- 1x: 250px*250px; 2x: 500*500px -->
+                  <source media="(min-width: 768px)" type="image/webp"
+                    srcset="img/mini06-desktop@1x.webp 1x, img/mini06-desktop@1x.webp 2x">
+                  <!-- 1x: 130px*130px; 2x: 260*260px -->
+                  <source type="image/webp" srcset="img/mini06-mobile@1x.webp, img/mini06-mobile@2x.webp 2x">
 
-            </div>
-            <div class="catalog__description-text-wrapper">
-              <h3 class="catalog__article-heading">Карась</h3>
-              <p class="catalog__description-text">Однообъёмный, без подкладки, магнитная застёжка, фиксаторы - кнопки,
-                лямки дублированы прочной стропой и надёжно вшиты четырьмя рядами прочной нити.
-              </p>
-              <p class="catalog__description-text">Размер 30 * 23,5 * 8 см.</p>
-            </div>
-          </div>
-        </article>
-      </section>
-      <section class="catalog__section">
-        <a id="wallets">
-          <h2 class="catalog_heading">Кошельки</h2>
-        </a>
-        <article>
-          <div class="catalog__description-wrapper">
-            <!-- Slider main container -->
-            <div class="catalog__image-slider image-slider swiper swiper-container">
-              <!-- Additional required wrapper -->
-              <div class="image-slider__wrapper swiper-wrapper">
-                <!-- Slides -->
-                <div data-hash="slide-4" class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image swiper-zoom-container">
-                    <picture>
-                      <!-- 1x: 520px*520px; 2x: 1040px*1040px -->
-                      <source media="(min-width: 768px)"
-                        srcset="img/orca-slider-desktop@1x.jpg 1x, img/orca-slider-desktop@2x.jpg 2x">
-                      <!-- 1x: 240px*222px; 2x: 480px*444px -->
-                      <img src="img/orca-slider-mobile@1x.png" srcset="img/orca-slider-mobile@2x.png 2x"
-                        alt="Вместительный темно-зеленый кошелек">
-                    </picture>
-                  </div>
-                </div>
-                <div data-hash="slide-3" class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image swiper-zoom-container">
-                    <picture>
-                      <!-- 1x: 520px*520px; 2x: 1040px*1040px -->
-                      <source media="(min-width: 768px)"
-                        srcset="img/nb-bag-slider-desktop@1x.jpg 1x, img/nb-bag-slider-desktop@2x.jpg 2x">
-                      <!-- 1x: 240px*222px; 2x: 480px*444px -->
-                      <img src="img/nb-bag-slider-mobile@1x.png" srcset="img/nb-bag-slider-mobile@2x.png 2x"
-                        alt="Стильная черная сумка для ноутбука">
-                    </picture>
-                  </div>
-                </div>
-                <div data-hash="slide-2" class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image swiper-zoom-container">
-                    <picture>
-                      <!-- 1x: 520px*520px; 2x: 1040px*1040px -->
-                      <source media="(min-width: 768px)"
-                        srcset="img/bag-grass-slider-desktop@1x.jpg 1x, img/bag-grass-slider-desktop@2x.jpg 2x">
-                      <!-- 1x: 240px*222px; 2x: 480px*444px -->
-                      <img src="img/woman-bag-slider-mobile@1x.jpg" srcset="img/woman-bag-slider-mobile@2x.jpg 2x"
-                        alt="Коричневая дамская сумочка">
-                    </picture>
-                  </div>
-                </div>
-                <div data-hash="slide-1" class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image swiper-zoom-container">
-                    <picture>
-                      <!-- 1x: 520px*520px; 2x: 1040px*1040px -->
-                      <source media="(min-width: 768px)"
-                        srcset="img/bagpack-slider-desktop@1x.jpg 1x, img/bagpack-slider-desktop@2x.jpg 2x">
-                      <!-- 1x: 240px*222px; 2x: 480px*444px -->
-                      <img src="img/bagpack-slider-mobile@1x.jpg" srcset="img/bagpack-slider-mobile@2x.png 2x"
-                        alt="Черно-оранжевый рюкзак">
-                    </picture>
-                  </div>
-                </div>
-              </div>
-              <!-- If we need pagination -->
-              <div class="swiper-pagination"></div>
+                  <!-- 1x: 250px*250px; 2x: 500*500px -->
+                  <source media="(min-width: 768px)"
+                    srcset="img/mini06-desktop@1x.jpg 1x, img/mini06-desktop@1x.jpg 2x">
+                  <!-- 1x: 130px*130px; 2x: 260*260px -->
+                  <img class="card__link-img" src="img/mini06-mobile@1x.jpg" srcset="img/mini06-mobile@2x.jpg 2x"
+                    width="130" height="130" alt="Черная сумка для ноутбука">
+                </picture>
+                <p class="card__name">Ключница</p>
+                <p class="card__price"><b>10 000</b>р.</p>
+              </a>
+            </li>
+            <li class="catalog__item catalog__card card">
+              <a class="card__link">
+                <picture class="card__link-wrapper">
+                  <!-- 1x: 250px*250px; 2x: 500*500px -->
+                  <source media="(min-width: 768px)" type="image/webp"
+                    srcset="img/mini07-desktop@1x.webp 1x, img/mini07-desktop@1x.webp 2x">
+                  <!-- 1x: 130px*130px; 2x: 260*260px -->
+                  <source type="image/webp" srcset="img/mini07-mobile@1x.webp, img/mini07-mobile@2x.webp 2x">
 
-              <!-- If we need navigation buttons -->
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
+                  <!-- 1x: 250px*250px; 2x: 500*500px -->
+                  <source media="(min-width: 768px)"
+                    srcset="img/mini07-desktop@1x.jpg 1x, img/mini07-desktop@1x.jpg 2x">
+                  <!-- 1x: 130px*130px; 2x: 260*260px -->
+                  <img class="card__link-img" src="img/mini07-mobile@1x.jpg" srcset="img/mini07-mobile@2x.jpg 2x"
+                    width="130" height="130" alt="Черная сумка для ноутбука">
+                </picture>
+                <p class="card__name">Ключница</p>
+                <p class="card__price"><b>10 000</b>р.</p>
+              </a>
+            </li>
+            <li class="catalog__item catalog__card card">
+              <a class="card__link">
+                <picture class="card__link-wrapper">
+                  <!-- 1x: 250px*250px; 2x: 500*500px -->
+                  <source media="(min-width: 768px)" type="image/webp"
+                    srcset="img/mini08-desktop@1x.webp 1x, img/mini08-desktop@1x.webp 2x">
+                  <!-- 1x: 130px*130px; 2x: 260*260px -->
+                  <source type="image/webp" srcset="img/mini08-mobile@1x.webp, img/mini08-mobile@2x.webp 2x">
 
-            </div>
-            <div class="catalog__description-text-wrapper">
-              <h3 class="catalog__article-heading">Косатка</h3>
-              <p class="catalog__description-text">Однообъёмный, без подкладки, магнитная застёжка, фиксаторы - кнопки,
-                лямки дублированы прочной стропой и надёжно вшиты четырьмя рядами прочной нити.
-              </p>
-              <p class="catalog__description-text">Размер 30 * 23,5 * 8 см.</p>
-            </div>
-          </div>
-        </article>
-        <article>
-          <div class="catalog__description-wrapper">
-            <!-- Slider main container -->
-            <div class="catalog__image-slider image-slider swiper swiper-container">
-              <!-- Additional required wrapper -->
-              <div class="image-slider__wrapper swiper-wrapper">
-                <!-- Slides -->
-                <div data-hash="slide-4" class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image swiper-zoom-container">
-                    <picture>
-                      <!-- 1x: 520px*520px; 2x: 1040px*1040px -->
-                      <source media="(min-width: 768px)"
-                        srcset="img/orca-slider-desktop@1x.jpg 1x, img/orca-slider-desktop@2x.jpg 2x">
-                      <!-- 1x: 240px*222px; 2x: 480px*444px -->
-                      <img src="img/orca-slider-mobile@1x.png" srcset="img/orca-slider-mobile@2x.png 2x"
-                        alt="Вместительный темно-зеленый кошелек">
-                    </picture>
-                  </div>
-                </div>
-                <div data-hash="slide-3" class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image swiper-zoom-container">
-                    <picture>
-                      <!-- 1x: 520px*520px; 2x: 1040px*1040px -->
-                      <source media="(min-width: 768px)"
-                        srcset="img/nb-bag-slider-desktop@1x.jpg 1x, img/nb-bag-slider-desktop@2x.jpg 2x">
-                      <!-- 1x: 240px*222px; 2x: 480px*444px -->
-                      <img src="img/nb-bag-slider-mobile@1x.png" srcset="img/nb-bag-slider-mobile@2x.png 2x"
-                        alt="Стильная черная сумка для ноутбука">
-                    </picture>
-                  </div>
-                </div>
-                <div data-hash="slide-2" class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image swiper-zoom-container">
-                    <picture>
-                      <!-- 1x: 520px*520px; 2x: 1040px*1040px -->
-                      <source media="(min-width: 768px)"
-                        srcset="img/bag-grass-slider-desktop@1x.jpg 1x, img/bag-grass-slider-desktop@2x.jpg 2x">
-                      <!-- 1x: 240px*222px; 2x: 480px*444px -->
-                      <img src="img/woman-bag-slider-mobile@1x.jpg" srcset="img/woman-bag-slider-mobile@2x.jpg 2x"
-                        alt="Коричневая дамская сумочка">
-                    </picture>
-                  </div>
-                </div>
-                <div data-hash="slide-1" class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image swiper-zoom-container">
-                    <picture>
-                      <!-- 1x: 520px*520px; 2x: 1040px*1040px -->
-                      <source media="(min-width: 768px)"
-                        srcset="img/bagpack-slider-desktop@1x.jpg 1x, img/bagpack-slider-desktop@2x.jpg 2x">
-                      <!-- 1x: 240px*222px; 2x: 480px*444px -->
-                      <img src="img/bagpack-slider-mobile@1x.jpg" srcset="img/bagpack-slider-mobile@2x.png 2x"
-                        alt="Черно-оранжевый рюкзак">
-                    </picture>
-                  </div>
-                </div>
-              </div>
-              <!-- If we need pagination -->
-              <div class="swiper-pagination"></div>
+                  <!-- 1x: 250px*250px; 2x: 500*500px -->
+                  <source media="(min-width: 768px)"
+                    srcset="img/mini08-desktop@1x.jpg 1x, img/mini08-desktop@1x.jpg 2x">
+                  <!-- 1x: 130px*130px; 2x: 260*260px -->
+                  <img class="card__link-img" src="img/mini08-mobile@1x.jpg" srcset="img/mini08-mobile@2x.jpg 2x"
+                    width="130" height="130" alt="Черная сумка для ноутбука">
+                </picture>
+                <p class="card__name">Коала</p>
+                <p class="card__price"><b>10 000</b>р.</p>
+              </a>
+            </li>
+            <li class="catalog__item catalog__card card">
+              <a class="card__link">
+                <picture class="card__link-wrapper">
+                  <!-- 1x: 250px*250px; 2x: 500*500px -->
+                  <source media="(min-width: 768px)" type="image/webp"
+                    srcset="img/mini09-desktop@1x.webp 1x, img/mini09-desktop@1x.webp 2x">
+                  <!-- 1x: 130px*130px; 2x: 260*260px -->
+                  <source type="image/webp" srcset="img/mini09-mobile@1x.webp, img/mini09-mobile@2x.webp 2x">
 
-              <!-- If we need navigation buttons -->
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
+                  <!-- 1x: 250px*250px; 2x: 500*500px -->
+                  <source media="(min-width: 768px)"
+                    srcset="img/mini09-desktop@1x.jpg 1x, img/mini09-desktop@1x.jpg 2x">
+                  <!-- 1x: 130px*130px; 2x: 260*260px -->
+                  <img class="card__link-img" src="img/mini09-mobile@1x.jpg" srcset="img/mini09-mobile@2x.jpg 2x"
+                    width="130" height="130" alt="Черная сумка для ноутбука">
+                </picture>
+                <p class="card__name">Коала</p>
+                <p class="card__price"><b>10 000</b>р.</p>
+              </a>
+            </li>
+            <li class="catalog__item catalog__card card">
+              <a class="card__link">
+                <picture class="card__link-wrapper">
+                  <!-- 1x: 250px*250px; 2x: 500*500px -->
+                  <source media="(min-width: 768px)" type="image/webp"
+                    srcset="img/mini10-desktop@1x.webp 1x, img/mini10-desktop@1x.webp 2x">
+                  <!-- 1x: 130px*130px; 2x: 260*260px -->
+                  <source type="image/webp" srcset="img/mini10-mobile@1x.webp, img/mini10-mobile@2x.webp 2x">
 
-            </div>
-            <div class="catalog__description-text-wrapper">
-              <h3 class="catalog__article-heading">Койот</h3>
-              <p class="catalog__description-text">Однообъёмный, без подкладки, магнитная застёжка, фиксаторы - кнопки,
-                лямки дублированы прочной стропой и надёжно вшиты четырьмя рядами прочной нити.
-              </p>
-              <p class="catalog__description-text">Размер 30 * 23,5 * 8 см.</p>
-            </div>
-          </div>
-        </article>
-        <article>
-          <div class="catalog__description-wrapper">
-            <!-- Slider main container -->
-            <div class="catalog__image-slider image-slider swiper swiper-container">
-              <!-- Additional required wrapper -->
-              <div class="image-slider__wrapper swiper-wrapper">
-                <!-- Slides -->
-                <div data-hash="slide-4" class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image swiper-zoom-container">
-                    <picture>
-                      <!-- 1x: 520px*520px; 2x: 1040px*1040px -->
-                      <source media="(min-width: 768px)"
-                        srcset="img/orca-slider-desktop@1x.jpg 1x, img/orca-slider-desktop@2x.jpg 2x">
-                      <!-- 1x: 240px*222px; 2x: 480px*444px -->
-                      <img src="img/orca-slider-mobile@1x.png" srcset="img/orca-slider-mobile@2x.png 2x"
-                        alt="Вместительный темно-зеленый кошелек">
-                    </picture>
-                  </div>
-                </div>
-                <div data-hash="slide-3" class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image swiper-zoom-container">
-                    <picture>
-                      <!-- 1x: 520px*520px; 2x: 1040px*1040px -->
-                      <source media="(min-width: 768px)"
-                        srcset="img/nb-bag-slider-desktop@1x.jpg 1x, img/nb-bag-slider-desktop@2x.jpg 2x">
-                      <!-- 1x: 240px*222px; 2x: 480px*444px -->
-                      <img src="img/nb-bag-slider-mobile@1x.png" srcset="img/nb-bag-slider-mobile@2x.png 2x"
-                        alt="Стильная черная сумка для ноутбука">
-                    </picture>
-                  </div>
-                </div>
-                <div data-hash="slide-2" class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image swiper-zoom-container">
-                    <picture>
-                      <!-- 1x: 520px*520px; 2x: 1040px*1040px -->
-                      <source media="(min-width: 768px)"
-                        srcset="img/bag-grass-slider-desktop@1x.jpg 1x, img/bag-grass-slider-desktop@2x.jpg 2x">
-                      <!-- 1x: 240px*222px; 2x: 480px*444px -->
-                      <img src="img/woman-bag-slider-mobile@1x.jpg" srcset="img/woman-bag-slider-mobile@2x.jpg 2x"
-                        alt="Коричневая дамская сумочка">
-                    </picture>
-                  </div>
-                </div>
-                <div data-hash="slide-1" class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image swiper-zoom-container">
-                    <picture>
-                      <!-- 1x: 520px*520px; 2x: 1040px*1040px -->
-                      <source media="(min-width: 768px)"
-                        srcset="img/bagpack-slider-desktop@1x.jpg 1x, img/bagpack-slider-desktop@2x.jpg 2x">
-                      <!-- 1x: 240px*222px; 2x: 480px*444px -->
-                      <img src="img/bagpack-slider-mobile@1x.jpg" srcset="img/bagpack-slider-mobile@2x.png 2x"
-                        alt="Черно-оранжевый рюкзак">
-                    </picture>
-                  </div>
-                </div>
-              </div>
-              <!-- If we need pagination -->
-              <div class="swiper-pagination"></div>
+                  <!-- 1x: 250px*250px; 2x: 500*500px -->
+                  <source media="(min-width: 768px)"
+                    srcset="img/mini10-desktop@1x.jpg 1x, img/mini10-desktop@1x.jpg 2x">
+                  <!-- 1x: 130px*130px; 2x: 260*260px -->
+                  <img class="card__link-img" src="img/mini10-mobile@1x.jpg" srcset="img/mini10-mobile@2x.jpg 2x"
+                    width="130" height="130" alt="Черная сумка для ноутбука">
+                </picture>
+                <p class="card__name">Косатка</p>
+                <p class="card__price"><b>10 000</b>р.</p>
+              </a>
+            </li>
+            <li class="catalog__item catalog__card card">
+              <a class="card__link">
+                <picture class="card__link-wrapper">
+                  <!-- 1x: 250px*250px; 2x: 500*500px -->
+                  <source media="(min-width: 768px)" type="image/webp"
+                    srcset="img/mini11-desktop@1x.webp 1x, img/mini11-desktop@1x.webp 2x">
+                  <!-- 1x: 130px*130px; 2x: 260*260px -->
+                  <source type="image/webp" srcset="img/mini11-mobile@1x.webp, img/mini11-mobile@2x.webp 2x">
 
-              <!-- If we need navigation buttons -->
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
+                  <!-- 1x: 250px*250px; 2x: 500*500px -->
+                  <source media="(min-width: 768px)"
+                    srcset="img/mini11-desktop@1x.jpg 1x, img/mini11-desktop@1x.jpg 2x">
+                  <!-- 1x: 130px*130px; 2x: 260*260px -->
+                  <img class="card__link-img" src="img/mini11-mobile@1x.jpg" srcset="img/mini11-mobile@2x.jpg 2x"
+                    width="130" height="130" alt="Черная сумка для ноутбука">
+                </picture>
+                <p class="card__name">Рэйн</p>
+                <p class="card__price"><b>10 000</b>р.</p>
+              </a>
+            </li>
 
-            </div>
-            <div class="catalog__description-text-wrapper">
-              <h3 class="catalog__article-heading">Хитрый лис</h3>
-              <p class="catalog__description-text">Однообъёмный, без подкладки, магнитная застёжка, фиксаторы - кнопки,
-                лямки дублированы прочной стропой и надёжно вшиты четырьмя рядами прочной нити.
-              </p>
-              <p class="catalog__description-text">Размер 30 * 23,5 * 8 см.</p>
-            </div>
-          </div>
-        </article>
-        <article>
-          <div class="catalog__description-wrapper">
-            <!-- Slider main container -->
-            <div class="catalog__image-slider image-slider swiper swiper-container">
-              <!-- Additional required wrapper -->
-              <div class="image-slider__wrapper swiper-wrapper">
-                <!-- Slides -->
-                <div data-hash="slide-4" class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image swiper-zoom-container">
-                    <picture>
-                      <!-- 1x: 520px*520px; 2x: 1040px*1040px -->
-                      <source media="(min-width: 768px)"
-                        srcset="img/orca-slider-desktop@1x.jpg 1x, img/orca-slider-desktop@2x.jpg 2x">
-                      <!-- 1x: 240px*222px; 2x: 480px*444px -->
-                      <img src="img/orca-slider-mobile@1x.png" srcset="img/orca-slider-mobile@2x.png 2x"
-                        alt="Вместительный темно-зеленый кошелек">
-                    </picture>
-                  </div>
-                </div>
-                <div data-hash="slide-3" class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image swiper-zoom-container">
-                    <picture>
-                      <!-- 1x: 520px*520px; 2x: 1040px*1040px -->
-                      <source media="(min-width: 768px)"
-                        srcset="img/nb-bag-slider-desktop@1x.jpg 1x, img/nb-bag-slider-desktop@2x.jpg 2x">
-                      <!-- 1x: 240px*222px; 2x: 480px*444px -->
-                      <img src="img/nb-bag-slider-mobile@1x.png" srcset="img/nb-bag-slider-mobile@2x.png 2x"
-                        alt="Стильная черная сумка для ноутбука">
-                    </picture>
-                  </div>
-                </div>
-                <div data-hash="slide-2" class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image swiper-zoom-container">
-                    <picture>
-                      <!-- 1x: 520px*520px; 2x: 1040px*1040px -->
-                      <source media="(min-width: 768px)"
-                        srcset="img/bag-grass-slider-desktop@1x.jpg 1x, img/bag-grass-slider-desktop@2x.jpg 2x">
-                      <!-- 1x: 240px*222px; 2x: 480px*444px -->
-                      <img src="img/woman-bag-slider-mobile@1x.jpg" srcset="img/woman-bag-slider-mobile@2x.jpg 2x"
-                        alt="Коричневая дамская сумочка">
-                    </picture>
-                  </div>
-                </div>
-                <div data-hash="slide-1" class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image swiper-zoom-container">
-                    <picture>
-                      <!-- 1x: 520px*520px; 2x: 1040px*1040px -->
-                      <source media="(min-width: 768px)"
-                        srcset="img/bagpack-slider-desktop@1x.jpg 1x, img/bagpack-slider-desktop@2x.jpg 2x">
-                      <!-- 1x: 240px*222px; 2x: 480px*444px -->
-                      <img src="img/bagpack-slider-mobile@1x.jpg" srcset="img/bagpack-slider-mobile@2x.png 2x"
-                        alt="Черно-оранжевый рюкзак">
-                    </picture>
-                  </div>
-                </div>
-              </div>
-              <!-- If we need pagination -->
-              <div class="swiper-pagination"></div>
-
-              <!-- If we need navigation buttons -->
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
-
-            </div>
-            <div class="catalog__description-text-wrapper">
-              <h3 class="catalog__article-heading">Коала</h3>
-              <p class="catalog__description-text">Однообъёмный, без подкладки, магнитная застёжка, фиксаторы - кнопки,
-                лямки дублированы прочной стропой и надёжно вшиты четырьмя рядами прочной нити.
-              </p>
-              <p class="catalog__description-text">Размер 30 * 23,5 * 8 см.</p>
-            </div>
-          </div>
-        </article>
-      </section>
-      <section class="catalog__section">
-        <a id="document-holders">
-          <h2 class="catalog_heading">Документницы</h2>
-        </a>
-        <article>
-          <div class="catalog__description-wrapper">
-            <!-- Slider main container -->
-            <div class="catalog__image-slider image-slider swiper swiper-container">
-              <!-- Additional required wrapper -->
-              <div class="image-slider__wrapper swiper-wrapper">
-                <!-- Slides -->
-                <div data-hash="slide-4" class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image swiper-zoom-container">
-                    <picture>
-                      <!-- 1x: 520px*520px; 2x: 1040px*1040px -->
-                      <source media="(min-width: 768px)"
-                        srcset="img/tr-slider-big-desktop@1x.png 1x, img/tr-slider-big-desktop@2x.jpg 2x">
-                      <!-- 1x: 240px*222px; 2x: 480px*444px -->
-                      <img src="img/tr-slider-big-mobile@1x.jpg" srcset="img/tr-slider-big-mobile@2x.jpg 2x"
-                        alt="Вместительный темно-зеленый кошелек">
-                    </picture>
-                  </div>
-                </div>
-                <div data-hash="slide-4" class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image swiper-zoom-container">
-                    <picture>
-                      <!-- 1x: 520px*520px; 2x: 1040px*1040px -->
-                      <source media="(min-width: 768px)"
-                        srcset="img/orca-slider-desktop@1x.jpg 1x, img/orca-slider-desktop@2x.jpg 2x">
-                      <!-- 1x: 240px*222px; 2x: 480px*444px -->
-                      <img src="img/orca-slider-mobile@1x.png" srcset="img/orca-slider-mobile@2x.png 2x"
-                        alt="Вместительный темно-зеленый кошелек">
-                    </picture>
-                  </div>
-                </div>
-                <div data-hash="slide-3" class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image swiper-zoom-container">
-                    <picture>
-                      <!-- 1x: 520px*520px; 2x: 1040px*1040px -->
-                      <source media="(min-width: 768px)"
-                        srcset="img/nb-bag-slider-desktop@1x.jpg 1x, img/nb-bag-slider-desktop@2x.jpg 2x">
-                      <!-- 1x: 240px*222px; 2x: 480px*444px -->
-                      <img src="img/nb-bag-slider-mobile@1x.png" srcset="img/nb-bag-slider-mobile@2x.png 2x"
-                        alt="Стильная черная сумка для ноутбука">
-                    </picture>
-                  </div>
-                </div>
-                <div data-hash="slide-2" class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image swiper-zoom-container">
-                    <picture>
-                      <!-- 1x: 520px*520px; 2x: 1040px*1040px -->
-                      <source media="(min-width: 768px)"
-                        srcset="img/bag-grass-slider-desktop@1x.jpg 1x, img/bag-grass-slider-desktop@2x.jpg 2x">
-                      <!-- 1x: 240px*222px; 2x: 480px*444px -->
-                      <img src="img/woman-bag-slider-mobile@1x.jpg" srcset="img/woman-bag-slider-mobile@2x.jpg 2x"
-                        alt="Коричневая дамская сумочка">
-                    </picture>
-                  </div>
-                </div>
-                <div data-hash="slide-1" class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image swiper-zoom-container">
-                    <picture>
-                      <!-- 1x: 520px*520px; 2x: 1040px*1040px -->
-                      <source media="(min-width: 768px)"
-                        srcset="img/bagpack-slider-desktop@1x.jpg 1x, img/bagpack-slider-desktop@2x.jpg 2x">
-                      <!-- 1x: 240px*222px; 2x: 480px*444px -->
-                      <img src="img/bagpack-slider-mobile@1x.jpg" srcset="img/bagpack-slider-mobile@2x.png 2x"
-                        alt="Черно-оранжевый рюкзак">
-                    </picture>
-                  </div>
-                </div>
-              </div>
-              <!-- If we need pagination -->
-              <div class="swiper-pagination"></div>
-
-              <!-- If we need navigation buttons -->
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
-
-            </div>
-            <div class="catalog__description-text-wrapper">
-              <h3 class="catalog__article-heading">Тревелер</h3>
-              <p class="catalog__description-text">Однообъёмный, без подкладки, магнитная застёжка, фиксаторы - кнопки,
-                лямки дублированы прочной стропой и надёжно вшиты четырьмя рядами прочной нити.
-              </p>
-              <p class="catalog__description-text">Размер 30 * 23,5 * 8 см.</p>
-            </div>
-          </div>
-        </article>
-        <article>
-          <div class="catalog__description-wrapper">
-            <!-- Slider main container -->
-            <div class="catalog__image-slider image-slider swiper swiper-container">
-              <!-- Additional required wrapper -->
-              <div class="image-slider__wrapper swiper-wrapper">
-                <!-- Slides -->
-                <div data-hash="slide-4" class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image swiper-zoom-container">
-                    <picture>
-                      <!-- 1x: 520px*520px; 2x: 1040px*1040px -->
-                      <source media="(min-width: 768px)"
-                        srcset="img/cover-slider-big-desktop@1x.png 1x, img/cover-slider-big-desktop@2x.png 2x">
-                      <!-- 1x: 240px*222px; 2x: 480px*444px -->
-                      <img src="img/cover-slider-big-mobile@1x.png" srcset="img/cover-slider-big-mobile@2x.png 2x"
-                        alt="Вместительный темно-зеленый кошелек">
-                    </picture>
-                  </div>
-                </div>
-                <div data-hash="slide-3" class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image swiper-zoom-container">
-                    <picture>
-                      <!-- 1x: 520px*520px; 2x: 1040px*1040px -->
-                      <source media="(min-width: 768px)"
-                        srcset="img/nb-bag-slider-desktop@1x.jpg 1x, img/nb-bag-slider-desktop@2x.jpg 2x">
-                      <!-- 1x: 240px*222px; 2x: 480px*444px -->
-                      <img src="img/nb-bag-slider-mobile@1x.png" srcset="img/nb-bag-slider-mobile@2x.png 2x"
-                        alt="Стильная черная сумка для ноутбука">
-                    </picture>
-                  </div>
-                </div>
-                <div data-hash="slide-2" class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image swiper-zoom-container">
-                    <picture>
-                      <!-- 1x: 520px*520px; 2x: 1040px*1040px -->
-                      <source media="(min-width: 768px)"
-                        srcset="img/bag-grass-slider-desktop@1x.jpg 1x, img/bag-grass-slider-desktop@2x.jpg 2x">
-                      <!-- 1x: 240px*222px; 2x: 480px*444px -->
-                      <img src="img/woman-bag-slider-mobile@1x.jpg" srcset="img/woman-bag-slider-mobile@2x.jpg 2x"
-                        alt="Коричневая дамская сумочка">
-                    </picture>
-                  </div>
-                </div>
-                <div data-hash="slide-1" class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image swiper-zoom-container">
-                    <picture>
-                      <!-- 1x: 520px*520px; 2x: 1040px*1040px -->
-                      <source media="(min-width: 768px)"
-                        srcset="img/bagpack-slider-desktop@1x.jpg 1x, img/bagpack-slider-desktop@2x.jpg 2x">
-                      <!-- 1x: 240px*222px; 2x: 480px*444px -->
-                      <img src="img/bagpack-slider-mobile@1x.jpg" srcset="img/bagpack-slider-mobile@2x.png 2x"
-                        alt="Черно-оранжевый рюкзак">
-                    </picture>
-                  </div>
-                </div>
-              </div>
-              <!-- If we need pagination -->
-              <div class="swiper-pagination"></div>
-
-              <!-- If we need navigation buttons -->
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
-
-            </div>
-            <div class="catalog__description-text-wrapper">
-              <h3 class="catalog__article-heading">Документница</h3>
-              <p class="catalog__description-text">Однообъёмный, без подкладки, магнитная застёжка, фиксаторы - кнопки,
-                лямки дублированы прочной стропой и надёжно вшиты четырьмя рядами прочной нити.
-              </p>
-              <p class="catalog__description-text">Размер 30 * 23,5 * 8 см.</p>
-            </div>
-          </div>
-        </article>
-      </section>
-      <section class="catalog__section">
-        <a id="custom-works">
-          <h2 class="catalog_heading">Работы
-            на заказ</h2>
-        </a>
-        <article>
-          <div class="catalog__description-wrapper">
-            <!-- Slider main container -->
-            <div class="catalog__image-slider image-slider swiper swiper-container">
-              <!-- Additional required wrapper -->
-              <div class="image-slider__wrapper swiper-wrapper">
-                <!-- Slides -->
-                <div data-hash="slide-4" class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image swiper-zoom-container">
-                    <picture>
-                      <!-- 1x: 520px*520px; 2x: 1040px*1040px -->
-                      <source media="(min-width: 768px)"
-                        srcset="img/menu-slider-big-desktop@1x.png 1x, img/menu-slider-big-desktop@2x.png 2x">
-                      <!-- 1x: 240px*222px; 2x: 480px*444px -->
-                      <img src="img/menu-slider-big-mobile@1x.png" srcset="img/menu-slider-big-mobile@2x.png 2x"
-                        alt="Вместительный темно-зеленый кошелек">
-                    </picture>
-                  </div>
-                </div>
-                <div data-hash="slide-3" class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image swiper-zoom-container">
-                    <picture>
-                      <!-- 1x: 520px*520px; 2x: 1040px*1040px -->
-                      <source media="(min-width: 768px)"
-                        srcset="img/nb-bag-slider-desktop@1x.jpg 1x, img/nb-bag-slider-desktop@2x.jpg 2x">
-                      <!-- 1x: 240px*222px; 2x: 480px*444px -->
-                      <img src="img/nb-bag-slider-mobile@1x.png" srcset="img/nb-bag-slider-mobile@2x.png 2x"
-                        alt="Стильная черная сумка для ноутбука">
-                    </picture>
-                  </div>
-                </div>
-                <div data-hash="slide-2" class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image swiper-zoom-container">
-                    <picture>
-                      <!-- 1x: 520px*520px; 2x: 1040px*1040px -->
-                      <source media="(min-width: 768px)"
-                        srcset="img/bag-grass-slider-desktop@1x.jpg 1x, img/bag-grass-slider-desktop@2x.jpg 2x">
-                      <!-- 1x: 240px*222px; 2x: 480px*444px -->
-                      <img src="img/woman-bag-slider-mobile@1x.jpg" srcset="img/woman-bag-slider-mobile@2x.jpg 2x"
-                        alt="Коричневая дамская сумочка">
-                    </picture>
-                  </div>
-                </div>
-                <div data-hash="slide-1" class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image swiper-zoom-container">
-                    <picture>
-                      <!-- 1x: 520px*520px; 2x: 1040px*1040px -->
-                      <source media="(min-width: 768px)"
-                        srcset="img/bagpack-slider-desktop@1x.jpg 1x, img/bagpack-slider-desktop@2x.jpg 2x">
-                      <!-- 1x: 240px*222px; 2x: 480px*444px -->
-                      <img src="img/bagpack-slider-mobile@1x.jpg" srcset="img/bagpack-slider-mobile@2x.png 2x"
-                        alt="Черно-оранжевый рюкзак">
-                    </picture>
-                  </div>
-                </div>
-              </div>
-              <!-- If we need pagination -->
-              <div class="swiper-pagination"></div>
-
-              <!-- If we need navigation buttons -->
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
-
-            </div>
-            <div class="catalog__description-text-wrapper">
-              <h3 class="catalog__article-heading"></h3>
-              <p class="catalog__description-text">Тект про разработку корпоративного стиля и работу с ресторанами и всякое такое.
-                Здесь могла бы быть сбруя для слона!!!
-              </p>
-              <p class="catalog__description-text"></p>
-            </div>
-          </div>
-        </article>
-      </section>
-      <section class="catalog__section">
-        <a id="engraved-covers">
-          <h2 class="catalog_heading">Обложки с
-              гравировкой</h2>
-        </a>
-        <article>
-          <div class="catalog__description-wrapper">
-            <!-- Slider main container -->
-            <div class="catalog__image-slider image-slider swiper swiper-container">
-              <!-- Additional required wrapper -->
-              <div class="image-slider__wrapper swiper-wrapper">
-                <!-- Slides -->
-                <div data-hash="slide-4" class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image swiper-zoom-container">
-                    <picture>
-                      <!-- 1x: 520px*520px; 2x: 1040px*1040px -->
-                      <source media="(min-width: 768px)"
-                        srcset="img/dog-slider-big-desktop@1x.png 1x, img/dog-slider-big-desktop@2x.png 2x">
-                      <!-- 1x: 240px*222px; 2x: 480px*444px -->
-                      <img src="img/dog-slider-big-mobile@1x.png" srcset="img/dog-slider-big-mobile@2x.png 2x"
-                        alt="Вместительный темно-зеленый кошелек">
-                    </picture>
-                  </div>
-                </div>
-                <div data-hash="slide-3" class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image swiper-zoom-container">
-                    <picture>
-                      <!-- 1x: 520px*520px; 2x: 1040px*1040px -->
-                      <source media="(min-width: 768px)"
-                        srcset="img/nb-bag-slider-desktop@1x.jpg 1x, img/nb-bag-slider-desktop@2x.jpg 2x">
-                      <!-- 1x: 240px*222px; 2x: 480px*444px -->
-                      <img src="img/nb-bag-slider-mobile@1x.png" srcset="img/nb-bag-slider-mobile@2x.png 2x"
-                        alt="Стильная черная сумка для ноутбука">
-                    </picture>
-                  </div>
-                </div>
-                <div data-hash="slide-2" class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image swiper-zoom-container">
-                    <picture>
-                      <!-- 1x: 520px*520px; 2x: 1040px*1040px -->
-                      <source media="(min-width: 768px)"
-                        srcset="img/bag-grass-slider-desktop@1x.jpg 1x, img/bag-grass-slider-desktop@2x.jpg 2x">
-                      <!-- 1x: 240px*222px; 2x: 480px*444px -->
-                      <img src="img/woman-bag-slider-mobile@1x.jpg" srcset="img/woman-bag-slider-mobile@2x.jpg 2x"
-                        alt="Коричневая дамская сумочка">
-                    </picture>
-                  </div>
-                </div>
-                <div data-hash="slide-1" class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image swiper-zoom-container">
-                    <picture>
-                      <!-- 1x: 520px*520px; 2x: 1040px*1040px -->
-                      <source media="(min-width: 768px)"
-                        srcset="img/bagpack-slider-desktop@1x.jpg 1x, img/bagpack-slider-desktop@2x.jpg 2x">
-                      <!-- 1x: 240px*222px; 2x: 480px*444px -->
-                      <img src="img/bagpack-slider-mobile@1x.jpg" srcset="img/bagpack-slider-mobile@2x.png 2x"
-                        alt="Черно-оранжевый рюкзак">
-                    </picture>
-                  </div>
-                </div>
-              </div>
-              <!-- If we need pagination -->
-              <div class="swiper-pagination"></div>
-
-              <!-- If we need navigation buttons -->
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
-
-            </div>
-            <div class="catalog__description-text-wrapper">
-              <h3 class="catalog__article-heading"></h3>
-              <p class="catalog__description-text">Про то, как можем выполнить гравировку и условия бесплатной гравировки
-              </p>
-              <p class="catalog__description-text"></p>
-            </div>
-          </div>
-        </article>
-      </section>
-      <section class="catalog__section">
-        <a id="printed-covers">
-          <h2 class="catalog_heading">Обложки
-            с печатью</h2>
-        </a>
-        <article>
-          <div class="catalog__description-wrapper">
-            <!-- Slider main container -->
-            <div class="catalog__image-slider image-slider swiper swiper-container">
-              <!-- Additional required wrapper -->
-              <div class="image-slider__wrapper swiper-wrapper">
-                <!-- Slides -->
-                <div data-hash="slide-4" class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image swiper-zoom-container">
-                    <picture>
-                      <!-- 1x: 520px*520px; 2x: 1040px*1040px -->
-                      <source media="(min-width: 768px)"
-                        srcset="img/dog-slider-big-desktop@1x.png 1x, img/dog-slider-big-desktop@2x.png 2x">
-                      <!-- 1x: 240px*222px; 2x: 480px*444px -->
-                      <img src="img/dog-slider-big-mobile@1x.png" srcset="img/dog-slider-big-mobile@2x.png 2x"
-                        alt="Вместительный темно-зеленый кошелек">
-                    </picture>
-                  </div>
-                </div>
-                <div data-hash="slide-3" class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image swiper-zoom-container">
-                    <picture>
-                      <!-- 1x: 520px*520px; 2x: 1040px*1040px -->
-                      <source media="(min-width: 768px)"
-                        srcset="img/nb-bag-slider-desktop@1x.jpg 1x, img/nb-bag-slider-desktop@2x.jpg 2x">
-                      <!-- 1x: 240px*222px; 2x: 480px*444px -->
-                      <img src="img/nb-bag-slider-mobile@1x.png" srcset="img/nb-bag-slider-mobile@2x.png 2x"
-                        alt="Стильная черная сумка для ноутбука">
-                    </picture>
-                  </div>
-                </div>
-                <div data-hash="slide-2" class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image swiper-zoom-container">
-                    <picture>
-                      <!-- 1x: 520px*520px; 2x: 1040px*1040px -->
-                      <source media="(min-width: 768px)"
-                        srcset="img/bag-grass-slider-desktop@1x.jpg 1x, img/bag-grass-slider-desktop@2x.jpg 2x">
-                      <!-- 1x: 240px*222px; 2x: 480px*444px -->
-                      <img src="img/woman-bag-slider-mobile@1x.jpg" srcset="img/woman-bag-slider-mobile@2x.jpg 2x"
-                        alt="Коричневая дамская сумочка">
-                    </picture>
-                  </div>
-                </div>
-                <div data-hash="slide-1" class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image swiper-zoom-container">
-                    <picture>
-                      <!-- 1x: 520px*520px; 2x: 1040px*1040px -->
-                      <source media="(min-width: 768px)"
-                        srcset="img/bagpack-slider-desktop@1x.jpg 1x, img/bagpack-slider-desktop@2x.jpg 2x">
-                      <!-- 1x: 240px*222px; 2x: 480px*444px -->
-                      <img src="img/bagpack-slider-mobile@1x.jpg" srcset="img/bagpack-slider-mobile@2x.png 2x"
-                        alt="Черно-оранжевый рюкзак">
-                    </picture>
-                  </div>
-                </div>
-              </div>
-              <!-- If we need pagination -->
-              <div class="swiper-pagination"></div>
-
-              <!-- If we need navigation buttons -->
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
-
-            </div>
-            <div class="catalog__description-text-wrapper">
-              <h3 class="catalog__article-heading"></h3>
-              <p class="catalog__description-text">Про то, как можем выполнить цветную печать
-              </p>
-              <p class="catalog__description-text"></p>
-            </div>
-          </div>
-        </article>
-      </section>
-      <section class="catalog__section">
-        <a id="belts-and-keychains">
-          <h2 class="catalog_heading">Ремни и
-            ключницы</h2>
-        </a>
-        <article>
-          <div class="catalog__description-wrapper">
-            <!-- Slider main container -->
-            <div class="catalog__image-slider image-slider swiper swiper-container">
-              <!-- Additional required wrapper -->
-              <div class="image-slider__wrapper swiper-wrapper">
-                <!-- Slides -->
-                <div data-hash="slide-4" class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image swiper-zoom-container">
-                    <picture>
-                      <!-- 1x: 520px*520px; 2x: 1040px*1040px -->
-                      <source media="(min-width: 768px)"
-                        srcset="img/leather-slider-big-desktop@1x.png 1x, img/leather-slider-big-desktop@2x.png 2x">
-                      <!-- 1x: 240px*222px; 2x: 480px*444px -->
-                      <img src="img/leather-slider-big-mobile@1x.png" srcset="img/leather-slider-big-mobile@2x.png 2x"
-                        alt="Вместительный темно-зеленый кошелек">
-                    </picture>
-                  </div>
-                </div>
-                <div data-hash="slide-3" class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image swiper-zoom-container">
-                    <picture>
-                      <!-- 1x: 520px*520px; 2x: 1040px*1040px -->
-                      <source media="(min-width: 768px)"
-                        srcset="img/nb-bag-slider-desktop@1x.jpg 1x, img/nb-bag-slider-desktop@2x.jpg 2x">
-                      <!-- 1x: 240px*222px; 2x: 480px*444px -->
-                      <img src="img/nb-bag-slider-mobile@1x.png" srcset="img/nb-bag-slider-mobile@2x.png 2x"
-                        alt="Стильная черная сумка для ноутбука">
-                    </picture>
-                  </div>
-                </div>
-                <div data-hash="slide-2" class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image swiper-zoom-container">
-                    <picture>
-                      <!-- 1x: 520px*520px; 2x: 1040px*1040px -->
-                      <source media="(min-width: 768px)"
-                        srcset="img/bag-grass-slider-desktop@1x.jpg 1x, img/bag-grass-slider-desktop@2x.jpg 2x">
-                      <!-- 1x: 240px*222px; 2x: 480px*444px -->
-                      <img src="img/woman-bag-slider-mobile@1x.jpg" srcset="img/woman-bag-slider-mobile@2x.jpg 2x"
-                        alt="Коричневая дамская сумочка">
-                    </picture>
-                  </div>
-                </div>
-                <div data-hash="slide-1" class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image swiper-zoom-container">
-                    <picture>
-                      <!-- 1x: 520px*520px; 2x: 1040px*1040px -->
-                      <source media="(min-width: 768px)"
-                        srcset="img/bagpack-slider-desktop@1x.jpg 1x, img/bagpack-slider-desktop@2x.jpg 2x">
-                      <!-- 1x: 240px*222px; 2x: 480px*444px -->
-                      <img src="img/bagpack-slider-mobile@1x.jpg" srcset="img/bagpack-slider-mobile@2x.png 2x"
-                        alt="Черно-оранжевый рюкзак">
-                    </picture>
-                  </div>
-                </div>
-              </div>
-              <!-- If we need pagination -->
-              <div class="swiper-pagination"></div>
-
-              <!-- If we need navigation buttons -->
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
-
-            </div>
-            <div class="catalog__description-text-wrapper">
-              <h3 class="catalog__article-heading"></h3>
-              <p class="catalog__description-text">Что-нибудь про удобство ключниц-чехольчиков или ключниц из жесткой кожей и про ремни
-              </p>
-              <p class="catalog__description-text"></p>
-            </div>
-          </div>
-        </article>
+          </ul>
+        </div>
       </section>
 
     </main>
