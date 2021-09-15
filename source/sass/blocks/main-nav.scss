@@ -1,7 +1,3 @@
-.main-nav {
-  outline: 1px soid green;
-}
-
 .main-nav__list,
 .main-nav__nested-list {
   list-style: none;
@@ -26,13 +22,14 @@
 }
 
 @media (min-width: $min-tablet-width) {
+  .main-nav {
+    width: 440px;
+  }
   .main-nav__toggle {
     display: none;
   }
 
-  .main-nav__list,
   .main-nav__nested-list {
-    margin-left: 57%;
     font-weight: normal;
     z-index: 1;
   }
@@ -51,8 +48,6 @@
   }
 
   .main-nav__list {
-    padding-left: 32px;
-    width: 400px;
     min-height: 30px;
     flex-direction: row;
     flex-wrap: wrap;
@@ -87,7 +82,7 @@
     line-height: 20px;
     position: absolute;
     top: 24px;
-    left: -62%;
+    left: 0;
     width: 145px;
     flex-direction: column;
     flex-wrap: wrap;

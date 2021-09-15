@@ -14,7 +14,7 @@
     content: "";
     width: 18px;
     height: 18px;
-    left: 0;
+    left: 2px;
     bottom: 0;
     transform: rotate(45deg);
   }
@@ -34,24 +34,22 @@
   .page-header {
     position: relative;
     min-height: 836px;
-    max-width: 1440px;
-    min-width: $min-tablet-width;
+    width: 1440px;
 
-    @include centered($padding-desktop);
-    background-image: url("../img/bg-header-desktop@1x.jpg"),
-      linear-gradient(to right, $white 55.8%, $brown 55.8%);
-    background-repeat: no-repeat, no-repeat;
-    background-size: 36.11% auto, 100%;
-    background-position: 79.5% 184px, 0 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("../img/bg-header-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 520px auto;
+    background-position: 730px 184px;
 
     @media (min-resolution: $retina-dpi),
       (min-resolution: $retina-dppx) {
 
-      background-image: url("../img/bg-header-desktop@2x.jpg"),
-        linear-gradient(to right, $white 55.8%, $brown 55.8%);
-      background-repeat: no-repeat, no-repeat;
-      background-size: 36.11% auto, 100%;
-      background-position: 79.5% 184px, 0 0;
+      background-image: url("../img/bg-header-desktop@2x.jpg");
+      background-repeat: no-repeat;
+      background-size: 520px auto;
+      background-position: 730px 184px;
     }
   }
 
@@ -61,14 +59,18 @@
   }
 
   .page-header__container {
+    width: 1440px;
+    padding-left: 190px;
+    padding-right: 190px;
     position: relative;
-    min-width: $min-tablet-width;
+    display: flex;
+    justify-content: space-between;
   }
 
   .page-header__wrapper {
-    background-image: linear-gradient(to right, $white 55.8%, $brown 55.8%);
+    background-image: linear-gradient(to right, $white 53.8%, $brown 53.8%);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: contain;
     background-position: 0 0;
     min-width: $min-desktop-width;
   }
@@ -78,16 +80,16 @@
   }
 
   .page-header__logo {
-    position: absolute;
-    top: 24px;
-    left: 0;
+    margin-top: 24px;
     width: 100px;
     height: 100px;
   }
 
   .page-header__promo {
-    width: 520px;
-    padding-top: 288px;
+    position: relative;
+    width: 620px;
+    padding-top: 216px;
+    padding-left: 190px;
     font-size: 24px;
     line-height: 29px;
     color: $brown;
@@ -122,15 +124,16 @@
   }
 
   .page-header__promo-button {
-    bottom: 35px;
+    left: 531px;
+    bottom: -307px;
     width: 20px;
     height: 28px;
 
     &::after {
       position: absolute;
       content: "";
-      width: 18px;
-      height: 18px;
+      width: 14px;
+      height: 14px;
       border-bottom: 2px solid $brown;
       border-right: 2px solid $brown;
     }
@@ -143,7 +146,7 @@
     }
 
     &:hover {
-      bottom: 30px;
+      bottom: -311px;
     }
   }
 }

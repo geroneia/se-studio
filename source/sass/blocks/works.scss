@@ -108,9 +108,24 @@
 }
 
 @media (min-width: $min-tablet-width) {
+  // main .works::before {
+  //   position: absolute;
+  //   display: block;
+  //   content: '';
+  //   width: 91px;
+  //   height: 100%;
+  //   top: 0;
+  //   left: 14%;
+  //   background-image: url("../img/stitching.svg");
+  //   background-position: 14.2% 0;
+  //   background-repeat: no-repeat;
+  //   background-size: auto;
+  // }
+
   .works {
     min-height: 836px;
-    min-width: $min-desktop-width;
+    position: relative;
+    background-color: $white;
   }
 
   .works__item-link {
@@ -119,18 +134,35 @@
   }
 
   .works__list-wrapper {
-    width: 61.8%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 888px;
+    height: 100%;
+  }
+
+  .works .works__list-wrapper::before {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 91px;
+    height: 100%;
+    top: 0;
+    left: calc(50% - 528px);
+    background-image: url("../img/stitching.svg");
+    background-position: 14.2% 0;
+    background-repeat: no-repeat;
+    background-size: auto;
   }
 
   .works__list {
     padding-top: 132px;
-    margin-left: -1.2%;
+    margin-left: -16px;
   }
 
   .works__item {
-    width: 50%;
-    padding-left: 1.4%;
-    padding-bottom: 1.4%;
+    width: 451px;
+    padding-left: 16px;
+    padding-bottom: 16px;
   }
 
   .works__item-link:hover {
@@ -154,13 +186,17 @@
   }
 
   .works__to-catalog-link {
+    position: absolute;
+    bottom: 8px;
+    left: calc(50% + 220px);
     width: 300px;
-    margin-right: 13.8%;
+    margin-right: 200px;
     padding-right: 32px;
     margin-top: 48px;
     margin-bottom: 48px;
     font-size: 24px;
     line-height: 29px;
+    z-index: 5;
 
     &::after {
       width: 30px;
