@@ -23,12 +23,10 @@
   .page-footer {
     min-height: 147px;
     background-color: $background-block;
-    min-width: $min-desktop-width;
   }
 
   .page-footer__wrapper {
-    max-width: 1440px;
-    min-width: $min-desktop-width;
+    width: 1440px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;

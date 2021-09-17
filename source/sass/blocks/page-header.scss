@@ -38,18 +38,20 @@
 
     margin-left: auto;
     margin-right: auto;
-    background-image: url("../img/bg-header-desktop@1x.jpg");
-    background-repeat: no-repeat;
-    background-size: 520px auto;
-    background-position: 730px 184px;
+    background-image: url("../img/bg-header-desktop@1x.jpg"),
+    linear-gradient(to right, $white 56%, $brown 56%);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 520px auto, contain;
+    background-position: 730px 184px, center;
 
     @media (min-resolution: $retina-dpi),
       (min-resolution: $retina-dppx) {
 
-      background-image: url("../img/bg-header-desktop@2x.jpg");
-      background-repeat: no-repeat;
-      background-size: 520px auto;
-      background-position: 730px 184px;
+      background-image: url("../img/bg-header-desktop@2x.jpg"),
+      linear-gradient(to right, $white 56%, $brown 56%);
+      background-repeat: no-repeat, no-repeat;
+      background-size: 520px auto, contain;
+      background-position: 730px 184px, center;
     }
   }
 
@@ -68,7 +70,7 @@
   }
 
   .page-header__wrapper {
-    background-image: linear-gradient(to right, $white 53.8%, $brown 53.8%);
+    background-image: linear-gradient(to right, $white 56%, $brown 56%);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 0 0;

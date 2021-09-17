@@ -108,24 +108,15 @@
 }
 
 @media (min-width: $min-tablet-width) {
-  // main .works::before {
-  //   position: absolute;
-  //   display: block;
-  //   content: '';
-  //   width: 91px;
-  //   height: 100%;
-  //   top: 0;
-  //   left: 14%;
-  //   background-image: url("../img/stitching.svg");
-  //   background-position: 14.2% 0;
-  //   background-repeat: no-repeat;
-  //   background-size: auto;
-  // }
-
   .works {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
     min-height: 836px;
     position: relative;
     background-color: $white;
+    min-width: 1440px;
   }
 
   .works__item-link {

@@ -54,12 +54,24 @@
   .follow-us__wrapper {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    max-width: 1440px;
-    min-width: $min-desktop-width;
+    min-width: 1440px;
     max-height: 520px;
 
     @include centered($padding-desktop);
+    position: relative;
+    &::before {
+      position: absolute;
+      display: block;
+      content: '';
+      width: 91px;
+      height: 104px;
+      top: 0;
+      left: calc(50% - 528px);
+      background-image: url("../img/stitching-tail.svg");
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
   }
 
   .follow-us__follow-link {
@@ -70,28 +82,31 @@
   }
 
   .follow-us__images-list {
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    max-width: 1060px;
+    width: 1060px;
   }
 
   .follow-us__column--first {
-    width: 49%;
+    width: 520px;
     flex-wrap: wrap;
     justify-content: flex-start;
     flex-direction: column;
     position: relative;
-    margin-right: 2%;
+    margin-right: 20px;
     align-content: flex-end;
     text-align: right;
 
     .follow-us__images-item {
-      width: 48%;
+      width: 250px;
+      margin-right: 20px;
+      margin-bottom: 20px;
 
       &:first-child {
-        max-height: 296px;
+        height: 296px;
         position: absolute;
         top: 0;
         left: 0;
@@ -100,13 +115,13 @@
 
       &:nth-child(2) {
         margin-right: 0;
-        max-height: 175px;
+        height: 175px;
         align-self: flex-end;
       }
 
       &:nth-child(3) {
         margin-right: 0;
-        max-height: 100px;
+        height: 100px;
         align-self: flex-end;
       }
 
@@ -118,29 +133,24 @@
     }
   }
 
-  .follow-us__images-item {
-    margin-right: 3.8%;
-    margin-bottom: 3.8%;
-  }
-
   .follow-us__column--second {
     flex-wrap: wrap;
-    width: 23.5%;
+    width: 250px;
     max-height: 730px;
-    margin-right: 2%;
+    margin-right: 20px;
     justify-content: flex-start;
 
     .follow-us__images-item {
       width: 100%;
 
       &:first-child {
-        max-height: 344px;
+        height: 344px;
         margin-bottom: auto;
       }
 
       &:nth-child(2) {
         margin-bottom: 0;
-        max-height: 160px;
+        height: 160px;
         align-self: flex-start;
       }
     }
@@ -148,8 +158,8 @@
 
   .follow-us__column--third {
     flex-wrap: wrap;
-    width: 23.5%;
-    max-height: 730px;
+    width: 250px;
+    height: 523px;
     justify-content: space-between;
 
     .follow-us__images-item {

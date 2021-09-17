@@ -43,17 +43,32 @@
 
 @media (min-width: $min-tablet-width) {
   .preferences {
+    position: relative;
     min-height: 291px;
-    min-width: $min-desktop-width;
+    min-width: 1440px;
 
     @include centered($padding-desktop);
+
+    &::before {
+      position: absolute;
+      display: block;
+      content: '';
+      width: 91px;
+      height: 100%;
+      top: 0;
+      left: calc(50% - 528px);
+      background-image: url("../img/stitching.svg");
+      background-position: 14.2% 0;
+      background-repeat: no-repeat;
+      background-size: auto;
+    }
   }
 
   .preferences__list {
     padding-top: 60px;
     flex-direction: row;
     justify-content: space-between;
-    min-width: 57.7%;
+    width: 618px;
   }
 
   .prefernces__item {
