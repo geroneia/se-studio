@@ -216,6 +216,8 @@
 
   .works__list-wrapper {
     width: 100%;
+    display: flex;
+    flex-direction: column;
 
     @include centered($padding-mobile);
   }
