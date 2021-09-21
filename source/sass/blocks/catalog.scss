@@ -60,8 +60,7 @@
 
 @media (min-width: $min-tablet-width) {
   .catalog__section article {
-    max-width: 1440px;
-    min-width: $min-desktop-width;
+    width: 1440px;
 
     @include centered($padding-desktop);
   }
@@ -69,7 +68,7 @@
   .catalog__section {
     padding-top: 18px;
     padding-bottom: 190px;
-    min-width: $min-desktop-width;
+    min-width: 1440px;
   }
 
   .catalog_heading {
