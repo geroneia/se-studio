@@ -24,6 +24,7 @@
 @media (min-width: $min-tablet-width) {
   .main-nav {
     width: 440px;
+    z-index: 2;
   }
   .main-nav__toggle {
     display: none;

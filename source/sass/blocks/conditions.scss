@@ -48,15 +48,41 @@
 }
 
 @media (min-width: $min-tablet-width) {
-  .conditions {
-    min-width: 1440px;
-  }
 
   .conditions__wrapper {
-    max-width: 1440px;
-    min-height: 651px;
+    position: relative;
+    width: 1440px;
+    min-height: 700px;
 
     @include centered($padding-desktop);
+
+    &::before {
+      position: absolute;
+      content: "";
+      display: block;
+      top: -185px;
+      left: calc(50% + 86px);
+      height: calc(100% + 204px);
+      width: 836px;
+      background-color: $brown;
+      z-index: 1;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      display: block;
+      top: 0;
+      left: 50%;
+      height: 300px;
+      width: 520px;
+      background-color: $brown;
+      background-image: url("../img/bg-shipping-desktop@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      z-index: 1;
+    }
   }
 
   .conditions__heading {
