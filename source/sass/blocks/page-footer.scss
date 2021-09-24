@@ -5,10 +5,6 @@
   a {
     text-transform: lowercase;
 
-    &:hover {
-      font-size: 21px;
-    }
-
     &:active {
       color: $active-link-color;
     }
@@ -24,6 +20,7 @@
     min-height: 147px;
     background-color: $background-block;
     min-width: 1440px;
+    align-self: stretch;
   }
 
   .page-footer__wrapper {

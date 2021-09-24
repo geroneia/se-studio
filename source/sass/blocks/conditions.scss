@@ -56,25 +56,13 @@
 
     @include centered($padding-desktop);
 
-    &::before {
-      position: absolute;
-      content: "";
-      display: block;
-      top: -200px;
-      left: calc(50% + 86px);
-      height: calc(100% + 150px);
-      width: 836px;
-      background-color: $brown;
-      z-index: 1;
-    }
-
     &::after {
       position: absolute;
       content: "";
       display: block;
       top: 0;
       left: 50%;
-      height: 300px;
+      min-height: 300px;
       width: 520px;
       background-color: $brown;
       background-image: url("../img/bg-shipping-desktop@1x.jpg");
@@ -95,7 +83,7 @@
   .conditions__text {
     font-size: 24px;
     line-height: 30px;
-    padding-right: 50%;
+    padding-right: 55%;
     padding-bottom: 18px;
   }
 }
